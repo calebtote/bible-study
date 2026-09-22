@@ -109,11 +109,52 @@ const checkEntityRefs = (ids: string[] | undefined, where: string) => {
 };
 
 const ENTITY_LINK = /\[\[entity:([a-z0-9-]+)\]\]/g;
+
+/*
+ * Inline scripture anchors: `[[ref:Joshua 2:10-11|that had already happened]]`.
+ * The anchored phrase is a claim, and the reference is the claim's evidence, so a
+ * broken one is worse than a broken entity link: it looks like support and opens
+ * nothing. Two failure modes are checked separately, because they are different
+ * authoring mistakes: a reference the parser cannot read, and a reference to a
+ * chapter the bundle does not carry, which would work online with an ESV key and
+ * quietly apologise offline. Anchors are curated, so they are held to the higher
+ * standard: the passage must be present in the bundle.
+ */
+const REF_ANCHOR = /\[\[ref:([^\]|]+)\|([^\]]+)\]\]/g;
+const MALFORMED_REF = /\[\[ref:(?![^\]|]+\|[^\]]+\]\])/;
+const WEB_DIR = path.join(process.cwd(), "public", "scripture", "web");
+const bundledChapters = new Set(
+  fs.readdirSync(WEB_DIR).map((f) => f.replace(/\.json$/, ""))
+);
+/* Kept in step with parseRef, which the app uses to resolve the same token. */
+const anchorSlug = (raw: string): string | null => {
+  const m = raw
+    .trim()
+    .replace(/\s+/g, " ")
+    .match(/^([1-3]\s+)?([A-Za-z][A-Za-z\s]*?)\s+(\d+)(?::(\d+)(?:\s*[-–]\s*(\d+))?)?$/);
+  if (!m) return null;
+  const book = `${m[1] ? m[1].trim() + " " : ""}${m[2].trim()}`.toLowerCase();
+  return `${(book === "psalm" ? "psalms" : book).replace(/\s+/g, "-")}-${m[3]}`;
+};
+
 const checkBodyLinks = (body: string, where: string) => {
   for (const m of body.matchAll(ENTITY_LINK)) {
     if (!ENTITY_IDS.has(m[1])) {
       fail(`${where} links to unknown entity "${m[1]}"`);
     }
+  }
+  for (const m of body.matchAll(REF_ANCHOR)) {
+    const slug = anchorSlug(m[1]);
+    if (!slug) {
+      fail(`${where} anchors "${m[2]}" to unreadable reference "${m[1]}"`);
+    } else if (!bundledChapters.has(slug)) {
+      fail(
+        `${where} anchors "${m[2]}" to ${m[1].trim()}, whose chapter is not in the bundled text`
+      );
+    }
+  }
+  if (MALFORMED_REF.test(body)) {
+    fail(`${where} contains a malformed [[ref:...]] token`);
   }
   if (body.includes("—")) {
     warn(`${where} contains an em dash, which the style guide excludes`);

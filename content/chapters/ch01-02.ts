@@ -237,7 +237,7 @@ export const CHAPTERS: Chapter[] = [
       "The charge repeats be strong and courageous three times and attaches it to keeping the law rather than to tactics. What does that ordering suggest Joshua was expected to be afraid of?",
       "Verse 4 describes a land reaching the Euphrates and Joshua 13:1 says much of it is still unpossessed. What should a map of Joshua 1 actually draw?",
       "Joshua is introduced as Moses' servant and does not get a title of his own until he dies. What is the book doing by keeping him in Moses' shadow through the whole commission?",
-      "The eastern tribes already have their land, and are held to fighting for land they will never live on until everyone else has rest. What holds an arrangement like that together?",
+      "The eastern tribes already have their land, and are held to [[ref:Numbers 32:20-27|fighting for land they will never live on]] until everyone else has rest. What holds an arrangement like that together?",
     ],
     relatedEntityIds: [
       "joshua",
@@ -312,7 +312,7 @@ export const CHAPTERS: Chapter[] = [
         body:
           "[[entity:joshua]] sends two men out of the camp secretly, to view the land and Jericho in particular. They go into the house of a prostitute named [[entity:rahab]] and stay there. The text gives no reason for the choice.\n\n" +
           "Word reaches the king of [[entity:jericho]], who sends to Rahab for the men. By then she has taken them up to the flat roof and covered them with flax stalks laid out to dry. She tells the messengers the men have gone, suggesting a quick pursuit might catch them. The search leaves toward the fords, and the gate shuts behind it.\n\n" +
-          "On the roof, she speaks. She knows Yahweh has given Israel the land. She has heard about the sea drying up, and about [[entity:sihon]] and [[entity:og]]. Every heart in the city has melted. Yahweh is God in heaven above and on earth beneath. Then a demand: swear to me and to my father's house. They swear, with conditions. A scarlet cord in the window. Her family inside. Nothing said outside.\n\n" +
+          "On the roof, she speaks. She knows Yahweh has given Israel the land. She has heard about [[ref:Exodus 14:21-31|the sea drying up]], and about [[entity:sihon]] and [[entity:og]]. Every heart in the city has melted. Yahweh is God in heaven above and on earth beneath. Then a demand: swear to me and to my father's house. They swear, with conditions. A scarlet cord in the window. Her family inside. Nothing said outside.\n\n" +
           "She lowers them by a rope through that window, because the house is built into the wall. They hide three days in the hills, then cross back. Their report to Joshua is nearly her sentence returned: Yahweh has given the land, and all its inhabitants melt before us.",
         scriptureRefs: ["Joshua 2:1-24"],
         citations: [
@@ -330,7 +330,7 @@ export const CHAPTERS: Chapter[] = [
         kind: "what-brought-us-here",
         title: "What brought us here",
         body:
-          "Joshua has done this job himself. He was one of the twelve men Moses sent from Kadesh, and one of the two who came back saying the land could be taken. That earlier reconnaissance ended in a report that frightened Israel out of entering for a generation. This one is smaller, quieter and aimed at a single town.\n\n" +
+          "Joshua has done this job himself. He was one of [[ref:Numbers 13:1-16|the twelve men Moses sent from Kadesh]], and one of [[ref:Numbers 14:6-9|the two who came back saying the land could be taken]]. That earlier reconnaissance ended in [[ref:Numbers 13:31-33|a report that frightened Israel out of entering]] for [[ref:Numbers 14:26-35|a generation]]. This one is smaller, quieter and aimed at a single town.\n\n" +
           "The camp they leave is [[entity:shittim]], and the last thing Numbers reports happening there is Israel being drawn into the worship of another god and into sexual relations with [[entity:moab]] and Midian. Sending two men from that camp into a prostitute's house is a juxtaposition readers have long found pointed. What happens in the house runs the other way: the Canaanite woman is the one speaking for Yahweh.",
         scriptureRefs: [
           "Numbers 13:1-3",
@@ -527,7 +527,7 @@ export const MILESTONES: Milestone[] = [
     title: "Moses is dead, and Joshua is told to cross",
     scriptureRefs: ["Joshua 1:1-9"],
     narrative:
-      "The book's first sentence is an obituary. Moses the servant of Yahweh is dead, and the man addressed is identified by his relationship to him: Joshua son of Nun, Moses' servant.\n\nWhat follows is not an installation ceremony. That had already happened, in Moses' lifetime and in front of the assembly. Here God simply speaks, and the speech does three things at once. It gives an order, arise and cross this Jordan. It renews a promise, the land I am giving them, sworn to their fathers. And it sets a condition with nothing military in it: keep the whole law Moses commanded, do not turn from it to the right or the left, keep this book in your mouth and think about it day and night.\n\nBe strong and courageous comes three times in nine verses. The repetition is the point. A man told that often not to be afraid is a man with reasons to be, and the chapter never pretends otherwise.",
+      "The book's first sentence is an obituary. Moses the servant of Yahweh is dead, and the man addressed is identified by his relationship to him: Joshua son of Nun, Moses' servant.\n\nWhat follows is not an installation ceremony. [[ref:Numbers 27:18-23|That had already happened]], in Moses' lifetime and in front of the assembly, and [[ref:Deuteronomy 31:7-8|Moses had charged Joshua publicly]] besides. Here God simply speaks, and the speech does three things at once. It gives an order, arise and cross this Jordan. It renews a promise, the land I am giving them, sworn to their fathers. And it sets a condition with nothing military in it: keep the whole law Moses commanded, do not turn from it to the right or the left, keep this book in your mouth and think about it day and night.\n\nBe strong and courageous comes three times in nine verses. The repetition is the point. A man told that often not to be afraid is a man with reasons to be, and the chapter never pretends otherwise.",
     entityIds: [
       "joshua",
       "moses",

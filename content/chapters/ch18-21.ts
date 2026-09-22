@@ -459,7 +459,7 @@ export const CHAPTERS: Chapter[] = [
         kind: "at-a-glance",
         title: "At a glance",
         body:
-          "The LORD tells [[entity:joshua]] to appoint the cities of refuge that [[entity:moses]] had already commanded. Six towns are named, three west of the [[entity:jordan-river]] and three east of it. A person who has killed someone unintentionally may run to one, state his case at the gate, and live there safely until he stands trial. The provision covers resident foreigners as well as Israelites.",
+          "The LORD tells [[entity:joshua]] to appoint the cities of refuge that [[entity:moses]] [[ref:Numbers 35:9-15|had already commanded]]. Six towns are named, three west of the [[entity:jordan-river]] and three east of it. A person who has killed someone unintentionally may run to one, state his case at the gate, and live there safely until he stands trial. The provision covers resident foreigners as well as Israelites.",
         scriptureRefs: ["Joshua 20:1-6", "Joshua 20:7-9"],
         citations: [],
         evidenceLabels: ["biblical-account"],
@@ -631,7 +631,7 @@ export const CHAPTERS: Chapter[] = [
     number: 21,
     title: "The Levitical cities, and a closing claim",
     summary:
-      "The Levites ask for the towns Moses had promised them, forty-eight are named across every tribal area on both sides of the Jordan, and the chapter ends by saying that not one word of the LORD's promise failed.",
+      "The Levites ask for [[ref:Numbers 35:1-8|the towns Moses had promised them]], forty-eight are named across every tribal area on both sides of the Jordan, and the chapter ends by saying that not one word of the LORD's promise failed.",
     phase: "inheritance-and-life",
     scriptureRange: "Joshua 21:1-45",
     milestoneIds: [

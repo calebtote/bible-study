@@ -792,7 +792,7 @@ Shiloh is the right place for it in more than one sense. This is where the tent 
     scriptureRefs: ["Joshua 22:13-20"],
     narrative: `Before the army moves, Israel sends Phinehas son of Eleazar with ten clan heads, one from each tribe, into Gilead. The composition matters: a priest for the cultic question and a full slate of tribal representatives for the political one.
 
-Their speech arrives as an indictment. This is treachery against the God of Israel. Have you learned nothing from Peor, where a plague fell on the congregation? If you rebel today, tomorrow God will be angry with all of Israel. Remember Achan, who did not perish alone in his sin. They offer one way out: if the eastern land is unclean, come across and take a share among us instead, but do not build a rival altar.
+Their speech arrives as an indictment. This is treachery against the God of Israel. Have you learned nothing from [[ref:Numbers 25:1-9|Peor, where a plague fell on the congregation]]? If you rebel today, tomorrow God will be angry with all of Israel. Remember [[ref:Joshua 7:1-5|Achan, who did not perish alone in his sin]]. They offer one way out: if the eastern land is unclean, come across and take a share among us instead, but do not build a rival altar.
 
 It is worth noticing what the delegation is for. They have come a long way to make an accusation, and by making it in person they have also, without intending to, created the chance for an answer.`,
     entityIds: [
@@ -1148,7 +1148,7 @@ The speech stops on the curse. That is how the chapter is built, and the last th
     scriptureRefs: ["Joshua 24:1"],
     narrative: `Joshua gathers all the tribes of Israel to Shechem, with the elders, heads, judges and officers, and they present themselves before God. Unlike chapter 23, this assembly has an address, and the address has a history.
 
-Shechem sits in the only easy east-west pass through the central highlands, between Mount Ebal to the north and Mount Gerizim to the south. Abraham built an altar in this area on first entering the land. Jacob bought a field here and later buried his household's foreign gods under a tree nearby. Joshua 8 records a ceremony of blessing and curse on the two flanking mountains. And the book never reports a battle for the city, which is one of its quieter puzzles: Israel assembles at a major Canaanite centre as though it were already theirs to use.
+Shechem sits in the only easy east-west pass through the central highlands, between Mount Ebal to the north and Mount Gerizim to the south. [[ref:Genesis 12:6-7|Abraham built an altar in this area on first entering the land]]. [[ref:Genesis 33:18-20|Jacob bought a field here]] and later [[ref:Genesis 35:2-4|buried his household's foreign gods under a tree nearby]]. Joshua 8 records a ceremony of blessing and curse on the two flanking mountains. And the book never reports a battle for the city, which is one of its quieter puzzles: Israel assembles at a major Canaanite centre as though it were already theirs to use.
 
 The Greek tradition reads Shiloh here instead. That is worth knowing, because the tent of meeting was at Shiloh, and this chapter will mention a sanctuary at Shechem without explaining it.`,
     entityIds: [
@@ -1369,7 +1369,7 @@ The elements here are the ordinary furniture of ancient agreements: a written te
     scriptureRefs: ["Joshua 24:29-33"],
     narrative: `Joshua dies at a hundred and ten and is buried in his own inheritance at Timnath-serah in the hill country of Ephraim. Israel served the LORD all his days, and all the days of the elders who outlived him, which is a good report with a time limit written into it.
 
-Then the bones of Joseph, carried out of Egypt, are buried at Shechem in the plot of ground Jacob had bought from the sons of Hamor. A promise made in Genesis and kept at the exodus finally lands here, in ground purchased rather than taken. And Eleazar the priest dies and is buried in the hill of Phinehas his son, in the hill country of Ephraim.
+Then the bones of Joseph, [[ref:Exodus 13:19|carried out of Egypt]], are buried at Shechem in [[ref:Genesis 33:18-20|the plot of ground Jacob had bought from the sons of Hamor]]. [[ref:Genesis 50:24-26|A promise made in Genesis]] and kept at the exodus finally lands here, in ground purchased rather than taken. And Eleazar the priest dies and is buried in the hill of Phinehas his son, in the hill country of Ephraim.
 
 A book about receiving land ends with the land receiving its people. Not a coronation, not a monument, three graves. Two of them cannot be located: Timnath-serah is probably Khirbet Tibnah and no more than probably, and the hill of Phinehas is unknown. The one burial place that can be pointed to is a field somebody bought.`,
     entityIds: [

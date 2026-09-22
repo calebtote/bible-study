@@ -52,14 +52,16 @@ function TextWithRefs({ text }: { text: string }) {
   );
 }
 
-const TOKEN = /(\[\[entity:[a-z0-9-]+\]\]|\*\*[^*]+\*\*|\*[^*]+\*)/g;
+const TOKEN =
+  /(\[\[entity:[a-z0-9-]+\]\]|\[\[ref:[^\]|]+\|[^\]]+\]\]|\*\*[^*]+\*\*|\*[^*]+\*)/g;
 
 /*
  * The same pattern without `g`, for testing a single segment. `TOKEN.test` would be
  * wrong here: a global regex carries `lastIndex` between calls, so consecutive tests
  * would start mid-string and answer about the wrong offset.
  */
-const IS_TOKEN = /^(?:\[\[entity:[a-z0-9-]+\]\]|\*\*[^*]+\*\*|\*[^*]+\*)$/;
+const IS_TOKEN =
+  /^(?:\[\[entity:[a-z0-9-]+\]\]|\[\[ref:[^\]|]+\|[^\]]+\]\]|\*\*[^*]+\*\*|\*[^*]+\*)$/;
 
 /** Prose that ends in a bare definite article, so the next word must not supply one. */
 const TRAILING_ARTICLE = /(^|[\s(“"'])the\s+$/i;
@@ -95,6 +97,22 @@ function Inline({
   return (
     <>
       {parts.map((part, i) => {
+        /*
+         * An authored anchor: `[[ref:Joshua 2:10-11|that had already happened]]`.
+         * The phrase is a claim the text makes without naming its passage, and the
+         * anchor supplies the passage on hover. This is the deliberate counterpart
+         * to the automatic matching below: automation catches references the prose
+         * spells out, and anchors carry the ones it only alludes to.
+         */
+        const anchor = part.match(/^\[\[ref:([^\]|]+)\|([^\]]+)\]\]$/);
+        if (anchor) {
+          return (
+            <RefPopover key={i} refText={anchor[1].trim()}>
+              {anchor[2]}
+            </RefPopover>
+          );
+        }
+
         const entity = part.match(/^\[\[entity:([a-z0-9-]+)\]\]$/);
         if (entity) {
           const record = ENTITY_BY_ID[entity[1]];

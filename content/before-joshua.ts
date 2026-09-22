@@ -404,7 +404,7 @@ From [[entity:kadesh-barnea]], an oasis at the edge of the Sinai, twelve men are
 
 All twelve agree the land is good. Ten conclude it cannot be taken: the towns are fortified, the people are large, and in their own phrase they felt like grasshoppers. Two disagree. [[entity:caleb]] and [[entity:joshua]] tell the assembly to go up at once. Israel sides with the ten, talks about stoning the two, and proposes going back to Egypt.
 
-The sentence that follows frames everything afterwards. That generation will not enter the land. They will die in the wilderness over forty years, a year for each day the scouts were away, and of those counted only Caleb and Joshua will cross. Then, having refused to go, they try it anyway without sanction and are beaten back as far as Hormah, a town this study cannot locate.
+The sentence that follows frames everything afterwards. [[ref:Numbers 14:26-35|That generation will not enter the land]]. They will die in the wilderness over forty years, a year for each day the scouts were away, and of those counted only Caleb and Joshua cross. Then, having refused to go, [[ref:Numbers 14:39-45|they try anyway without sanction and are beaten back as far as Hormah]], a town this study cannot locate.
 
 Now read Joshua 14. Caleb comes forward at Gilgal and says he was forty when [[entity:moses]] sent him out, that his fellow scouts made the people's heart melt while he followed wholly, that Moses swore him a portion that day, and that he is now eighty-five and wants the hill country with the fortified Anakim towns in it. Every clause points back here. Without this stage, that is an old man asking a favour. With it, he is collecting on a promise and asking for the exact ground the majority said was impossible.
 
@@ -584,7 +584,7 @@ He retells the journey, including the refusal at Kadesh, and he restates the law
 
 He commissions [[entity:joshua]] in front of everyone. The words are the ones God repeats in Joshua 1: be strong and courageous, you will bring this people in, I will not leave you. [[entity:eleazar]] is beside him, because civil and priestly authority are being handed over together. Then a blessing on the tribes, tribe by tribe, in poetry.
 
-Then Nebo. Moses climbs the ridge, sees the land laid out from the northern hills round to the Negev, and dies there. The text states that no one knows where he is buried, and this study does not try to improve on that. Israel mourns thirty days.
+Then Nebo. [[ref:Deuteronomy 34:1-8|Moses climbs the ridge, sees the land laid out from the northern hills round to the Negev, and dies there]]. The text states that no one knows where he is buried, and this study does not try to improve on that. Israel mourns thirty days.
 
 Joshua 1:1 begins in the middle of that sentence: after the death of Moses. Read on its own, Joshua's opening is an unexplained commission. Read after Deuteronomy, it is a succession, and the terms of the succession are already fixed. Joshua gives no new law. He applies one he received.`,
     scriptureRefs: [

@@ -80,7 +80,7 @@ export const CHAPTERS: Chapter[] = [
         title: "What brought us here",
         body:
           "Israel crossed the [[entity:jordan-river]] on the tenth day of the first month and camped at [[entity:gilgal]], where twelve stones from the riverbed were set up. Behind that lies forty years in which the generation that refused to enter died out. Numbers and Deuteronomy both record that failure; Joshua 5 adds that the sons born on the way had not been circumcised. The text states this and does not explain it.\n\n" +
-          "Two of the three pieces here reach back to Egypt. Passover was instituted the night Israel left, and the law ties eating it to being circumcised, which makes the order of this chapter a legal requirement rather than a mood. The manna began a month after the sea crossing, with the notice that Israel ate it until they came to the border of Canaan. Chapter 5 is where that clause runs out.",
+          "Two of the three pieces here reach back to Egypt. [[ref:Exodus 12:1-14|Passover was instituted the night Israel left]], and [[ref:Exodus 12:43-49|the law ties eating it to being circumcised]], which makes the order of this chapter a legal requirement rather than a mood. [[ref:Exodus 16:11-15|The manna began a month after the sea crossing]], with [[ref:Exodus 16:35|the notice that Israel ate it until they came to the border of Canaan]]. Chapter 5 is where that clause runs out.",
         scriptureRefs: [
           "Joshua 4:19",
           "Exodus 12:43-49",
@@ -869,7 +869,7 @@ export const CHAPTERS: Chapter[] = [
         body:
           "The ambush party is thirty thousand in one verse and five thousand in another. The chapter does not reconcile the figures and neither will this study.\n\n" +
           "What [[entity:joshua]] holds out is a *kidon*, the word used later for Goliath's weapon. He keeps it extended until the destruction is complete, which readers have long compared with [[entity:moses]]'s raised hand at the sea and against Amalek.\n\n" +
-          "The king is hanged and then taken down at sunset. Deuteronomy requires exactly that, so the narrative is observing a rule even here.\n\n" +
+          "The king is hanged and then taken down at sunset. [[ref:Deuteronomy 21:22-23|Deuteronomy requires exactly that]], so the narrative is observing a rule even here.\n\n" +
           "Two chapters, two heaps of stones: one over [[entity:achan]], one over the king of [[entity:ai]] at his own gate. The phrasing is the same.\n\n" +
           "The altar's stones are unworked, with no iron used on them, which follows both Exodus and Deuteronomy. The text does not say why.\n\n" +
           "The assembly is described as including the sojourner along with the native born, the same pairing the law uses about who may keep Passover.",
@@ -1014,7 +1014,7 @@ export const MILESTONES: Milestone[] = [
     scriptureRefs: ["Joshua 5:10", "Exodus 12:43-49"],
     narrative:
       "On the fourteenth day of the first month, at evening, Israel keeps Passover on the plain east of [[entity:jericho]]. The date matters: they crossed the [[entity:jordan-river]] on the tenth, which is the day the law sets for selecting the lamb.\n\n" +
-      "This is only the third Passover the Pentateuch records. The first was kept in Egypt on the night of departure, the second at Sinai a year later. Nothing is said about the forty years between. Exodus 12 restricts the meal to the circumcised, which is why the knives came first.\n\n" +
+      "This is only the third Passover the Pentateuch records. [[ref:Exodus 12:21-28|The first was kept in Egypt on the night of departure]], [[ref:Numbers 9:1-5|the second at Sinai a year later]]. Nothing is said about the forty years between. Exodus 12 restricts the meal to the circumcised, which is why the knives came first.\n\n" +
       "The scene is a memorial kept by people who were not there. Almost everyone eating had been born after the exodus. They are being told, by a meal, that the deliverance belongs to them.",
     entityIds: ["joshua", "gilgal", "jericho", "jordan-river", "egypt-new-kingdom"],
     mapFeatureIds: ["site-gilgal", "site-jericho", "region-jordan-valley"],
@@ -1685,7 +1685,7 @@ export const MILESTONES: Milestone[] = [
     scriptureRefs: ["Joshua 8:30-31", "Deuteronomy 27:1-8"],
     narrative:
       "The chapter changes subject without a transition. [[entity:joshua]] builds an altar to Yahweh on [[entity:mount-ebal]]. No march is described, no route, no days on the road; the text simply places him there, about thirty-five kilometres north of [[entity:ai]].\n\n" +
-      "The altar follows Moses' specification exactly: whole stones, unworked, with no iron tool used on them. Burnt offerings and peace offerings are made on it, and a copy of the law is written on the stones.\n\n" +
+      "The altar follows [[ref:Deuteronomy 27:1-8|Moses' specification]] exactly: whole stones, unworked, with no iron tool used on them. Burnt offerings and peace offerings are made on it, and a copy of the law is written on the stones.\n\n" +
       "This is the first altar Israel builds in the land in this book. It is not built at a captured city, not at [[entity:gilgal]], and not where the fighting has been. It is built at the place Deuteronomy named before Israel crossed the river, which means the site was chosen by an instruction rather than by the campaign.",
     entityIds: ["joshua", "moses", "mount-ebal", "mount-gerizim", "shechem"],
     mapFeatureIds: ["site-mount-ebal", "site-mount-gerizim", "site-shechem"],
