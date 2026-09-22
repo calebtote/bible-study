@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Build the static export used for GitLab Pages (or any host with no Node server).
+ * Build the static export used for GitHub Pages (or any host with no Node server).
  *
  * Next.js cannot include a route handler that reads the request in a static export;
  * `app/api/esv/route.ts` reads `request.url` to get `?q=`, so it is one of those and the

@@ -1,0 +1,67 @@
+# Publishes the study to GitHub Pages as a static export.
+#
+# The app has exactly one thing a static host cannot serve: the ESV proxy route,
+# which exists only to keep the ESV credential off the client. `npm run build:pages`
+# (scripts/build-static.mjs) removes that route for the duration of this build alone;
+# every reader on Pages reads the bundled World English Bible instead, which is the
+# whole reason that translation is bundled in full rather than fetched on demand.
+#
+# `actions/configure-pages` reports the base path this build will actually be served
+# under, whether that is a project page without a custom domain
+# (https://<user>.github.io/<repo>/), a user or org root page
+# (https://<user>.github.io/), or a custom domain. Passing its output straight into
+# `NEXT_PUBLIC_BASE_PATH` means nothing in this repo needs to know which of those
+# applies, or to be edited if that ever changes.
+#
+# One manual step this file cannot do for you: Settings -> Pages -> Build and
+# deployment -> Source must be set to "GitHub Actions" once, the first time this runs.
+
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - id: pages
+        uses: actions/configure-pages@v5
+
+      - run: npm ci
+
+      - run: npm run build:pages
+        env:
+          NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

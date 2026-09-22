@@ -8,7 +8,7 @@
  * GeoJSON, the bundled scripture, and the ESV proxy. Those call sites go through
  * `withBasePath` instead of assuming they are served from the domain root.
  *
- * `STATIC_EXPORT` is the companion fact: a GitLab Pages (or any static host) deployment
+ * `STATIC_EXPORT` is the companion fact: a GitHub Pages (or any static host) deployment
  * has no server, so `/api/esv` cannot exist there at all. Code that would otherwise hit
  * that route checks this flag first, so a static deployment fails toward the bundled
  * World English Bible immediately rather than after a guaranteed 404 round trip.

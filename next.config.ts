@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 /*
- * Static export, for hosting on GitLab Pages (or any host with no Node server).
+ * Static export, for hosting on GitHub Pages (or any host with no Node server).
  *
  * Set only by `scripts/build-static.mjs`, never by hand: that script also removes
  * `app/api` for the duration of the build, because a route handler that reads
@@ -12,8 +12,8 @@ import type { NextConfig } from "next";
 const STATIC_EXPORT = process.env.NEXT_PUBLIC_STATIC_EXPORT === "1";
 
 /*
- * The sub-path GitLab (or any other host) is serving this build from, e.g.
- * "/bible-study" for a project without a custom domain. Read from the same
+ * The sub-path GitHub (or any other host) is serving this build from, e.g.
+ * "/bible-study" for a project page without a custom domain. Read from the same
  * `NEXT_PUBLIC_BASE_PATH` that `lib/base-path.ts` uses for asset URLs the router does
  * not touch, so the two can never drift apart. Empty for local dev, for `next start`,
  * and for any host that serves the app from its domain root.
