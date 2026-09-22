@@ -78,13 +78,15 @@ export const CHAPTERS: Chapter[] = [
         kind: "what-brought-us-here",
         title: "What brought us here",
         body:
-          "[[entity:joshua]] is not a new name here. He appears as Moses' aide from the Exodus onward, as one of the twelve men sent to scout Canaan, and as one of only two of that generation permitted to enter it. His appointment has already happened twice: [[ref:Numbers 27:18-23|Moses laid hands on him before]] [[entity:eleazar]] and the assembly, and [[ref:Deuteronomy 31:7-8|Moses charged him publicly in front of all Israel]]. Chapter 1 is God confirming a transfer that Moses had already made.\n\nThe obituary is heavier than it sounds. Deuteronomy closes by saying [[ref:Deuteronomy 34:10-12|no prophet like Moses has arisen since]], so the man now told to lead steps into a place the text has just declared unfillable.\n\n" +
-          "The eastern arrangement is older too. [[entity:tribe-reuben]] and [[entity:tribe-gad]] [[ref:Numbers 32:1-27|asked Moses for the land taken from]] [[entity:sihon]] and [[entity:og]], and the price Moses set was that their men fight west of the river until the rest of Israel had rest. Verses 12 to 18 are Joshua calling that in, and chapter 22 is where the account is finally settled.",
+          "[[entity:joshua]] is not a new name here. He appears as Moses' aide from the Exodus onward, as one of the twelve men sent to scout Canaan, and as one of only two of that generation permitted to enter it. His appointment has already happened twice: [[ref:Numbers 27:18-23|Moses laid hands on him before]] [[entity:eleazar]] and the assembly, and [[ref:Deuteronomy 31:6-8|Moses charged him publicly in front of all Israel]], a passage worth rereading for which promises repeat and to whom. Chapter 1 is God confirming a transfer that Moses had already made. Even the words of verses 3 to 5 are inherited: [[ref:Deuteronomy 11:24-25|Moses had said nearly the same thing to all Israel]], and the two passages repay a side-by-side reading.\n\nThe obituary is heavier than it sounds. Deuteronomy closes by saying [[ref:Deuteronomy 34:10-12|no prophet like Moses has arisen since]], so the man now told to lead steps into a place the text has just declared unfillable.\n\n" +
+          "The eastern arrangement is older too. [[entity:tribe-reuben]] and [[entity:tribe-gad]] [[ref:Numbers 32:1-27|asked Moses for the land taken from]] [[entity:sihon]] and [[entity:og]], and the price Moses set was that their men fight west of the river until the rest of Israel had rest. Verses 12 to 18 are Joshua calling that in, and chapter 22 is where the account is finally settled. The word Joshua uses for the rest of Israel in verses 14 and 15 is the one [[ref:Numbers 32:6-7|Moses pressed on these same tribes]] the first time.",
         scriptureRefs: [
           "Numbers 14:6-9",
           "Numbers 27:18-23",
+          "Numbers 32:6-7",
           "Numbers 32:20-22",
-          "Deuteronomy 31:7-8",
+          "Deuteronomy 11:24-25",
+          "Deuteronomy 31:6-8",
           "Deuteronomy 34:5-9",
         ],
         citations: [
@@ -141,9 +143,14 @@ export const CHAPTERS: Chapter[] = [
         kind: "why-it-matters",
         title: "Why it matters",
         body:
-          "The chapter's whole argument is continuity. The land is the land sworn to the fathers; the instruction is the instruction given to Moses; the presence promised is the presence Moses had. Joshua is handed nothing of his own. Even the courage he is commanded to have is grounded in someone else's promise.\n\n" +
+          "The chapter's whole argument is continuity. The land is the land sworn to the fathers; the instruction is the instruction given to Moses; the presence promised is the presence Moses had. Joshua is handed nothing of his own. Even the courage he is commanded to have is grounded in someone else's promise: verse 5 stands in front of all the imperatives and travels well past Joshua, since [[ref:Hebrews 13:5-6|the writer of Hebrews quotes it]] and draws his own conclusion. Verses 7 and 8 each end on the same named result of keeping the book.\n\n" +
           "Reformed readings press that hardest. Woudstra takes the land grant as one administration of a single covenant running from [[entity:abraham]] forward, so Joshua's task is to administer an inheritance rather than to win one, and Calvin reads verse 8 as making obedience the condition of the blessing without making it the ground of the gift. That is one Christian reading among several. Others put the accent on the conditionality itself, hearing in verses 7 and 8 a warning aimed past Joshua at later readers who had already lost the land.",
-        scriptureRefs: ["Joshua 1:5-9", "Genesis 15:18-21", "Deuteronomy 17:18-20"],
+        scriptureRefs: [
+          "Joshua 1:5-9",
+          "Genesis 15:18-21",
+          "Deuteronomy 17:18-20",
+          "Hebrews 13:5-6",
+        ],
         citations: [
           {
             sourceId: "woudstra-joshua",
@@ -173,18 +180,20 @@ export const CHAPTERS: Chapter[] = [
         body:
           "Verse 1 calls Moses the servant of Yahweh and [[entity:joshua]] the servant of Moses. Joshua receives the higher title only at his death, in Joshua 24:29.\n\n" +
           "The promise of presence opens the charge in verse 5, closes it in verse 9, and returns in verse 17 in the people's mouths. [[ref:Exodus 3:11-12|Moses got the same answer at the burning bush]], and the charge carries an older echo besides: do not fear, the LORD is with us. [[ref:Numbers 14:6-9|Joshua said those words forty years earlier]], against the panic at Kadesh.\n\n" +
-          "Meditate on it day and night has one close relative, [[ref:Psalm 1|the psalm that opens the Psalter]], where the same habit grows a tree planted by water rather than a conqueror.\n\n" +
-          "Verse 4's phrase about all the land of the [[entity:hittites]] sits oddly in a description of Canaan, since the Hittite kingdom lay well to the north in Anatolia and Syria. It is one reason commentators read the verse as a horizon sketched in famous landmarks rather than as a surveyed boundary.\n\n" +
-          "Three days turns up repeatedly in these opening chapters. The crossing is three days off here, [[entity:rahab]] tells the spies to hide three days in the hills, and the officers move through the camp after three days in chapter 3. The intervals do not obviously line up into one timetable, and the book makes no attempt to reconcile them.",
+          "Meditate on it day and night has one close relative, [[ref:Psalm 1|the psalm that opens the Psalter]], where the same habit grows a tree planted by water rather than a conqueror. And when [[ref:Matthew 4:1-11|Jesus answers his own wilderness test]], every reply is a quotation; a study Bible's margins will show what the three sources have in common.\n\n" +
+          "Verse 4's phrase about all the land of the [[entity:hittites]] sits oddly here, since the Hittite kingdom lay far to the north; one reason commentators read the verse as a horizon of famous landmarks rather than a surveyed boundary.\n\n" +
+          "Three days turns up repeatedly in these opening chapters: the crossing is three days off here, [[entity:rahab]] tells the spies to hide three days in the hills, and the officers move after three days in chapter 3. The intervals resist a single timetable; one long-standing proposal reorders instead, placing the spies' errand and the three days of Joshua 2:22 before the order of 1:10.",
         scriptureRefs: [
           "Joshua 1:1",
           "Joshua 1:4",
           "Joshua 1:11",
           "Joshua 1:16-18",
           "Joshua 24:29",
+          "Joshua 2:22",
           "Exodus 3:11-12",
           "Numbers 14:6-9",
           "Psalm 1",
+          "Matthew 4:1-11",
         ],
         citations: [
           {
@@ -208,8 +217,8 @@ export const CHAPTERS: Chapter[] = [
         kind: "difficult-questions",
         title: "Difficult questions",
         body:
-          "Verses 3 and 4 describe a land reaching the Euphrates. Israel is never said in this book to hold that, and the book says so itself: Joshua 13:1 has God telling Joshua that very much land remains, Joshua 23:4 has Joshua allotting nations that remain, and [[entity:region-lebanon]] stands inside the extent here and among the unconquered there. The tension is not a slip somebody failed to tidy. It runs the length of the volume.\n\n" +
-          "Three ways of taking it are live, and they are not exclusive. The verse may be a grant, describing a horizon the grantor is entitled to name whether or not it is occupied, which is how 1 Kings 4:21 later describes the reach of Solomon's rule. It may be a boundary formula drawn from the idiom of imperial inscriptions, in which totality is conventional rather than measured. Or it may be a standard the book deliberately sets so that chapters 13 and 23 can measure Israel against it. This study does not choose between them, and it does not colour in the outline.",
+          "Verses 3 and 4 describe a land reaching the Euphrates. Israel is never said in this book to hold that, and the book says so itself: Joshua 13:1 has God telling Joshua that very much land remains, Joshua 23:4 has Joshua allotting nations that remain, and [[entity:region-lebanon]] stands inside the extent here and among the unconquered there. The tension is not a slip; it runs the length of the volume.\n\n" +
+          "Three readings are live, and not exclusive. It may be a grant, a horizon the grantor may name whether or not it is occupied, as 1 Kings 4:21 later describes Solomon's reach. It may be a boundary formula drawn from the idiom of imperial inscriptions, in which totality is conventional rather than measured. Or it may be a standard the book deliberately sets so that chapters 13 and 23 can measure Israel against it. This study does not choose between them, and it does not colour in the outline.",
         scriptureRefs: [
           "Joshua 1:3-4",
           "Joshua 13:1-6",
@@ -245,11 +254,11 @@ export const CHAPTERS: Chapter[] = [
       },
     ],
     discussionQuestions: [
-      "The charge repeats be strong and courageous three times and attaches it to keeping the law rather than to tactics. What does that ordering suggest Joshua was expected to be afraid of?",
+      "The charge repeats be strong and courageous three times and attaches it to keeping the law rather than to tactics. What would 'this book of the law' have meant to Joshua, and what does the ordering suggest he was expected to be afraid of?",
       "Verse 4 describes a land reaching the Euphrates and Joshua 13:1 says much of it is still unpossessed. What should a map of Joshua 1 actually draw?",
       "Joshua is introduced as Moses' servant and does not get a title of his own until he dies. What is the book doing by keeping him in Moses' shadow through the whole commission?",
       "The eastern tribes already have their land, and are held to [[ref:Numbers 32:20-27|fighting for land they will never live on]] until everyone else has rest. What holds an arrangement like that together?",
-      "In verses 16 to 18 the people answer Joshua with the same words God gave him: only be strong and courageous, may the LORD your God be with you. What changes for a leader when the promise comes back from the people being led?",
+      "In verses 16 to 18 the answer comes back to Joshua in the same words God gave him: only be strong and courageous, may the LORD your God be with you. Who exactly is speaking here, and what changes for a leader when the promise returns from the people being led?",
     ],
     relatedEntityIds: [
       "joshua",
@@ -286,7 +295,7 @@ export const CHAPTERS: Chapter[] = [
       "promise-and-fulfillment",
       "land-and-inheritance",
     ],
-    wordCount: 543,
+    wordCount: 697,
   },
 
   /* ================================================================ */
@@ -342,10 +351,11 @@ export const CHAPTERS: Chapter[] = [
         kind: "what-brought-us-here",
         title: "What brought us here",
         body:
-          "Joshua has done this job himself. He was one of [[ref:Numbers 13:1-16|the twelve men Moses sent from Kadesh]], and one of [[ref:Numbers 14:6-9|the two who came back saying the land could be taken]]. That earlier reconnaissance ended in [[ref:Numbers 13:31-33|a report that frightened Israel out of entering]] for [[ref:Numbers 14:26-35|a generation]]. This one is smaller, quieter and aimed at a single town.\n\n" +
+          "Joshua has done this job himself. He was one of [[ref:Numbers 13:1-16|the twelve men Moses sent from Kadesh]], and one of [[ref:Numbers 14:6-9|the two who came back saying the land could be taken]]. That earlier reconnaissance ended in [[ref:Numbers 13:31-33|a report that frightened Israel out of entering]] for [[ref:Numbers 14:26-35|a generation]]. This one is smaller, quieter and aimed at a single town, and its brief is thinner too: [[ref:Numbers 13:17-20|Moses had listed exactly what he wanted to know]] about towns, soil and strength, where Joshua says only go, view. The difference is worth carrying forward to verse 24.\n\n" +
           "The camp they leave is [[entity:shittim]], and the last thing Numbers reports happening there is Israel being drawn into the worship of another god and into sexual relations with [[entity:moab]] and Midian. Sending two men from that camp into a prostitute's house is a juxtaposition readers have long found pointed. What happens in the house runs the other way: the Canaanite woman is the one speaking for Yahweh.",
         scriptureRefs: [
           "Numbers 13:1-3",
+          "Numbers 13:17-20",
           "Numbers 14:6-10",
           "Numbers 25:1-3",
           "Joshua 2:1",
@@ -371,9 +381,9 @@ export const CHAPTERS: Chapter[] = [
         kind: "surrounding-world",
         title: "The surrounding world",
         body:
-          "Jericho sits on a perennial spring where the road up from the Jordan fords begins to climb toward the hill country. It was a small walled town, the kind that controls a crossing and an oasis rather than a province, and most of its living came from irrigated fields around the spring. That is why flax is drying on a roof: flax is pulled before the grain harvest, then dried and retted for linen.\n\n" +
+          "Jericho sits on a perennial spring where the road up from the Jordan fords begins to climb toward the hill country. It was a small walled town, the kind that controls a crossing and an oasis rather than a province, living from irrigated fields around the spring. That is why flax is drying on a roof: flax is pulled before the grain harvest, then dried and retted for linen.\n\n" +
           "Roofs in towns like this were flat, plastered and used as working and sleeping space, so stalks spread there to dry are ordinary and so is a conversation held up in the open air. Houses commonly abutted the fortification line, and rooms were sometimes built directly against or into it, sharing its outer face. What state Jericho's own defences were in is a genuinely contested question, and it belongs to chapter 6.\n\n" +
-          "How would a woman in Jericho know about a sea in Egypt a generation ago and a battle in Bashan last season? The same way anyone did. News travelled with traders, refugees and messengers along the routes Jericho guarded, and the Amarna correspondence shows Canaanite rulers well informed about events far outside their own valleys.",
+          "How would a woman in Jericho know about a sea in Egypt a generation ago? The same way anyone did. News travelled with traders, refugees and messengers along the routes Jericho guarded, and the Amarna correspondence shows Canaanite rulers well informed about events far outside their own valleys.",
         scriptureRefs: ["Joshua 2:6", "Joshua 2:10", "Joshua 2:15"],
         citations: [
           {
@@ -412,8 +422,14 @@ export const CHAPTERS: Chapter[] = [
         title: "Why it matters",
         body:
           "The chapter's theology is on the lips of the wrong person. [[entity:rahab]] is Canaanite, a woman, and a prostitute, and her sentence in verse 11, that Yahweh is God in heaven above and on earth beneath, is lifted almost intact from Deuteronomy 4:39. Nobody in Israel says anything that clear in these four chapters. The spies barely speak at all.\n\n" +
-          "What that does to the book is structural rather than sentimental. If the issue in Canaan were ancestry, Rahab would be on the wrong side of it and stay there. She does not. She hears, she concludes, she acts, and she and her household live while Jericho does not. Held next to [[entity:achan]] five chapters later, an Israelite who takes what was devoted and dies with his household, the pairing is hard to read as accidental. The line the book actually draws is not one a map could draw.",
-        scriptureRefs: ["Joshua 2:9-11", "Deuteronomy 4:39", "Joshua 7:24-26"],
+          "What that does to the book is structural rather than sentimental. If the issue in Canaan were ancestry, Rahab would be on the wrong side of it and stay there. She does not. She hears, she concludes, she acts, and she and her household live while Jericho does not. Everything she believes arrived by report, which is why Romans 10:17 is often read with her in view, and [[ref:James 2:24-26|James makes her an example]] in his argument about faith and works; verse 11 here is the place to look for what her faith was actually fastened to. Held next to [[entity:achan]] five chapters later, an Israelite who takes what was devoted and dies with his household, the pairing is hard to read as accidental. The line the book actually draws is not one a map could draw.",
+        scriptureRefs: [
+          "Joshua 2:9-11",
+          "Deuteronomy 4:39",
+          "Joshua 7:24-26",
+          "Romans 10:17",
+          "James 2:24-26",
+        ],
         citations: [
           {
             sourceId: "hess-joshua",
@@ -439,11 +455,20 @@ export const CHAPTERS: Chapter[] = [
         kind: "details-worth-noticing",
         title: "Details worth noticing",
         body:
-          "The word used of [[entity:rahab]] is the ordinary Hebrew term for a prostitute. Attempts to render it innkeeper are not supported by the term, and the narrative shows no interest in softening it. Her occupation is also what makes the story work: a house where strangers come and go without comment, and a woman who can speak to the king's men at her own door.\n\n" +
-          "The oath is spatial. Everyone to be spared must be inside the house, anyone who steps into the street voids the guarantee, and the house is identified by a mark in a window. Safety is a place, which is the logic the doorframes in Exodus 12 work on as well.\n\n" +
-          "The rope she lowers them with and the cord she is told to display are both ordinary domestic cordage, hanging from the same window. The sign is not supplied by Israel. She already owns it.\n\n" +
-          "The spies' one reported sentence, in verse 24, is Rahab's claim handed back to Joshua. They scouted a city and came home quoting a Canaanite.",
-        scriptureRefs: ["Joshua 2:1", "Joshua 2:15-21", "Joshua 2:24", "Exodus 12:7"],
+          "The word used of [[entity:rahab]] is the ordinary Hebrew term for a prostitute. Attempts to render it innkeeper fail the term, and the narrative does not soften it. Her occupation also makes the story work: strangers come and go without comment, and she can deal with the king's men at her own door. Count who gets a name in verses 1 to 7 and who does not.\n\n" +
+          "No one names the LORD in those first seven verses, and the last clause of verse 7 plants a note of suspense. Both details are worth tracking to where the chapter answers them.\n\n" +
+          "Deal kindly and faithfully in verse 14 renders a Hebrew pair, hesed and emet, the vocabulary of [[ref:Exodus 34:6|the LORD's own self-proclamation]] to Moses.\n\n" +
+          "The oath is spatial. Everyone to be spared must be inside the house, anyone who steps into the street voids the guarantee, and the house is identified by a mark in a window. Safety is a place, which is the logic the doorframes in Exodus 12 work on as well. The rope that lowers them and the cord she displays are ordinary domestic cordage from the same window; the sign is not supplied by Israel. She already owns it.\n\n" +
+          "The spies' one reported sentence, in verse 24, is Rahab's claim handed back to Joshua. They scouted a city and came home quoting a Canaanite. Their sentence bears setting beside [[ref:Numbers 13:31|the one the earlier spies settled on]].",
+        scriptureRefs: [
+          "Joshua 2:1-7",
+          "Joshua 2:14",
+          "Joshua 2:15-21",
+          "Joshua 2:24",
+          "Exodus 12:7",
+          "Exodus 34:6",
+          "Numbers 13:31",
+        ],
         citations: [
           {
             sourceId: "bird-harlot-heroine",
@@ -465,7 +490,7 @@ export const CHAPTERS: Chapter[] = [
         kind: "difficult-questions",
         title: "Difficult questions",
         body:
-          "Rahab lies, and the narrative never comments. She misdirects a search party, and the New Testament texts that commend her faith do not raise the deception. Calvin met this head on and held that the lie itself was not excusable while the faith behind it was genuine, which is one Reformed way of keeping both. Others argue the narrative is working with a recognised category of deception under unjust threat, and others that the storyteller simply has no interest in the question. The text does not settle it.\n\n" +
+          "Rahab lies, and the narrative never comments. She misdirects a search party, and the New Testament texts that commend her faith do not raise the deception. Calvin met this head on, holding the lie inexcusable and the faith behind it genuine, one Reformed way of keeping both. Others argue the narrative is working with a recognised category of deception under unjust threat, and others that the storyteller simply has no interest in the question. The text does not settle it.\n\n" +
           "Then there is what happens to her afterwards. When Jericho falls, her family is brought out and set outside the camp of Israel, and only after that is it said that she lived in Israel's midst. Spared is not the same as belonging, and the book records the interval without explaining it.\n\n" +
           "A smaller puzzle: the mission gathers no military intelligence. No count of fighting men, no note on the walls, no assessment of the gate. The one substantive thing the spies learn, they learn because a resident tells them.",
         scriptureRefs: ["Joshua 2:4-6", "Joshua 6:22-25", "Joshua 2:24"],
@@ -502,6 +527,7 @@ export const CHAPTERS: Chapter[] = [
       "The two men are sent to view the land and come back with a report about morale rather than about defences. What did the mission actually accomplish?",
       "Rahab lies to the king's messengers and the narrative says nothing about it. Is the silence approval, indifference, or something else?",
       "Her family is spared, and then set outside the camp. What do you think has to happen for someone to move from spared to belonging?",
+      "Rahab appears again in [[ref:Matthew 1:1-6|the genealogy that opens the New Testament]]. What details of her story make her name there surprising?",
     ],
     relatedEntityIds: [
       "joshua",
@@ -524,7 +550,7 @@ export const CHAPTERS: Chapter[] = [
       "judgment-and-mercy",
       "promise-and-fulfillment",
     ],
-    wordCount: 553,
+    wordCount: 641,
   },
 ];
 
@@ -658,7 +684,7 @@ export const MILESTONES: Milestone[] = [
     title: "Three days to the crossing",
     scriptureRefs: ["Joshua 1:10-11"],
     narrative:
-      "Joshua's first recorded act as leader is an order about food. The officers go through the camp with one instruction: prepare provisions, because in three days you cross this Jordan to go in and possess the land.\n\nIt is a small detail with a good deal inside it. Israel is still being fed by manna at this point, and the text does not explain what the provisions were for. The move itself is short, about ten kilometres from the camp in the plains of Moab down to the riverbank opposite Jericho, so the three days are not travelling time. And the verb in the order is possess, not raid. Whatever the crossing turns out to cost, the stated intention from the first order onward is to stay.",
+      "Joshua's first recorded act as leader is an order about food, and it is worth setting directly under the command of verse 2: told to arise and cross, he starts a crossing. The officers go through the camp with one instruction: prepare provisions, because in three days you cross this Jordan to go in and possess the land.\n\nIt is a small detail with a good deal inside it. Israel is still being fed by manna at this point, and the text does not explain what the provisions were for. The move itself is short, about ten kilometres from the camp in the plains of Moab down to the riverbank opposite Jericho, so the three days are not travelling time. And the verb in the order is possess, not raid. Whatever the crossing turns out to cost, the stated intention from the first order onward is to stay.\n\nVerse 11 also holds two agencies in one sentence: the people are to prepare and cross over to possess the land that the LORD their God is giving them. Whose act is the taking? The verse declines to divide it.",
     entityIds: [
       "joshua",
       "shittim",
@@ -711,7 +737,7 @@ export const MILESTONES: Milestone[] = [
       "Deuteronomy 3:18-20",
     ],
     narrative:
-      "[[entity:tribe-reuben]], [[entity:tribe-gad]] and [[entity:tribe-manasseh-east]] are in an odd position. They already have what everyone else is crossing to get. Moses gave them the plateau and highlands taken from [[entity:sihon]] and [[entity:og]], and their wives, children and herds are staying there.\n\nJoshua holds them to the terms. Their fighting men cross armed and go in front, and they may return to their own land only when their brothers have rest and have possessed theirs. The debt is not measured in years but in an outcome, which means nobody in the chapter knows how long it will run.\n\nThey agree without hedging, then add something Joshua did not ask for: anyone who rebels against your orders will be put to death. Only be strong and courageous. The fourth and last use of that phrase in the chapter is theirs, spoken back to him.\n\nThis thread does not close until chapter 22, and when it does it nearly causes a war.",
+      "[[entity:tribe-reuben]], [[entity:tribe-gad]] and [[entity:tribe-manasseh-east]] are in an odd position. They already have what everyone else is crossing to get. Moses gave them the plateau and highlands taken from [[entity:sihon]] and [[entity:og]], and their wives, children and herds are staying there.\n\nJoshua holds them to the terms. Their fighting men cross armed and go in front, and they may return to their own land only when their brothers have rest and have possessed theirs. The debt is not measured in years but in an outcome, which means nobody in the chapter knows how long it will run.\n\nThey agree without hedging, then add something Joshua did not ask for: anyone who rebels against your orders will be put to death. Only be strong and courageous. The fourth and last use of that phrase in the chapter is theirs, spoken back to him. The pledge is sweeping, whole obedience on pain of death, and the book does not leave speech like that untested for long.\n\nThis thread does not close until chapter 22, and when it does it nearly causes a war.",
     entityIds: [
       "joshua",
       "moses",
@@ -833,9 +859,9 @@ export const MILESTONES: Milestone[] = [
     chapter: 2,
     order: 2,
     title: "Rahab on the roof",
-    scriptureRefs: ["Joshua 2:2-14"],
+    scriptureRefs: ["Joshua 2:2-14", "Numbers 21:21-35"],
     narrative:
-      "The king of Jericho hears about it and sends to [[entity:rahab]] directly. That detail says something about the size of the place: the ruler knows whose house the strangers went into.\n\nShe has already moved them. Up to the flat roof, under stalks of flax spread out to dry, then back down to deal with the men at her door. They came, she says, and they left; the gate was closing; go after them. The search party takes the road toward the fords.\n\nThen she climbs back up, and what follows is the theological centre of the chapter. I know Yahweh has given you this land. Terror of you has fallen on us. We heard how he dried up the sea in front of you, and what you did to [[entity:sihon]] and [[entity:og]] east of the river. Our hearts melted and no courage is left in anyone. Yahweh your God is God in heaven above and on earth beneath.\n\nOnly then does she ask for anything. Deal kindly with my father's house as I have dealt kindly with you, and give me a sure sign. Her terms are ready before she has their answer.",
+      "The king of Jericho hears about it and sends to [[entity:rahab]] directly. That detail says something about the size of the place: the ruler knows whose house the strangers went into.\n\nShe has already moved them. Up to the flat roof, under stalks of flax spread out to dry, then back down to deal with the men at her door. They came, she says, and they left; the gate was closing; go after them. The search party takes the road toward the fords.\n\nThen she climbs back up, and what follows is the theological centre of the chapter. I know Yahweh has given you this land. Terror of you has fallen on us. We heard how he dried up the sea in front of you, and what you did to [[entity:sihon]] and [[entity:og]] [[ref:Numbers 21:21-35|east of the river]]. Our hearts melted and no courage is left in anyone. Yahweh your God is God in heaven above and on earth beneath.\n\nOnly then does she ask for anything. Deal kindly with my father's house as I have dealt kindly with you, and give me a sure sign. Her terms are ready before she has their answer.",
     entityIds: [
       "rahab",
       "sihon",
@@ -924,9 +950,9 @@ export const MILESTONES: Milestone[] = [
     chapter: 2,
     order: 4,
     title: "Three days in the hills, then the report",
-    scriptureRefs: ["Joshua 2:22-24"],
+    scriptureRefs: ["Joshua 2:22-24", "Joshua 1:2", "Numbers 13:31"],
     narrative:
-      "They do exactly what she told them. Three days in the hill country while the search works the fords, then down, across the river, and back to [[entity:joshua]].\n\nTheir report is two sentences long and contains no military information at all. Yahweh has delivered all the land into our hands, and all the inhabitants melt before us. No count of fighting men, no note on the height of the walls, no assessment of the gate. What they bring back is morale, and they bring it back in the words of the woman who gave it to them.\n\nIt is Numbers 13 run again with the opposite outcome. The same errand, a comparable report, and this time nobody argues.",
+      "They do exactly what she told them. Three days in the hill country while the search works the fords, then down, across the river, and back to [[entity:joshua]].\n\nTheir report is two sentences long and contains no military information at all. Yahweh has delivered all the land into our hands, and all the inhabitants melt before us. No count of fighting men, no note on the height of the walls, no assessment of the gate. What they bring back is morale, and they bring it back in the words of the woman who gave it to them.\n\nIt is Numbers 13 run again with the opposite outcome. The same errand, a comparable report, and this time nobody argues. Their opening clause also closes a bracket: it hands back, nearly word for word, something the LORD said in Joshua 1:2, so the first two chapters end where they began.",
     entityIds: [
       "joshua",
       "rahab",

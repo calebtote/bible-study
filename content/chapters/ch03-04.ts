@@ -63,7 +63,7 @@ export const CHAPTERS: Chapter[] = [
         body:
           "[[entity:joshua]] rises early and the camp moves from [[entity:shittim]] to the edge of the [[entity:jordan-river]], where it waits three days. Then the officers pass through with one order. When you see the ark of the covenant carried by the Levitical priests, leave your place and go after it, but keep about two thousand cubits between yourselves and it. The reason given is not reverence in the abstract. It is that you have not passed this way before." +
           "\n\n" +
-          "Joshua tells the people to consecrate themselves, because God will do wonders among them, and he tells them in advance what to watch for: when the priests' feet rest in the water, the river will be cut off. Twelve men, one from each tribe, are to be appointed. The chapter does not say what they are for." +
+          "Joshua tells the people to consecrate themselves, [[ref:Leviticus 20:7-8|a charge with Levitical roots]], because God will do wonders among them, and he tells them in advance what to watch for: when the priests' feet rest in the water, the river will be cut off. Twelve men, one from each tribe, are to be appointed. The chapter does not say what they are for." +
           "\n\n" +
           "The priests reach the bank. Verse 15 states the condition without comment: the Jordan overflows its banks all through the harvest. Their feet dip in, the flow coming down from above stands and rises in one heap far upstream near [[entity:adam-city]] beside [[entity:zarethan]], and the water running down toward the [[entity:salt-sea]] is cut off. The priests stand still in the riverbed while the nation passes over opposite [[entity:jericho]].",
         scriptureRefs: ["Joshua 3:1-6", "Joshua 3:7-13", "Joshua 3:14-17"],
@@ -94,11 +94,11 @@ export const CHAPTERS: Chapter[] = [
         kind: "surrounding-world",
         title: "The surrounding world",
         body:
-          "The Jordan is not a river in a plain. It runs down the floor of a tectonic rift, dropping below sea level soon after the [[entity:sea-of-chinnereth]] and continuing down to the [[entity:salt-sea]], the lowest exposed land on earth. Inside the broad valley floor the river has cut a second, narrower trench, the Zor, thick with scrub and walled by soft marl banks that undercut and collapse." +
+          "The Jordan is not a river in a plain. It runs down the floor of a tectonic rift, dropping below sea level soon after the [[entity:sea-of-chinnereth]] and continuing down to the [[entity:salt-sea]], the lowest exposed land on earth. Inside the broad valley floor the river has cut a second, narrower trench, the Zor, walled by soft marl banks that undercut and collapse." +
           "\n\n" +
-          "Its flood is seasonal. Winter rain and snowmelt off [[entity:mount-hermon]] and the northern highlands reach the lower valley in spring, which is also when the grain harvest falls in the valley, and which is the season Joshua 3:15 names. Before modern damming and extraction the spring river spread well out of its channel across the Zor." +
+          "Its flood is seasonal. Winter rain and snowmelt off [[entity:mount-hermon]] and the northern highlands reach the lower valley in spring, when the grain harvest falls in the valley, the season Joshua 3:15 names. Before modern damming and extraction the spring river spread well out of its channel across the Zor." +
           "\n\n" +
-          "The marl terraces near the ed-Damiyeh crossing, the area usually proposed for [[entity:adam-city]], have collapsed into the river within recorded memory and held it back for a time before the water broke through. That is a documented property of this stretch of valley, and it is why a landslide keeps being proposed as the mechanism behind Joshua 3. It shows that the river can be dammed this way. It does not show that it was.",
+          "The marl terraces near the ed-Damiyeh crossing, the area usually proposed for [[entity:adam-city]], have collapsed into the river within recorded memory and dammed it for a time. That is why a landslide keeps being proposed as the mechanism behind Joshua 3: it shows the river can be dammed this way, though not that it was.",
         scriptureRefs: ["Joshua 3:15", "Joshua 3:16"],
         citations: [
           {
@@ -126,7 +126,7 @@ export const CHAPTERS: Chapter[] = [
         kind: "why-it-matters",
         title: "Why it matters",
         body:
-          "What goes at the head of the column is not a commander and not a standard. It is a box carried by priests, and the nation is told to stay the better part of a kilometre behind it. The chapter repeats the phrase ark of the covenant to the point of insistence. Whatever else is happening on this day, the claim being made is that the presence of God is going first and the army is following." +
+          "What goes at the head of the column is not a commander and not a standard. It is a box carried by priests, and the nation is told to stay the better part of a kilometre behind it. The chapter repeats the phrase ark of the covenant to the point of insistence. Whatever else is happening on this day, the claim being made is that the presence of God is going first and the army is following, an order of march with [[ref:Numbers 10:33-36|a precedent from the wilderness years]]." +
           "\n\n" +
           "The second claim is about continuity. The generation that saw the sea opened at the exodus has died in the wilderness; this generation is given the same act in its own river, and Joshua 4:23 will say so outright. Reformed writers read that as a seal on the succession from [[entity:moses]] to [[entity:joshua]] and on a covenant that holds unchanged across a change of leader. That is one Christian reading among several rather than the only one, but the chapter itself does connect the water to Joshua's standing: God tells him this is the day he will be magnified in Israel's sight.",
         scriptureRefs: ["Joshua 3:3-4", "Joshua 3:7", "Joshua 3:11", "Joshua 4:23"],
@@ -150,14 +150,30 @@ export const CHAPTERS: Chapter[] = [
         kind: "details-worth-noticing",
         title: "Details worth noticing",
         body:
-          "The reason attached to the two thousand cubits is unusual. Not that the ark is dangerous, though elsewhere it is, but that the people have not passed this way before. The gap is what makes a marker at the front of a long column visible from the back of it." +
+          "Certain words and phrases insist on themselves across 3:1-4:24, and a list kept while reading pays off. The ark's mentions in 3:1-13 alone are worth counting." +
           "\n\n" +
-          "The twelve men of verse 12 are appointed and then dropped. Nothing is said about their task until chapter 4 picks them up, so the crossing is narrated with a loose thread hanging out of it." +
+          "The reason attached to the two thousand cubits is unusual: you have not passed this way before. The gap is what makes a marker at the front of a long column visible from the back." +
           "\n\n" +
-          "The priests do two opposite things. They go first, and then they stop. Once the water is cut off they stand in the middle of the channel until the whole nation is across, so the ark is in the riverbed for the entire crossing rather than leading a procession through it." +
+          "God's names shift: the living God is among you in verse 10, while verses 11 and 13 give the ark's owner a longer title, in verse 13 stacked onto the divine name itself, beside the promise about the water. What each claims repays a slow look." +
           "\n\n" +
-          "Verse 16 looks both ways along the river in a single sentence, heaped up far to the north, failed away to the south. The narrator is not describing what a person standing on the bank could see.",
-        scriptureRefs: ["Joshua 3:4", "Joshua 3:12", "Joshua 3:16", "Joshua 3:17"],
+          "The twelve men of verse 12 are appointed, then dropped until chapter 4, a loose thread. It is the third gap in a row: verse 7 makes a promise without the how, verse 8 orders the priests without the why." +
+          "\n\n" +
+          "Verse 17's stood firm has a history: at the sea, Moses told Israel to [[ref:Exodus 14:13|stand firm and see]]. The chapter's other contacts with [[ref:Exodus 14:21-31|Exodus 14]] reward verse-by-verse comparison." +
+          "\n\n" +
+          "The priests do two opposite things, going first and then stopping. They stand in the middle of the channel until the whole nation is across, keeping the ark in the riverbed for the entire crossing rather than at the head of a procession." +
+          "\n\n" +
+          "Verse 16 looks both ways along the river in one sentence, heaped up far to the north, failed away to the south, more than anyone standing on the bank could see.",
+        scriptureRefs: [
+          "Joshua 3:4",
+          "Joshua 3:7",
+          "Joshua 3:8",
+          "Joshua 3:10",
+          "Joshua 3:11",
+          "Joshua 3:12",
+          "Joshua 3:13",
+          "Joshua 3:16",
+          "Joshua 3:17",
+        ],
         citations: [
           {
             sourceId: "butler-joshua",
@@ -180,11 +196,11 @@ export const CHAPTERS: Chapter[] = [
         kind: "difficult-questions",
         title: "Difficult questions",
         body:
-          "*Did they simply wade across at a low point?* The text closes that off. Verse 15 says the river was over its banks throughout harvest, and it offers that detail unprompted rather than under pressure. A narrator inventing an easy ford has no reason to put the flood on the record." +
+          "*Did they simply wade across at a low point?* The text closes that off: verse 15 volunteers that the river was over its banks throughout harvest. A narrator inventing an easy ford has no reason to put the flood on the record." +
           "\n\n" +
-          "*Was it a landslide?* Collapses of the marl terraces near the Damiyeh area have blocked the Jordan on record, which establishes that a local collapse can stop this river. It does not establish that one did stop it here. The chapter names no landslide, no dam and no mechanism of any kind; it times the cut-off to the moment the priests' feet touch the water and attributes it to God. Saying the landslide explains Joshua 3 adds something to the chapter. So does saying that a landslide would make it less an act of God. Both go past what is written." +
+          "*Was it a landslide?* Collapses of the marl terraces near the Damiyeh area have blocked the Jordan on record, so a local collapse can stop this river; whether one did here is another matter. The chapter names no mechanism of any kind; it times the cut-off to the moment the priests' feet touch the water and attributes it to God. Saying a landslide explains Joshua 3 adds something to the chapter; so does saying it would make this less an act of God. Both go past what is written." +
           "\n\n" +
-          "*Where are Adam and Zarethan?* [[entity:adam-city]] is usually placed at Tell ed-Damiyeh with reasonable confidence. [[entity:zarethan]] is disputed, with Tell es-Sa'idiyeh and Tell Umm Hamad both proposed. The general shape of the account, a blockage well upstream of the crossing, survives that uncertainty. Precise distances do not, and we do not give them.",
+          "*Where are Adam and Zarethan?* [[entity:adam-city]] is usually placed at Tell ed-Damiyeh. [[entity:zarethan]] is disputed, with Tell es-Sa'idiyeh and Tell Umm Hamad proposed. The general shape of the account, a blockage well upstream of the crossing, survives that uncertainty; precise distances do not, and we do not give them.",
         scriptureRefs: ["Joshua 3:13", "Joshua 3:15", "Joshua 3:16"],
         citations: [
           {
@@ -208,7 +224,7 @@ export const CHAPTERS: Chapter[] = [
       "Joshua states in advance exactly what will happen when the priests' feet touch the water. Why might the narrator want the prediction on record before the event rather than the explanation afterwards?",
       "Verse 15 volunteers that the Jordan was in flood all through harvest. What would be lost from the chapter if that clause were deleted?",
       "Twelve men are appointed in verse 12 and given nothing to do. How does that unfinished detail shape the way you read the crossing itself?",
-      "The water is said to heap up far upstream near a place we cannot locate with confidence, and to fail downstream toward the Salt Sea. Why might the narrator reach for both ends of the river instead of describing only the channel at the people's feet?",
+      "Between verses 10 and 13 God is named three ways, and the longest title appears twice. What does each name claim about his power and authority, and why might the fullest one sit beside the promise about the water?",
     ],
     relatedEntityIds: [
       "joshua",
@@ -314,11 +330,11 @@ export const CHAPTERS: Chapter[] = [
         kind: "surrounding-world",
         title: "The surrounding world",
         body:
-          "Setting up unworked standing stones was an ordinary thing to do in this world. Upright stones, single and in rows, turn up at sanctuaries and open-air installations across the Bronze and Iron Age southern Levant, and the Hebrew Bible knows the practice well enough to legislate against some uses of it while narrating others without objection." +
+          "Setting up unworked standing stones was an ordinary thing to do in this world. Upright stones turn up at sanctuaries and open-air installations across the Bronze and Iron Age southern Levant, and the Hebrew Bible knows the practice well enough to legislate against some uses of it while narrating others without objection." +
           "\n\n" +
-          "The functions vary: witness to an agreement, boundary marker, grave, memorial of an event, or representation of a deity. What the archaeology supplies is the vocabulary, not this monument. Nothing excavated can be attached to Joshua 4, and since [[entity:gilgal]] has no established location there is nowhere in particular to look. A general practice does not attest a particular pile of stones." +
+          "The functions vary: witness to an agreement, boundary marker, grave, memorial of an event, or representation of a deity. What the archaeology supplies is the vocabulary, not this monument. Nothing excavated can be attached to Joshua 4, and since [[entity:gilgal]] has no established location there is nowhere in particular to look." +
           "\n\n" +
-          "The camp matters as much as the stones. Gilgal becomes Israel's base through chapters 5 to 10, the place the army goes back to after each campaign. A camp on the valley floor at the foot of the hill country is exactly the kind of place where a boundary between outside and inside gets marked, and then crossed, over and over.",
+          "The camp matters as much as the stones. Gilgal becomes Israel's base through chapters 5 to 10, the place the army returns to after each campaign, on the valley floor where the boundary between outside and inside gets marked and crossed, over and over.",
         scriptureRefs: ["Joshua 4:8", "Joshua 4:20", "Deuteronomy 16:22"],
         citations: [
           {
@@ -348,7 +364,7 @@ export const CHAPTERS: Chapter[] = [
         body:
           "This is where the book says why it bothers with geography. The stones are set up so that a question can be asked. When your children ask their fathers what these stones mean, you tell them. The monument is not aimed at God and not at the inhabitants of the land; it is a prompt placed in a landscape so that a generation which crossed nothing has something to point at and a reason to want the story." +
           "\n\n" +
-          "That makes remembering a physical arrangement rather than an effort of will. Deuteronomy 6 and Exodus 12 use the same form, a child's question answered with an account of rescue, and here the answer is anchored to a spot on the ground. Reformed writers have drawn from this the principle that covenant signs are given to be explained to children and point away from themselves to what God did, which is one Christian reading rather than the only one. The chapter's own claim is narrower and harder to argue with: without something standing where it can be tripped over, the question does not get asked at all.",
+          "That makes remembering a physical arrangement rather than an effort of will. Deuteronomy 6 and Exodus 12 use the same form, a child's question answered with an account of rescue, [[ref:Psalm 145:4|the Psalms treat the handover between generations as praise]], and here the answer is anchored to a spot on the ground. Reformed writers have drawn from this the principle that covenant signs are given to be explained to children and point away from themselves to what God did, which is one Christian reading rather than the only one. The chapter's own claim is narrower and harder to argue with: without something standing where it can be tripped over, the question does not get asked at all.",
         scriptureRefs: ["Joshua 4:6-7", "Joshua 4:21-24", "Deuteronomy 6:20-25", "Exodus 12:26-27"],
         citations: [
           {
@@ -375,14 +391,29 @@ export const CHAPTERS: Chapter[] = [
         kind: "details-worth-noticing",
         title: "Details worth noticing",
         body:
-          "The date is given, and it is not a neutral one. Israel comes up on the tenth day of the first month, the day Exodus 12 sets for taking the Passover lamb. Chapter 5 will hold a Passover at this camp." +
+          "The date given is not neutral. Israel comes up on the tenth day of the first month, the day Exodus 12 sets for [[ref:Exodus 12:1-6|taking the Passover lamb]]. Chapter 5 will hold a Passover at this camp." +
           "\n\n" +
-          "About forty thousand is a smaller figure than the muster of those same tribes in Numbers 26, and the chapter offers no reconciliation. It has been read as the contingent actually sent rather than the whole militia, among other explanations." +
+          "Verse 1 calls Israel by a word the Hebrew Bible mostly keeps for other peoples. Why here is worth asking with [[ref:Genesis 12:1-3|the promise to Abram]] and [[ref:Genesis 15:18-20|the borders sworn to him]] open alongside." +
           "\n\n" +
-          "The stones taken out come from one precise spot, the place where the priests' feet stood, not from the bank and not from the plain. Their value as a sign depends on where they were lifted from." +
+          "Water standing in a heap is an image the Psalms know: [[ref:Psalm 33:7|Psalm 33 uses it of the sea]], and Psalm 29 sets the LORD's voice [[ref:Psalm 29:3|over the waters]], his throne [[ref:Psalm 29:10|over the flood]]." +
           "\n\n" +
-          "Joshua 3:7 promised that God would begin to magnify Joshua on this day. Joshua 4:14 reports it done, in the same breath as the eastern tribes keeping their word. Both halves of the day are about credit being established in public.",
-        scriptureRefs: ["Joshua 4:3", "Joshua 4:13", "Joshua 4:14", "Joshua 4:19", "Numbers 26:7", "Exodus 12:3"],
+          "The scripted answer of verses 21 to 23 is longer than the question needs; count the events a father must relate. Verse 24 names two audiences without giving them the same verb, and stacks more than one purpose clause. What [[ref:Deuteronomy 6:1-5|fearing the LORD]] involves, [[ref:Deuteronomy 6:13-14|whom it excludes]] and [[ref:Deuteronomy 5:29|why he wants it]] is Deuteronomy's territory." +
+          "\n\n" +
+          "About forty thousand is smaller than the Numbers 26 muster of these tribes, and the chapter offers no reconciliation. One reading takes it as the contingent sent rather than the whole militia." +
+          "\n\n" +
+          "The stones come from one precise spot, where the priests' feet stood. Their value as a sign depends on where they were lifted from." +
+          "\n\n" +
+          "Joshua 3:7 promised that God would begin to magnify Joshua on this day. Joshua 4:14 reports it done, in the same breath as the eastern tribes keeping their word. Both halves of the day are about credit being established in public, and [[ref:Exodus 14:31|the sea crossing ends on a comparable note about Moses]].",
+        scriptureRefs: [
+          "Joshua 4:1",
+          "Joshua 4:3",
+          "Joshua 4:13",
+          "Joshua 4:14",
+          "Joshua 4:19",
+          "Joshua 4:21-24",
+          "Numbers 26:7",
+          "Exodus 12:3",
+        ],
         citations: [
           {
             sourceId: "howard-joshua",
@@ -405,11 +436,11 @@ export const CHAPTERS: Chapter[] = [
         kind: "difficult-questions",
         title: "Difficult questions",
         body:
-          "*One set of stones or two?* Verses 8 and 20 have stones lifted out of the channel and set up at the camp. Verse 9 has Joshua set up twelve stones in the middle of the river. Readers have taken it three ways: two monuments, one visible and one submerged; a back-reference in verse 9 to the same stones, awkwardly worded; or a difficulty in the text itself. The Hebrew allows argument, and the phrase to this day in verse 9 is a claim made by someone who could not have been looking at them. We do not think the chapter settles it." +
+          "*One set of stones or two?* Verses 8 and 20 have stones lifted out of the channel and set up at the camp. Verse 9 has Joshua set up twelve stones in the middle of the river. Readers have taken it three ways: two monuments, one visible and one submerged; a back-reference in verse 9 to the same stones; or a difficulty in the text itself. The Hebrew allows argument, and to this day in verse 9 is a claim by someone who could not have been looking at them. The chapter does not settle it." +
           "\n\n" +
-          "*Where is Gilgal?* Nowhere we can name. Proposals have included Khirbet el-Mafjir and Khirbet en-Nitla, and none has carried. The map pin stands for the area the text describes and should be read as an area, not an address. So the one object in Joshua whose whole purpose is to be stood in front of and asked about is an object nobody can go and stand in front of." +
+          "*Where is Gilgal?* Nowhere we can name. Proposals include Khirbet el-Mafjir and Khirbet en-Nitla; none has carried. The map pin stands for the area the text describes. So the one object in Joshua whose whole purpose is to be stood in front of and asked about cannot be visited." +
           "\n\n" +
-          "*Does the Levantine practice support the account?* It shows that the act described would have been legible to anyone in that world. It does not attest this monument, and nothing found can be tied to it.",
+          "*Does the Levantine practice support the account?* It shows the act described would have been legible in that world; it does not attest this monument, and nothing found can be tied to it.",
         scriptureRefs: ["Joshua 4:8", "Joshua 4:9", "Joshua 4:19-20"],
         citations: [
           {

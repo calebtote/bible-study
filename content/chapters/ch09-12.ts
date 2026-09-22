@@ -52,7 +52,7 @@ export const CHAPTERS: Chapter[] = [
         kind: "walk-through",
         title: "Walk through the chapter",
         body:
-          "The kings of the land are forming a single front. One group breaks ranks. [[entity:gibeon]] has heard what happened at [[entity:jericho]] and [[entity:ai]], and judges that a sworn agreement will hold where walls will not.\n\n" +
+          "The kings of the land are forming a single front, and verses 1-2 name the allied peoples one by one; the roll call is worth counting. One group breaks ranks. [[entity:gibeon]] has heard what happened at [[entity:jericho]] and [[entity:ai]], and judges that a sworn agreement will hold where walls will not.\n\n" +
           "Its men load donkeys with worn sacks, split wineskins, patched sandals and mouldy bread, and present themselves at [[entity:gilgal]] as envoys from far away. The speech is carefully built: they name what God did in Egypt and to [[entity:sihon]] and [[entity:og]], which is old news, and say nothing of Jericho or Ai, which would betray how recently they heard it. Israel inspects the provisions but does not ask counsel from Yahweh's mouth. [[entity:joshua]] makes peace, and the leaders swear.\n\n" +
           "Three days later the truth arrives. Israel marches to the four towns and does not touch them, because of the oath. The congregation complains; the leaders do not budge. Joshua asks why they lied, and they answer without excuses: we heard what your God had commanded, and we were afraid for our lives. They are set to cutting wood and carrying water for the congregation and for the altar.",
         scriptureRefs: ["Joshua 9:1-27"],
@@ -157,10 +157,19 @@ export const CHAPTERS: Chapter[] = [
         kind: "details-worth-noticing",
         title: "Details worth noticing",
         body:
-          "The phrase given to the Gibeonites is not invented for them. Deuteronomy 29 lists the foreigners in Israel's camps, \"from the one who cuts your wood to the one who draws your water\", among those standing inside the covenant, so the sentence that looks like a punishment is also the vocabulary of belonging.\n\n" +
+          "The phrase given to the Gibeonites is not invented for them. Deuteronomy 29 lists the foreigners in Israel's camps, \"from the one who cuts your wood to the one who draws your water\", among those standing inside the covenant, so the sentence that looks like a punishment is also the vocabulary of belonging. Psalm 84:10 is worth reading beside their assignment to the altar.\n\n" +
+          "Verse 15 does not describe the agreement once. Count the separate expressions the writer stacks into that single verse.\n\n" +
+          "The narrator says Israel did not ask counsel from Yahweh's mouth. [[ref:Numbers 27:18-21|Joshua's commissioning]] had set out how exactly that counsel was to be sought, which sharpens the omission.\n\n" +
+          "On oaths kept at a cost, Psalm 15:4 and James 5:12 are the two texts most often read beside the leaders' refusal to budge. And Genesis 12:1-3 sets out the promise made to Abraham in several parts; whether Gibeon's survival belongs anywhere in that promise, and to which part, is worth weighing with the passage open.\n\n" +
           "[[entity:gibeon]] later appears in Joshua 21 among the towns given to the priests, and in 2 Samuel a famine is traced to Saul's killing of Gibeonites.",
         scriptureRefs: [
           "Deuteronomy 29:10-12",
+          "Joshua 9:15",
+          "Numbers 27:18-21",
+          "Psalm 15:4",
+          "James 5:12",
+          "Psalm 84:10",
+          "Genesis 12:1-3",
           "Joshua 21:17",
           "2 Samuel 21:1-6",
         ],
@@ -203,6 +212,7 @@ export const CHAPTERS: Chapter[] = [
       "Gibeon sits about thirty kilometres from Gilgal, one day's walk over the plateau. Why did nobody in Israel test the claim before swearing?",
       "Joshua 9:14 names the failure as not asking counsel of God, not as making peace. Does that change how you read what follows?",
       "Israel's leaders keep an oath they were tricked into. When is honouring a commitment obtained dishonestly the right thing to do, and when is it not?",
+      "Set the Gibeonites beside Rahab in Joshua 2:9-11. Both heard the same reports about the same God. Was the disguise necessary?",
     ],
     relatedEntityIds: [
       "joshua",
@@ -227,7 +237,7 @@ export const CHAPTERS: Chapter[] = [
       "outsiders-and-belonging",
       "obedience-and-failure",
     ],
-    wordCount: 477,
+    wordCount: 479,
   },
 
   /* ================================================================ */
@@ -353,8 +363,23 @@ export const CHAPTERS: Chapter[] = [
         title: "Details worth noticing",
         body:
           "The two places named in the poem are the top and the bottom of the same road. Gibeon sits on the plateau; the valley of [[entity:aijalon]] opens at the foot of the Beth-horon descent.\n\n" +
+          "The five kings and their cities are listed in full twice within verses 1-5. Repetition that dense is a choice, and what it communicates is worth asking; [[ref:Isaiah 40:15|Isaiah 40:15]] offers a scale for weighing gathered nations.\n\n" +
+          "The promise of verse 8 rewards a slow read, tense included. Verses 8-15 then reward a plain list: what does the LORD do in this battle, and what does Israel do? The same accounting runs through the formula of verses 28-39, where one clause recurs at verses 30, 32 and 42 with only its object changing.\n\n" +
+          "Verse 21 closes the pursuit with a note about what no man did. Verse 25 says aloud what the feet-on-necks scene of verse 24 was meant to fix in the commanders' minds, with most of the land still unfought. The kings' deaths are public and severe, and [[ref:Matthew 18:1-9|Matthew 18:1-9]] is often read alongside to ask why.\n\n" +
           "[[entity:makkedah]] is named seven times in the chapter and cannot be located. Neither can [[entity:libnah]]. Both are absent from the map on purpose.",
-        scriptureRefs: ["Joshua 10:12-13", "Joshua 10:16-28"],
+        scriptureRefs: [
+          "Joshua 10:1-5",
+          "Joshua 10:8-15",
+          "Joshua 10:12-13",
+          "Joshua 10:16-28",
+          "Joshua 10:21",
+          "Joshua 10:24-25",
+          "Joshua 10:30",
+          "Joshua 10:32",
+          "Joshua 10:42",
+          "Isaiah 40:15",
+          "Matthew 18:1-9",
+        ],
         citations: [
           {
             sourceId: "rainey-notley-sacred-bridge",
@@ -482,7 +507,7 @@ export const CHAPTERS: Chapter[] = [
           "[[entity:jabin]] of [[entity:hazor]] gathers a far larger force than the southern five: [[entity:jobab]] of [[entity:madon]], the kings of [[entity:shimron]] and [[entity:achshaph]], rulers from the hill country, the Arabah south of [[entity:chinnereth]], the lowland and the heights of [[entity:dor]]. They bring very many horses and chariots and camp at the [[entity:waters-of-merom]].\n\n" +
           "[[entity:joshua]] is told not to fear them, and is given an instruction that sounds like waste: hamstring the horses, burn the chariots. He attacks suddenly, and the coalition breaks and is pursued north-west toward Sidon, west toward [[entity:misrephoth-maim]], and east into the valley of Mizpah.\n\n" +
           "Joshua then turns back for Hazor, kills its king, and burns the city, which had been the head of all those kingdoms. The text is careful: of the cities standing on their mounds, Israel burned none except this one.\n\n" +
-          "Then the chapter zooms out. Joshua took the whole land, from [[entity:mount-halak]] to [[entity:baal-gad]] below [[entity:mount-hermon]]. He made war a long time. No city made peace except Gibeon. The [[entity:anakim]] were cut off from the hill country, though some remained in the Philistine cities. The land had rest from war.",
+          "Then the chapter zooms out. Joshua took the whole land, from [[entity:mount-halak]] to [[entity:baal-gad]] below [[entity:mount-hermon]]. He made war a long time. No city made peace except Gibeon. The [[entity:anakim]], the giants of [[ref:Numbers 13:28-33|the spies' report]], were cut off from the hill country, though some remained in the Philistine cities. The land had rest from war.",
         scriptureRefs: ["Joshua 11:1-23"],
         citations: [
           {
@@ -499,7 +524,7 @@ export const CHAPTERS: Chapter[] = [
         kind: "what-brought-us-here",
         title: "What brought us here",
         body:
-          "Jabin reacts as [[entity:adoni-zedek]] did: an army has appeared in the hill country and the usual arrangements no longer hold. The difference is scale. Hazor was the dominant power of the north, and what it assembles is drawn from four separate zones of country. The north takes a different kind of fight, and the text concedes that it took a long time.\n\n" +
+          "Jabin reacts as [[entity:adoni-zedek]] did, and the shape is now familiar: Joshua 9:1-2, 10:1-5 and 11:1-5 all open the same way, and the pattern they share is worth naming. The difference is scale. Hazor was the dominant power of the north, and what it assembles is drawn from four separate zones of country. The north takes a different kind of fight, and the text concedes that it took a long time.\n\n" +
           "Geography accounts for some of that. The southern campaign turned on one ridge road and one descent; the north is open country cut by broad valleys, so a force built around chariots never has to funnel itself into a pass.",
         scriptureRefs: ["Joshua 10:1-5", "Joshua 11:1-5", "Joshua 11:18"],
         citations: [
@@ -567,10 +592,26 @@ export const CHAPTERS: Chapter[] = [
         kind: "details-worth-noticing",
         title: "Details worth noticing",
         body:
-          "Israel destroys the chariot force instead of using it, removing the one technology that could have changed its position in the valleys.\n\n" +
+          "Israel destroys the chariot force instead of using it, removing the one technology that could have changed its position in the valleys. [[ref:Deuteronomy 17:16|Deuteronomy 17:16]], [[ref:Deuteronomy 20:1|Deuteronomy 20:1]] and [[ref:Psalm 20:7|Psalm 20:7]] all bear on that order about horses and chariots.\n\n" +
+          "Chapters 10 and 11 run on parallel rails: set 10:1-5 beside 11:1-5, 10:8 beside 11:6, 10:9-11 beside 11:7-9, and 10:16-39 beside 11:10-15. Reading the two side by side shows what each chapter chooses to stress, and whose action carries each account is worth comparing.\n\n" +
+          "Verse 4 calls the horde \"like the sand that is on the seashore\", a phrase with a history: [[ref:Genesis 22:17|Genesis 22:17]] uses it of someone else. Note also exactly which words the writer spends on their numbers and equipment. The word to Joshua in verse 6 repeats a refrain heard at Joshua 1:9 and 10:8. And the peoples of verse 3 also appear in the lists of [[ref:Genesis 15:18-21|Genesis 15:18-21]] and [[ref:Exodus 3:7-8|Exodus 3:7-8]]; why the narrator reaches for those names here is worth asking.\n\n" +
+          "Verses 12-15 keep anchoring Joshua's actions to what Moses commanded; count the mentions, then read Deuteronomy 7:1-6 and 20:16-18 for the commands and the reason Moses gives. One small word likewise recurs through the summary of verses 16-23 and repays counting. \"A long time\" in verse 18 can even be measured: Joshua 14:10 supplies the arithmetic, and Exodus 23:29-30 and Deuteronomy 7:22 had said in advance that the clearing would be gradual.\n\n" +
           "Verse 13 is worth not skimming: of the cities on their mounds, only Hazor was burned. The book distinguishes defeating a city from destroying it.\n\n" +
           "[[entity:madon]], [[entity:mount-halak]] and [[entity:misrephoth-maim]] are named here and none can be located. The muster site itself, the [[entity:waters-of-merom]], is disputed.",
-        scriptureRefs: ["Joshua 11:6", "Joshua 11:9", "Joshua 11:13"],
+        scriptureRefs: [
+          "Joshua 11:3-6",
+          "Joshua 11:9",
+          "Joshua 11:12-23",
+          "Genesis 15:18-21",
+          "Genesis 22:17",
+          "Exodus 3:7-8",
+          "Deuteronomy 7:1-6",
+          "Deuteronomy 17:16",
+          "Deuteronomy 20:1",
+          "Deuteronomy 20:16-18",
+          "Psalm 20:7",
+          "Joshua 14:10",
+        ],
         citations: [
           {
             sourceId: "rainey-notley-sacred-bridge",
@@ -587,8 +628,13 @@ export const CHAPTERS: Chapter[] = [
         title: "Difficult questions",
         body:
           "Hazor is the best test case in the book for what archaeology can and cannot settle. The Late Bronze destruction was violent. Two excavators of the same site have published different conclusions about who did it: Ben-Tor argues for an external attacker and takes Israel as the best candidate, while Zuckerman read the same evidence as the city's own population turning on its rulers. Egyptians and rival Canaanite cities have also been proposed. A burnt layer does not carry a signature.\n\n" +
-          "The chapter also holds its hardest sentence: God hardened their hearts so that they would come out to battle. Christian readers handle this very differently. This study will not treat the verse as a pattern for anyone's conduct now.",
-        scriptureRefs: ["Joshua 11:10-13", "Joshua 11:20"],
+          "The chapter also holds its hardest sentence: God hardened their hearts so that they would come out to battle. The wording recalls Pharaoh in Exodus 7-11, a hardening Paul takes up in [[ref:Romans 9:14-18|Romans 9:14-18]], and [[ref:Deuteronomy 9:4-5|Deuteronomy 9:4-5]] belongs in the same conversation for what it says about Israel itself. Christian readers handle this very differently. This study will not treat the verse as a pattern for anyone's conduct now.",
+        scriptureRefs: [
+          "Joshua 11:10-13",
+          "Joshua 11:20",
+          "Deuteronomy 9:4-5",
+          "Romans 9:14-18",
+        ],
         citations: [
           {
             sourceId: "ben-tor-hazor",
@@ -647,7 +693,7 @@ export const CHAPTERS: Chapter[] = [
       "canaanites",
     ],
     themeIds: ["rest", "promise-and-fulfillment", "obedience-and-failure"],
-    wordCount: 444,
+    wordCount: 453,
   },
 
   /* ================================================================ */
@@ -772,9 +818,17 @@ export const CHAPTERS: Chapter[] = [
         title: "Details worth noticing",
         body:
           "Moses is credited with the east, Joshua with the west.\n\n" +
+          "Set the total of verse 24 beside the horde of 11:4, which was like the sand on the seashore. The two numbers frame the whole campaign, and what that comparison offers when the odds look impossible is worth sitting with. [[ref:Joshua 21:43-45|Joshua 21:43-45]] is where the book itself totals what was accomplished, and Moses' song at the sea, [[ref:Exodus 15:13-18|Exodus 15:13-18]], sang of these events before Israel had crossed; it rewards rereading with the register finished.\n\n" +
           "Ten of the thirty-one cannot be placed. [[entity:makkedah]], [[entity:libnah]], [[entity:hormah]] and [[entity:madon]] have no secure location, and neither do Geder, Tappuah, Hepher, Lassharon, Jokneam or Goiim in Gilgal. Of the twenty-one that can be shown, four are disputed.\n\n" +
           "[[entity:ai]] and [[entity:arad]] are both in the list: Ai's identification is the sharpest site problem in the book, and the mound at Arad has a long occupation gap here.",
-        scriptureRefs: ["Joshua 12:6", "Joshua 12:7", "Joshua 12:14-24"],
+        scriptureRefs: [
+          "Joshua 12:6",
+          "Joshua 12:7",
+          "Joshua 12:14-24",
+          "Joshua 11:4",
+          "Joshua 21:43-45",
+          "Exodus 15:13-18",
+        ],
         citations: [
           {
             sourceId: "rainey-notley-sacred-bridge",

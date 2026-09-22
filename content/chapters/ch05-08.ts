@@ -85,7 +85,7 @@ export const CHAPTERS: Chapter[] = [
           "Joshua 4:19",
           "Exodus 12:43-49",
           "Exodus 16:35",
-          "Numbers 14:26-35",
+          "Numbers 14:1-38",
           "Deuteronomy 2:14-16",
         ],
         citations: [
@@ -109,10 +109,16 @@ export const CHAPTERS: Chapter[] = [
         kind: "surrounding-world",
         title: "The surrounding world",
         body:
-          "Circumcision was not unique to Israel. Egyptians practised it, and so did several of Israel's neighbours; Jeremiah later lists Egypt, Edom, Ammon and Moab among the circumcised. So the rite did not mark Israel off from Egypt by being unusual. What the text makes of it is covenantal: this is the sign given to [[entity:abraham]], and the point is whose people these are.\n\n" +
+          "Circumcision was not unique to Israel. Egyptians practised it, and so did several of Israel's neighbours; Jeremiah later lists Egypt, Edom, Ammon and Moab among the circumcised. So the rite did not mark Israel off from Egypt by being unusual. What the text makes of it is covenantal: this is the sign given to [[entity:abraham]], and the point is whose people these are. Deuteronomy 10:12-22, Deuteronomy 30:6 and Romans 2:25-29 return to the same sign.\n\n" +
           "The phrase *the reproach of Egypt* is not explained. Readings differ over whether it means the shame of slavery, the taunt that Yahweh brought them out to die in the desert, or the uncircumcised state of the wilderness generation itself. We do not know which the author intended.\n\n" +
           "The setting is agriculturally specific. The plains of [[entity:jericho]] sit around 250 metres below sea level, warm enough that barley there ripens earlier than anywhere in the hill country. An army arriving in the first month arrives when that grain is standing. [[entity:gilgal]] itself has never been securely identified; the site register marks it disputed, with Khirbet el-Mafjir and Khirbet en-Nitla among the candidates.",
-        scriptureRefs: ["Genesis 17:9-14", "Joshua 5:9", "Jeremiah 9:25-26"],
+        scriptureRefs: [
+          "Genesis 17:1-14",
+          "Joshua 5:9",
+          "Jeremiah 9:25-26",
+          "Deuteronomy 30:6",
+          "Romans 2:25-29",
+        ],
         citations: [
           {
             sourceId: "anchor-bible-dictionary",
@@ -168,10 +174,17 @@ export const CHAPTERS: Chapter[] = [
           "Joshua 5:2 says to circumcise Israel *a second time*, which has puzzled readers since antiquity and reads differently in the Greek tradition. Commentators offer solutions; none has settled the matter.\n\n" +
           "Gibeath-haaraloth is named once and never again. [[entity:gilgal]] is explained by a play on a verb meaning to roll, which is how the text links the place to the rolled-away reproach. The text is punning, and knows it.\n\n" +
           "Exodus 16 already reports that the manna lasted until Israel reached the edge of Canaan. Joshua 5:12 supplies the date, and pairs the last of the manna with the first of the local grain inside a single verse.\n\n" +
-          "Two details tie the closing scene to earlier ones. A messenger with a drawn sword had stood in [[entity:balaam]]'s road, and the instruction to remove sandals repeats what [[entity:moses]] heard at the bush.",
+          "Two details tie the closing scene to earlier ones. A messenger with a drawn sword had stood in [[entity:balaam]]'s road, and the instruction to remove sandals repeats what [[entity:moses]] heard at the bush.\n\n" +
+          "Verse 1 is the second time Canaan has heard the report of Yahweh's works. [[ref:Joshua 2:8-13|Rahab heard the same news]]; the difference between her response and the kings' is worth pinning down. Psalm 2, especially Psalm 2:11-12, speaks to kings who hear such reports.\n\n" +
+          "In 5:7 the verb has a subject worth noticing: who is said to have raised up this generation in place of the one that died.\n\n" +
+          "John 1:29, 1 Corinthians 5:7 and Revelation 5:6-10 take up the Passover lamb.",
         scriptureRefs: [
+          "Joshua 5:1",
           "Joshua 5:2",
+          "Joshua 5:7",
           "Joshua 5:12",
+          "Joshua 2:8-13",
+          "Psalm 2:11-12",
           "Exodus 16:35",
           "Numbers 22:22-31",
           "Exodus 3:1-6",
@@ -233,7 +246,7 @@ export const CHAPTERS: Chapter[] = [
       "The manna stops the day after Israel eats Canaan's grain. What changes for a people who now depend on a harvest they did not plant?",
       "The reproach of Egypt is declared rolled away forty years after Israel left Egypt. Why might the text place that announcement here rather than at the sea?",
       "Joshua offers the commander two options and is told neither. Where do you hear the question 'are you for us or for them' asked in a way this answer would unsettle?",
-      "Gilgal's location has never been securely identified, and the camp there anchors the next five chapters. How much does not knowing where it stood change the way you read the campaigns run out of it?",
+      "Numbers 14:1-38 records the rebellion that kept the last generation out of the land. Read beside Joshua 5:1-12, what themes tie this chapter's three episodes together, and who is this new generation by contrast?",
     ],
     relatedEntityIds: [
       "joshua",
@@ -253,7 +266,7 @@ export const CHAPTERS: Chapter[] = [
       "memory-and-memorials",
       "land-and-inheritance",
     ],
-    wordCount: 557,
+    wordCount: 561,
   },
 
   /* ================================================================ */
@@ -378,9 +391,15 @@ export const CHAPTERS: Chapter[] = [
         kind: "why-it-matters",
         title: "Why it matters",
         body:
-          "Nothing Israel does in this chapter would take a city. It walks, carries a box, blows horns, and shouts. The narrative is arranged so that the only agent who could account for the result is God, and the claim is stated before the event rather than after it: I have given Jericho into your hand.\n\n" +
+          "Nothing Israel does in this chapter would take a city. It walks, carries a box, blows horns, and shouts. The narrative is arranged so that the only agent who could account for the result is God, and the claim is stated before the event rather than after it: I have given Jericho into your hand. That sentence is worth setting beside [[ref:Joshua 1:3|the book's opening grant]]; what the one verse has done to the other by 6:2 is worth working out. It is worth counting how many times 6:1-14 mentions the ark, and how often a command from the LORD is followed by the people doing exactly that; the narrator repeats both patterns for a reason worth naming. Paul's argument in 1 Corinthians 1:18-25 has often been read alongside a strategy this unlikely.\n\n" +
           "Reformed readers have taken Jericho as the pattern case of what they call holy war, in which the battle is Yahweh's and the human contribution is obedience and worship, and Calvin presses the point that the procession was designed to make Israel's strength irrelevant. That is one Christian reading. Others place the weight on [[entity:rahab]], taking the chapter's real hinge to be the survival of a Canaanite household inside a story of total destruction, so that the exception rather than the rule tells you where the book is going.",
-        scriptureRefs: ["Joshua 6:2", "Joshua 6:25"],
+        scriptureRefs: [
+          "Joshua 6:2",
+          "Joshua 1:3",
+          "Joshua 6:1-14",
+          "1 Corinthians 1:18-25",
+          "Joshua 6:25",
+        ],
         citations: [
           {
             sourceId: "calvin-joshua",
@@ -436,10 +455,17 @@ export const CHAPTERS: Chapter[] = [
         kind: "difficult-questions",
         title: "Difficult questions",
         body:
-          "The chapter says that everything breathing in [[entity:jericho]] was killed, children included, at God's command and as an act of worship. That is what the text says, and no amount of context makes it comfortable.\n\n" +
+          "The chapter says that everything breathing in [[entity:jericho]] was killed, children included, at God's command and as an act of worship. That is what the text says, and no amount of context makes it comfortable. Leviticus 18:24-30, Deuteronomy 9:4-6, Genesis 15:12-21 and Jeremiah 18:7-8 each supply part of the Torah's and the prophets' own frame for it, and are worth reading before deciding anything.\n\n" +
           "The responses in print do not converge. Some argue that the language is the conventional hyperbole of ancient conquest accounts, which routinely claim total destruction of populations that demonstrably survived. Some read Jericho as a garrison rather than a town full of families. Some hold that the command was genuine, limited to one people at one moment, and not repeatable. Some conclude that the portrait of God here cannot be reconciled with the portrait in the Gospels, and say so. The study's question on the command to destroy the Canaanites sets these out at length, alongside the separate question of how destruction language works.\n\n" +
           "Two things can be said without choosing. The chapter itself immediately exempts a Canaanite family, which is hard to square with a straightforward ethnic programme. And the book's own claim is that Yahweh gave the city, not that Israel earned or deserved it, which removes any ground for a later people reading their own wars into this one.",
-        scriptureRefs: ["Joshua 6:17-21", "Joshua 6:25"],
+        scriptureRefs: [
+          "Joshua 6:17-21",
+          "Joshua 6:25",
+          "Leviticus 18:24-30",
+          "Deuteronomy 9:4-6",
+          "Genesis 15:12-21",
+          "Jeremiah 18:7-8",
+        ],
         citations: [
           {
             sourceId: "younger-conquest-accounts",
@@ -479,7 +505,7 @@ export const CHAPTERS: Chapter[] = [
     discussionQuestions: [
       "Israel is ordered to keep silent for six days and then shout on command. What does a week of saying nothing do to the people doing it?",
       "The metal from Jericho is consigned to the treasury rather than destroyed. Why does that exception matter for what happens in the next chapter?",
-      "Excavation at Tell es-Sultan has not produced a Late Bronze city to match this account, and the redating that would fix that is disputed. How do you hold the chapter's claim and that state of the evidence at the same time?",
+      "Genesis 12:1-3 promised Abraham a land and a blessing reaching all the families of the earth. Where does each of those promises surface in the fall of Jericho and the sparing of Rahab?",
       "Rahab's household is brought out of a city under total destruction and then settled outside the camp. What does 'outside the camp' say about where she stands at the end of the chapter?",
       "Nothing in the chapter softens what was done to Jericho's children. What is lost if a reader moves straight to the theology without staying with that verse?",
     ],
@@ -497,7 +523,7 @@ export const CHAPTERS: Chapter[] = [
       "judgment-and-mercy",
       "outsiders-and-belonging",
     ],
-    wordCount: 558,
+    wordCount: 636,
   },
 
   /* ================================================================ */
@@ -608,9 +634,9 @@ export const CHAPTERS: Chapter[] = [
         kind: "why-it-matters",
         title: "Why it matters",
         body:
-          "Israel loses a battle it should have won, against a town its own scouts called small, and the chapter locates the cause inside the camp rather than on the field. Victory turns out not to be something Israel possesses. The divine sentence is conditional in a way chapter 1's promise was not: I will not be with you any more unless you remove the devoted thing.\n\n" +
+          "Israel loses a battle it should have won, against a town its own scouts called small, and the chapter locates the cause inside the camp rather than on the field. Victory turns out not to be something Israel possesses. The divine sentence is conditional in a way chapter 1's promise was not: I will not be with you any more unless you remove the devoted thing. Joshua's prayer, for its part, stakes everything on the LORD's great name (7:9), an appeal worth setting beside John 12:27-28.\n\n" +
           "Reformed theology has read this as covenant solidarity, the community treated as one body whose members are answerable for each other, and Calvin uses the chapter to argue that hidden sin is a public matter. That is one Christian reading among several. It does not dissolve the difficulty, which is that thirty-six men die for a theft they did not commit and a family is executed alongside the man who confessed. The study's question on Achan's household stays with that rather than explaining it away.",
-        scriptureRefs: ["Joshua 7:12", "Joshua 7:11"],
+        scriptureRefs: ["Joshua 7:12", "Joshua 7:11", "Joshua 7:9", "John 12:27-28"],
         citations: [
           {
             sourceId: "calvin-joshua",
@@ -635,12 +661,16 @@ export const CHAPTERS: Chapter[] = [
           "Shebarim is left untranslated in most English versions because nobody knows what it is. It may be a place name or a common noun, and its location is unknown.\n\n" +
           "The word for the slope the men were struck on is the same one chapter 10 uses for the descent of Beth-horon. There the enemy is caught on the slope. Here it is Israel.\n\n" +
           "[[entity:joshua]]'s complaint borrows the wilderness generation's line about being content to stay on the far side of the river, which is exactly the attitude Deuteronomy condemns.\n\n" +
-          "[[entity:achan]] says he saw, coveted, took and hid. Commentators note that sequence elsewhere in the Hebrew Bible, and the chapter plays throughout on the root for trouble: 1 Chronicles calls him Achar, the troubler of Israel, and the valley takes the same root.",
+          "[[entity:achan]] says he saw, coveted, took and hid. His confession rewards a side-by-side read with [[ref:Genesis 3:6|the scene in Eden]]; the similarities are left for the reader to find. The chapter plays throughout on the root for trouble: 1 Chronicles calls him Achar, the troubler of Israel, and the valley takes the same root.\n\n" +
+          "The accusation in 7:11 stacks five distinct charges in a single verse; listing them out slows the verse down usefully.\n\n" +
+          "Yahweh's burning anger opens the chapter in verse 1 and is not said to turn until verse 26, a frame around everything between.",
         scriptureRefs: [
           "Joshua 7:1",
           "Joshua 7:5",
           "Joshua 7:7",
+          "Joshua 7:11",
           "Joshua 7:21",
+          "Genesis 3:6",
           "Joshua 7:26",
           "1 Chronicles 2:7",
         ],
@@ -699,10 +729,10 @@ export const CHAPTERS: Chapter[] = [
     ],
     discussionQuestions: [
       "The scouts look at Ai and report that a few thousand men will do. What does the chapter do with the idea that a defeat can have a competent-sounding explanation?",
-      "The men of Ai chase Israel from the gate down the slope. How does knowing that the retreat ran downhill, back toward the valley floor, change your picture of the rout?",
+      "Joshua's prayer in 7:6-9 runs lament and accusation together. Which of its phrases sound like faith, which sound like doubt, and how do you tell the difference?",
       "Joshua's first response is to complain that Israel should have stayed east of the Jordan. What does it mean that God answers with 'get up' rather than with an argument?",
       "The lot narrows from tribe to clan to household to one man while the whole nation stands and watches. What is that process doing to everyone who is not taken?",
-      "The Valley of Achor has never been securely located, and the heap of stones is said to have still been standing when the chapter was written. What does a memorial nobody can find do for a reader?",
+      "Chapter 6 ends with a Canaanite household walking out of a doomed city; chapter 7 ends with an Israelite household under a heap of stones. What is the book doing by setting those two fates side by side?",
     ],
     relatedEntityIds: [
       "joshua",
@@ -722,7 +752,7 @@ export const CHAPTERS: Chapter[] = [
       "judgment-and-mercy",
       "unity-among-tribes",
     ],
-    wordCount: 588,
+    wordCount: 608,
   },
 
   /* ================================================================ */
@@ -807,8 +837,13 @@ export const CHAPTERS: Chapter[] = [
           "Two site questions sit under this chapter, and neither is settled.\n\n" +
           "[[entity:ai]] is disputed. Et-Tell matches the geography the ambush needs, a town east of [[entity:bethel]] with a valley to the north and broken ground to the west to hide in, but excavation there found no Late Bronze occupation. Khirbet el-Maqatir has been proposed instead by researchers arguing for an early conquest date, and a third reading makes Ai an outpost of Bethel. The site is disputed, and this study says so rather than choosing.\n\n" +
           "On [[entity:mount-ebal]], Adam Zertal excavated a large stone structure and identified it as an Israelite altar connected with this passage. Aharon Kempinski published a rebuttal reading the same remains as an Iron Age watchtower. The structure exists; what it was is contested.\n\n" +
-          "The geography around it is not in doubt. Ebal and [[entity:mount-gerizim]] face each other across a narrow pass with [[entity:shechem]] in it, and Shechem was a long-occupied centre commanding that route.",
-        scriptureRefs: ["Joshua 8:9", "Joshua 8:30"],
+          "The geography around it is not in doubt. Ebal and [[entity:mount-gerizim]] face each other across a narrow pass with [[entity:shechem]] in it, and Shechem was a long-occupied centre commanding that route. It is also patriarchal ground: Genesis 12:6-7 and Genesis 33:18-20 both record what happened at Shechem long before Israel arrived.",
+        scriptureRefs: [
+          "Joshua 8:9",
+          "Joshua 8:30",
+          "Genesis 12:6-7",
+          "Genesis 33:18-20",
+        ],
         citations: [
           {
             sourceId: "callaway-ai",
@@ -844,9 +879,14 @@ export const CHAPTERS: Chapter[] = [
         kind: "why-it-matters",
         title: "Why it matters",
         body:
-          "The two halves of this chapter are doing different work, and the second is not a postscript. The first half is ordinary warfare. Israel wins by a feint and an ambush, using ground and timing, and the account is frank about the mechanics. Whatever chapter 6 claimed about the city being given, it has to sit beside a chapter where the method is a military trick available to anyone.\n\n" +
-          "The second half puts the whole community in front of the law, and the detail that matters is who is standing there: women, children, and the sojourners who live among them. Reformed readers have taken the public reading at [[entity:mount-ebal]] as the pattern for a congregation hearing the covenant together, which is one Christian reading among others. What no reading should pass over is the juxtaposition. The chapter that reports twelve thousand dead at [[entity:ai]] also reports resident foreigners inside the assembly, and it makes no attempt to explain how both are true.",
-        scriptureRefs: ["Joshua 8:18-22", "Joshua 8:33-35"],
+          "The two halves of this chapter are doing different work, and the second is not a postscript. The first half is ordinary warfare. Israel wins by a feint and an ambush, using ground and timing, and the account is frank about the mechanics. Whatever chapter 6 claimed about the city being given, it has to sit beside a chapter where the method is a military trick available to anyone. The plan itself keeps naming who gives the city, at 8:1 and again at 8:7, before any ambush moves.\n\n" +
+          "The second half puts the whole community in front of the law, and the detail that matters is who is standing there: women, children, and the sojourners who live among them. Reformed readers have taken the public reading at [[entity:mount-ebal]] as the pattern for a congregation hearing the covenant together, which is one Christian reading among others. What no reading should pass over is the juxtaposition. The chapter that reports twelve thousand dead at [[entity:ai]] also reports resident foreigners inside the assembly, and it makes no attempt to explain how both are true. How the reading of blessing and curse lands on people who have just been through chapters 7 and 8 is worth pausing on.",
+        scriptureRefs: [
+          "Joshua 8:18-22",
+          "Joshua 8:1",
+          "Joshua 8:7",
+          "Joshua 8:33-35",
+        ],
         citations: [
           {
             sourceId: "mcconville-williams-joshua",
@@ -870,7 +910,10 @@ export const CHAPTERS: Chapter[] = [
           "The ambush party is thirty thousand in one verse and five thousand in another. The chapter does not reconcile the figures and neither will this study.\n\n" +
           "What [[entity:joshua]] holds out is a *kidon*, the word used later for Goliath's weapon. He keeps it extended until the destruction is complete, which readers have long compared with [[entity:moses]]'s raised hand at the sea and against Amalek.\n\n" +
           "The king is hanged and then taken down at sunset. [[ref:Deuteronomy 21:22-23|Deuteronomy requires exactly that]], so the narrative is observing a rule even here.\n\n" +
-          "Two chapters, two heaps of stones: one over [[entity:achan]], one over the king of [[entity:ai]] at his own gate. The phrasing is the same.\n\n" +
+          "Three heaps of stones now stand in the book: twelve from the riverbed in Joshua 4:1-9, one over [[entity:achan]], one over the king of [[entity:ai]] at his own gate. The phrasing repeats; what each heap is there to recall does not.\n\n" +
+          "The offerings in 8:31 are two named kinds. Leviticus 1 and Leviticus 3 spell out how each is performed and where they differ.\n\n" +
+          "The law-copying has two precedents worth comparing: Deuteronomy 17:18-20 and Joshua 1:8.\n\n" +
+          "One word repeats through 8:34-35 often enough to be the point of the sentences; it is worth counting.\n\n" +
           "The altar's stones are unworked, with no iron used on them, which follows both Exodus and Deuteronomy. The text does not say why.\n\n" +
           "The assembly is described as including the sojourner along with the native born, the same pairing the law uses about who may keep Passover.",
         scriptureRefs: [
@@ -878,7 +921,11 @@ export const CHAPTERS: Chapter[] = [
           "Joshua 8:12",
           "Joshua 8:18",
           "Joshua 8:29",
+          "Joshua 4:1-9",
+          "Joshua 8:31",
+          "Joshua 8:34-35",
           "Deuteronomy 21:22-23",
+          "Deuteronomy 17:18-20",
           "Exodus 20:25",
           "Exodus 12:48-49",
         ],
@@ -965,7 +1012,7 @@ export const CHAPTERS: Chapter[] = [
       "outsiders-and-belonging",
       "unity-among-tribes",
     ],
-    wordCount: 592,
+    wordCount: 634,
   },
 ];
 
@@ -1236,7 +1283,7 @@ export const MILESTONES: Milestone[] = [
     chapter: 6,
     order: 4,
     title: "Rahab's household comes out",
-    scriptureRefs: ["Joshua 6:22-25", "Hebrews 11:31"],
+    scriptureRefs: ["Joshua 6:22-25", "Hebrews 11:30-31"],
     narrative:
       "[[entity:joshua]] sends the two men who had gone in as spies back into the ruined city to fetch [[entity:rahab]]. They bring out her father, her mother, her brothers and everyone who belonged to her, and set them down outside the camp of Israel. Then the city is burned, and the metal goes to the treasury of Yahweh's house.\n\n" +
       "The chapter does not tidy this up. A Canaanite family walks out of a town under total destruction because of a bargain struck with two foreigners on a roof, and the reason given is that she hid the messengers. Her placement outside the camp is left unexplained; the text records it and then says she lived in the midst of Israel, which is a different location and a later moment.\n\n" +
