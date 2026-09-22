@@ -1,36 +1,127 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Joshua: The Journey into the Land
 
-## Getting Started
+An interactive study of the book of Joshua: all 24 chapters, the geography they
+happened in, and the surrounding ancient world that explains them. Built for
+personal study and for leading a small group.
 
-First, run the development server:
+At every milestone the interface answers the same six questions. Where are we,
+what is happening, what brought us here, who are these people, what was their
+surrounding world like, and why does this matter in the biblical story.
+
+## Getting started
+
+Requires Node 20 or newer (developed on 26).
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev          # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+That is enough. The map ships with its own geography and the Scripture text
+ships with the app, so nothing above needs network access or credentials.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Optional: the ESV
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Scripture is shown in the English Standard Version when a credential is
+configured, and in the bundled public-domain World English Bible otherwise.
+Either way the translation is named on screen, and a passage that falls back
+says why in place.
 
-## Learn More
+Get a key from [api.esv.org](https://api.esv.org/) and put it in `.env.local`:
 
-To learn more about Next.js, take a look at the following resources:
+```
+API_ESV_ORG=your-token-here
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The bare token and the `Authorization: Token your-token-here` line ESV hands
+out are both accepted. The value is read server-side only, in
+`app/api/esv/route.ts`, and never reaches the client bundle, `localStorage`, or
+an exported notebook file.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Production
 
-## Deploy on Vercel
+```bash
+npm run build        # runs npm run validate first
+npm start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Scripts
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Command | What it does |
+| --- | --- |
+| `npm run validate` | Checks referential integrity across all content. Runs automatically before every build. |
+| `npm run lint` | ESLint, including the React Compiler hook rules. |
+| `npm run basemap` | Regenerates the bundled map geography from Natural Earth. Only needed when changing the basemap. |
+| `node scripts/show-verses.mjs joshua-6@1-5` | Prints bundled WEB verses, for checking a passage while authoring. |
+
+`npm run validate` fails the build on an unknown entity, milestone, source,
+theme or Scripture reference. A citation cannot rot silently into a dead link.
+
+## How it is organised
+
+Content is data, separate from the components that render it.
+
+```
+content/          chapters, milestones, entities, people, themes, sources, map features
+lib/              map selection, scripture loading, search, URL and local state
+components/       the study screen, the atlas, the explorers
+public/geo/       bundled Natural Earth geography
+public/scripture/ bundled World English Bible
+```
+
+Nothing a reader produces leaves their browser. Notes, bookmarks and progress
+live in `localStorage`; the notebook exports and imports JSON, and an import
+tells you what it found before it overwrites anything. There are no accounts.
+
+Chapter, milestone and open dossier all live in the URL, so a link restores the
+view it was copied from.
+
+## The editorial rules are in the data
+
+The book of Joshua is easy to render dishonestly, so the distinctions are
+enforced by types rather than left to prose.
+
+- A milestone declares a `sequenceType`. A territorial summary or an allotment
+  cannot be animated as though it were a march, because the renderer reads that
+  field to decide whether movement is even drawn.
+- A map feature declares its certainty, including `unknown`. An unlocated place
+  renders as a gap in a route and says so, rather than being given a plausible
+  coordinate.
+- Allotment and remaining-land layers are drawn and labelled as claims about
+  what the text says, not as evidence of control. Military victory is not
+  occupation and an allotment is not proof of possession, and the map is not
+  allowed to imply otherwise.
+- Absolute dates appear only in `HistoricalAnchor` records, each naming the
+  chronology it assumes. Biblical sequence is stored separately from proposed
+  historical dating.
+- Identification of a site is distinguished from confirmation of an event there.
+
+Theological material is Christian in orientation, and Reformed readings are
+labelled as Reformed rather than presented as the only Christian reading. For
+difficult passages the text's claims, the literary function, the historical
+questions, the major interpretations and what remains unresolved are kept
+separate. Ancient Israel's campaigns are never presented as authorising modern
+violence.
+
+## Limitations
+
+Worth knowing before relying on it.
+
+- **Coordinates are curated, not surveyed.** Sites are placed from published
+  identifications, with certainty labelled per feature. Nine sites are
+  deliberately left unlocated. Disputed identifications carry a question mark on
+  the map.
+- **Nothing here is peer-reviewed.** Sources are cited per claim and are real
+  and checkable, but the synthesis is editorial. For a contested question, read
+  the sources rather than the summary.
+- **Shaded relief is the only external dependency,** and it is scenery. It comes
+  from a public elevation tile service and removes itself after two failures,
+  with a notice explaining the flat terrain. Every other map layer is bundled.
+- **No artifact photography is bundled.** Licensing images for redistribution was
+  out of scope, so archaeological and artifact material is described and cited
+  rather than shown.
+- **Approximate polygons are approximate.** People groups and regions are drawn
+  as labelled areas with provenance, not as bordered states. They indicate where
+  the text locates a group, at a resolution the evidence supports.
+- **The ESV needs a key and a network.** Without either, the study reads in the
+  World English Bible, which is bundled and public domain.
