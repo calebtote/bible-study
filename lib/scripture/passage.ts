@@ -24,6 +24,7 @@ import {
   type ParsedRef,
   type Verse,
 } from "./reference";
+import { STATIC_EXPORT, withBasePath } from "@/lib/base-path";
 
 export interface Passage {
   ref: ParsedRef;
@@ -91,7 +92,7 @@ async function loadWeb(ref: ParsedRef): Promise<PassageResult> {
   if (!chapter) {
     let response: Response;
     try {
-      response = await fetch(`/scripture/web/${ref.slug}.json`);
+      response = await fetch(withBasePath(`/scripture/web/${ref.slug}.json`));
     } catch {
       return {
         status: "error",
@@ -140,7 +141,21 @@ async function loadWeb(ref: ParsedRef): Promise<PassageResult> {
 const notBundled = (ref: ParsedRef) =>
   `${ref.book} is not among the books bundled with this study, so ${ref.display} cannot be shown here. Open it in your own Bible.`;
 
+/*
+ * A statically exported build has no server, so `/api/esv` cannot exist at all: it is
+ * a route handler, not a file, and static hosts serve files. Checked first, before any
+ * cache lookup, so this never fights the "unavailable" cache for the same slot; a build
+ * that has no proxy always answers the same way, and answers it without a network
+ * round trip that could only ever 404.
+ */
+const NO_ESV_PROXY = {
+  reason:
+    "This build has no ESV proxy, so the World English Bible is shown instead.",
+};
+
 async function loadEsv(ref: ParsedRef): Promise<Passage | { reason: string }> {
+  if (STATIC_EXPORT) return NO_ESV_PROXY;
+
   const cached = esvCache.get(ref.display);
   if (cached && cached !== "unavailable") return cached;
   if (cached === "unavailable") {
@@ -149,7 +164,7 @@ async function loadEsv(ref: ParsedRef): Promise<Passage | { reason: string }> {
 
   let response: Response;
   try {
-    response = await fetch(`/api/esv?q=${encodeURIComponent(ref.display)}`);
+    response = await fetch(withBasePath(`/api/esv?q=${encodeURIComponent(ref.display)}`));
   } catch {
     return { reason: "The English Standard Version could not be reached." };
   }

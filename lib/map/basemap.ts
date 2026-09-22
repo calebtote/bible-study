@@ -13,6 +13,7 @@
 
 import type { StyleSpecification } from "maplibre-gl";
 import { MAP_COLORS } from "@/lib/design/palette";
+import { withBasePath } from "@/lib/base-path";
 
 /** The study area, used for the reset view and to fence the camera in. */
 export const STUDY_BOUNDS: [[number, number], [number, number]] = [
@@ -44,7 +45,7 @@ export const BASE_ATTRIBUTION =
   '<a href="https://www.naturalearthdata.com/" target="_blank" rel="noreferrer">Natural Earth</a> (public domain)';
 
 export function buildBaseStyle(opts: { wide: boolean }): StyleSpecification {
-  const landUrl = opts.wide ? "/geo/land-wide.json" : "/geo/land.json";
+  const landUrl = withBasePath(opts.wide ? "/geo/land-wide.json" : "/geo/land.json");
 
   return {
     version: 8,
@@ -58,11 +59,14 @@ export function buildBaseStyle(opts: { wide: boolean }): StyleSpecification {
      * `MapLabels`, which has the side benefit of setting them in Source Serif
      * rather than in whatever a glyph pack happens to contain. Icons need no
      * glyphs, so those stay on the canvas, drawn into the map by `icons.ts`.
+     *
+     * These are MapLibre style sources, not `next/link` destinations, so Next's
+     * `basePath` rewriting never reaches them; `withBasePath` does that work by hand.
      */
     sources: {
       land: { type: "geojson", data: landUrl },
-      lakes: { type: "geojson", data: "/geo/lakes.json" },
-      rivers: { type: "geojson", data: "/geo/rivers.json" },
+      lakes: { type: "geojson", data: withBasePath("/geo/lakes.json") },
+      rivers: { type: "geojson", data: withBasePath("/geo/rivers.json") },
     },
     layers: [
       {
@@ -140,7 +144,7 @@ export async function checkBundledGeography(): Promise<{
   ok: boolean;
   missing: string[];
 }> {
-  const files = ["/geo/land.json", "/geo/lakes.json", "/geo/rivers.json"];
+  const files = ["/geo/land.json", "/geo/lakes.json", "/geo/rivers.json"].map(withBasePath);
   const missing: string[] = [];
   await Promise.all(
     files.map(async (f) => {

@@ -21,6 +21,7 @@ import type {
   StudyProgress,
 } from "@/content/types";
 import { LAYERS } from "@/content/types";
+import { STATIC_EXPORT } from "@/lib/base-path";
 
 export const STORAGE_KEY = "joshua-study-v1";
 
@@ -48,8 +49,13 @@ export const DEFAULT_PREFERENCES: Preferences = {
      * credential, an offline reader or a failed request all fall through to the bundled
      * World English Bible, and the passage says so in place rather than silently
      * swapping translations underneath a reader comparing wording.
+     *
+     * A statically exported build is a stronger case than "unavailable": there is no
+     * server for any deployment of it to have a credential on, ever, so defaulting to
+     * ESV there would mean every reader's first passage is the fallback message
+     * before it settles into WEB. Starting them on WEB is simply the honest default.
      */
-    preferred: "esv",
+    preferred: STATIC_EXPORT ? "web" : "esv",
   },
   motion: "auto",
 };

@@ -45,11 +45,38 @@ npm run build        # runs npm run validate first
 npm start
 ```
 
+### GitLab Pages
+
+`.gitlab-ci.yml` publishes a static export on every push to the default branch.
+Push this repository to a GitLab project with CI/CD enabled (the default) and
+Pages does the rest; no settings to fill in.
+
+A static export has no server, so the ESV proxy route cannot exist there.
+`npm run build:pages` removes it for that build only, and every reader on
+Pages reads the bundled World English Bible, which is the whole reason that
+translation is bundled in full rather than fetched on demand. Everything else
+in the study, the map, the chapters, the dossiers, notes and export/import,
+works the same as it does with `npm run build`.
+
+The CI job computes the site's base path from GitLab's own `CI_PAGES_URL`, so
+it publishes correctly whether the project serves from a sub-path
+(`https://you.gitlab.io/project-name/`) or from a root domain. Nothing to
+configure by hand, and nothing here needs to change if a custom domain is
+added later.
+
+To try the static build locally:
+
+```bash
+npm run build:pages   # writes ./out
+npx serve out
+```
+
 ## Scripts
 
 | Command | What it does |
 | --- | --- |
 | `npm run validate` | Checks referential integrity across all content. Runs automatically before every build. |
+| `npm run build:pages` | Static export for GitLab Pages, at `./out`. Drops the ESV proxy route for that build only. |
 | `npm run lint` | ESLint, including the React Compiler hook rules. |
 | `npm run basemap` | Regenerates the bundled map geography from Natural Earth. Only needed when changing the basemap. |
 | `node scripts/show-verses.mjs joshua-6@1-5` | Prints bundled WEB verses, for checking a passage while authoring. |
