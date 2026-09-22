@@ -71,6 +71,17 @@ export function buildBaseStyle(opts: { wide: boolean }): StyleSpecification {
         paint: { "background-color": MAP_COLORS.sea },
       },
       {
+        id: "coastal-wash",
+        type: "line",
+        source: "land",
+        paint: {
+          "line-color": "#DCE5DA",
+          "line-width": ["interpolate", ["linear"], ["zoom"], 4, 3, 9, 12, 13, 20],
+          "line-blur": 5,
+          "line-opacity": 0.5,
+        },
+      },
+      {
         id: "land",
         type: "fill",
         source: "land",
@@ -83,6 +94,7 @@ export function buildBaseStyle(opts: { wide: boolean }): StyleSpecification {
         paint: {
           "line-color": MAP_COLORS.coast,
           "line-width": ["interpolate", ["linear"], ["zoom"], 5, 0.5, 10, 1.1],
+          "line-opacity": 0.7,
         },
       },
       {
@@ -108,7 +120,7 @@ export function buildBaseStyle(opts: { wide: boolean }): StyleSpecification {
         paint: {
           "line-color": MAP_COLORS.river,
           "line-width": ["interpolate", ["linear"], ["zoom"], 5, 0.6, 10, 2.2],
-          "line-opacity": 0.8,
+          "line-opacity": 0.7,
         },
         layout: { "line-cap": "round", "line-join": "round" },
       },

@@ -330,8 +330,8 @@ export function MapLegend({
                           x2="0"
                           y2="6"
                           stroke={MAP_COLORS.allotment}
-                          strokeWidth="1"
-                          strokeOpacity="0.55"
+                          strokeWidth="0.7"
+                          strokeOpacity="0.38"
                         />
                       </pattern>
                     </defs>
@@ -358,15 +358,15 @@ export function MapLegend({
                     <defs>
                       <pattern
                         id="lg-remain"
-                        width="5"
-                        height="5"
+                        width="8"
+                        height="8"
                         patternUnits="userSpaceOnUse"
                       >
                         <path
-                          d="M0 0L5 5M5 0L0 5"
+                          d="M0 0L8 8M8 0L0 8"
                           stroke={MAP_COLORS.remaining}
-                          strokeWidth="0.8"
-                          strokeOpacity="0.6"
+                          strokeWidth="0.7"
+                          strokeOpacity="0.4"
                         />
                       </pattern>
                     </defs>
@@ -427,15 +427,16 @@ export function MapLegend({
                     <defs>
                       <pattern
                         id="lg-schem"
-                        width="5"
-                        height="5"
+                        width="8"
+                        height="8"
                         patternUnits="userSpaceOnUse"
                       >
-                        <path
-                          d="M0 0H5M0 0V5"
-                          stroke={MAP_COLORS.region}
-                          strokeWidth="0.7"
-                          strokeOpacity="0.5"
+                        <circle
+                          cx="4"
+                          cy="4"
+                          r="0.65"
+                          fill={MAP_COLORS.region}
+                          fillOpacity="0.4"
                         />
                       </pattern>
                     </defs>
@@ -478,6 +479,28 @@ export function MapLegend({
               }
               title="A coalition of cities"
               body="Connectors from the city that convened it to each ally. Never a shaded area, because an alliance is an agreement between cities and not territory anyone governed."
+            />
+          </>
+        )}
+
+        {present.kinds.has("modern-reference") && (
+          <>
+            <Heading>Modern reference</Heading>
+            <Row
+              swatch={
+                <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden>
+                  <circle
+                    cx="8"
+                    cy="8"
+                    r="3"
+                    fill={MAP_COLORS.modern}
+                    stroke={MAP_COLORS.labelHalo}
+                    strokeWidth="1"
+                  />
+                </svg>
+              }
+              title="A present-day city"
+              body="Orientation only, named in grey italic so it cannot be mistaken for the ancient map. A modern city at or near an ancient site is not evidence about that site."
             />
           </>
         )}

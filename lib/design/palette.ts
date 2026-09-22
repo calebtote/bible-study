@@ -18,12 +18,12 @@ export const PALETTE = {
 
 /** Map specific tints. Sandy, low chroma, nothing that competes with the type. */
 export const MAP_COLORS = {
-  sea: "#C3D5DE",
+  sea: "#B9CED2",
   landLow: "#ECE5D3",
-  land: "#E8DFC9",
+  land: "#E9DFC7",
   landHigh: "#DDD0B3",
-  coast: "#C9BDA4",
-  lake: "#AAC4D1",
+  coast: "#9FAEA1",
+  lake: "#ACC7CE",
   lakeEdge: PALETTE.water,
   river: PALETTE.water,
   label: "#4A4F4A",

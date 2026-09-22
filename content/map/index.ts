@@ -191,11 +191,12 @@ export const FEATURES_BY_LAYER: Record<LayerId, MapFeature[]> =
 
 /**
  * Context features draw whenever their layer is on, rather than waiting for a
- * milestone to name them. These are the physiographic regions: the land does not
- * appear and disappear as the story moves.
+ * milestone to name them. The physiographic regions, because the land does not
+ * appear and disappear as the story moves; and the modern reference points,
+ * because a ruler is only useful if it is held against everything.
  */
 export const CONTEXT_FEATURE_IDS: string[] = AUTHORED_FEATURES.filter(
-  (f) => f.kind === "region"
+  (f) => f.kind === "region" || f.kind === "modern-reference"
 ).map((f) => f.id);
 
 /** Places named in the study that the study refuses to put on the map. */

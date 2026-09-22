@@ -228,6 +228,49 @@ body {
 }
 
 /* MapLibre's own chrome, restyled to match the interface. */
+.atlas-map {
+  background: var(--color-terrain);
+}
+
+.atlas-paper {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath fill='%23877650' filter='url(%23grain)' opacity='.3' d='M0 0h180v180H0z'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+  mix-blend-mode: multiply;
+  opacity: 0.16;
+  box-shadow: inset 0 0 70px rgb(98 83 51 / 0.06);
+}
+
+.atlas-map .maplibregl-ctrl-group {
+  background: rgb(247 243 234 / 0.96);
+  border: 1px solid var(--color-rule-strong);
+  border-radius: 4px;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+.atlas-map .maplibregl-ctrl-group button {
+  width: 34px;
+  height: 34px;
+}
+
+.atlas-map .maplibregl-ctrl-group button + button {
+  border-top: 1px solid var(--color-rule);
+}
+
+.atlas-map .maplibregl-ctrl-group button:hover {
+  background-color: var(--color-ivory-deep);
+}
+
+.atlas-map .maplibregl-ctrl-scale {
+  background: rgb(247 243 234 / 0.72);
+  border-color: var(--color-forest);
+  border-width: 1px;
+  color: var(--color-forest);
+  font-family: var(--font-sans);
+  font-size: 10px;
+  padding: 1px 5px;
+}
+
 .maplibregl-map {
   font-family: var(--font-sans) !important;
 }

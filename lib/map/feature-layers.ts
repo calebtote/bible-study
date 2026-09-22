@@ -122,6 +122,22 @@ const src = FEATURES_SOURCE;
 /** Polygon fills. Each texture is a claim about what kind of area this is. */
 const fillLayers: FillLayerSpecification[] = [
   {
+    id: "poly-wash",
+    type: "fill",
+    source: src,
+    filter: ["all", ["==", ["geometry-type"], "Polygon"],
+      ["in", ["get", "kind"], ["literal", ["allotment", "remaining-land", "polity-region"]]]],
+    paint: {
+      "fill-color": ["case", ["get", "selected"], MAP_COLORS.siteSelected,
+        ["==", ["get", "kind"], "allotment"], MAP_COLORS.allotment,
+        ["==", ["get", "kind"], "remaining-land"], MAP_COLORS.remaining,
+        MAP_COLORS.peoples],
+      "fill-opacity": ["case", ["get", "selected"], 0.12, 0.045],
+      // Avoid the automatic hairline on influence areas: their edge is uncertain.
+      "fill-antialias": false,
+    },
+  },
+  {
     /*
      * Peoples and polities. Stipple, low opacity, and no companion line layer.
      * The absence of an outline is the point: these are rough areas of presence
@@ -133,7 +149,8 @@ const fillLayers: FillLayerSpecification[] = [
     filter: ["all", ["==", ["get", "layer"], "peoples"], ["==", ["geometry-type"], "Polygon"]],
     paint: {
       "fill-pattern": "stipple-peoples",
-      "fill-opacity": 0.75,
+      "fill-opacity": ["case", ["get", "selected"], 0.9, 0.65],
+      "fill-antialias": false,
     },
   },
   {
@@ -142,8 +159,8 @@ const fillLayers: FillLayerSpecification[] = [
     source: src,
     filter: ["all", ["==", ["get", "kind"], "region"], ["==", ["geometry-type"], "Polygon"]],
     paint: {
-      "fill-color": MAP_COLORS.region,
-      "fill-opacity": ["case", ["get", "selected"], 0.2, 0.085],
+      "fill-color": ["case", ["get", "selected"], MAP_COLORS.siteSelected, MAP_COLORS.region],
+      "fill-opacity": ["case", ["get", "selected"], 0.14, 0.055],
     },
   },
   {
@@ -167,7 +184,7 @@ const fillLayers: FillLayerSpecification[] = [
     ],
     paint: {
       "fill-pattern": "hatch-remaining",
-      "fill-opacity": 0.85,
+      "fill-opacity": ["case", ["get", "selected"], 1, 0.75],
     },
   },
   {
@@ -199,6 +216,7 @@ function polygonOutlines(): LineLayerSpecification[] {
       id: `poly-edge-region-${certainty}`,
       type: "line",
       source: src,
+      layout: { "line-join": "round", "line-cap": "round" },
       filter: [
         "all",
         ["==", ["get", "kind"], "region"],
@@ -206,9 +224,11 @@ function polygonOutlines(): LineLayerSpecification[] {
         ["==", ["geometry-type"], "Polygon"],
       ],
       paint: {
-        "line-color": MAP_COLORS.region,
-        "line-width": ["case", ["get", "selected"], 1.8, 0.9],
-        "line-opacity": 0.55,
+        "line-color": ["case", ["get", "selected"], MAP_COLORS.siteSelected, MAP_COLORS.region],
+        "line-width": ["interpolate", ["linear"], ["zoom"], 5,
+          ["case", ["get", "selected"], 1.2, 0.6], 10,
+          ["case", ["get", "selected"], 1.8, 1]],
+        "line-opacity": ["case", ["get", "selected"], 0.85, 0.5],
         ...(dash ? { "line-dasharray": dash } : {}),
       },
     });
@@ -217,6 +237,7 @@ function polygonOutlines(): LineLayerSpecification[] {
       id: `poly-edge-allotment-${certainty}`,
       type: "line",
       source: src,
+      layout: { "line-join": "round", "line-cap": "round" },
       filter: [
         "all",
         ["==", ["get", "kind"], "allotment"],
@@ -224,9 +245,11 @@ function polygonOutlines(): LineLayerSpecification[] {
         ["==", ["geometry-type"], "Polygon"],
       ],
       paint: {
-        "line-color": MAP_COLORS.allotment,
-        "line-width": ["case", ["get", "selected"], 2.2, 1.2],
-        "line-opacity": 0.8,
+        "line-color": ["case", ["get", "selected"], MAP_COLORS.siteSelected, MAP_COLORS.allotment],
+        "line-width": ["interpolate", ["linear"], ["zoom"], 5,
+          ["case", ["get", "selected"], 1.4, 0.8], 10,
+          ["case", ["get", "selected"], 2, 1.2]],
+        "line-opacity": ["case", ["get", "selected"], 0.9, 0.65],
         /*
          * An allotment edge is dashed even when the certainty is the best the
          * data offers, because the boundary lists in Joshua name places rather
@@ -241,6 +264,7 @@ function polygonOutlines(): LineLayerSpecification[] {
       id: `poly-edge-remaining-${certainty}`,
       type: "line",
       source: src,
+      layout: { "line-join": "round", "line-cap": "round" },
       filter: [
         "all",
         ["==", ["get", "kind"], "remaining-land"],
@@ -249,8 +273,10 @@ function polygonOutlines(): LineLayerSpecification[] {
       ],
       paint: {
         "line-color": MAP_COLORS.remaining,
-        "line-width": ["case", ["get", "selected"], 2.2, 1.1],
-        "line-opacity": 0.85,
+        "line-width": ["interpolate", ["linear"], ["zoom"], 5,
+          ["case", ["get", "selected"], 1.4, 0.8], 10,
+          ["case", ["get", "selected"], 2, 1.2]],
+        "line-opacity": ["case", ["get", "selected"], 0.9, 0.7],
         "line-dasharray": dash ?? [1.4, 1.4],
       },
     });
@@ -424,6 +450,25 @@ const pointLayers: (CircleLayerSpecification | SymbolLayerSpecification)[] = [
       "circle-opacity": 0.85,
       "circle-stroke-color": MAP_COLORS.labelHalo,
       "circle-stroke-width": 1.6,
+    },
+  },
+  {
+    /*
+     * Modern reference points. Small, grey, and unlike anything ancient on the map:
+     * ancient sites are warm charcoal discs with an ivory ring, so cool grey with no
+     * ring cannot be misread as one of them. They are orientation, not subject, and
+     * they are not interactive — there is no dossier behind a modern city.
+     */
+    id: "modern-ref",
+    type: "circle",
+    source: src,
+    filter: ["==", ["get", "kind"], "modern-reference"],
+    paint: {
+      "circle-radius": ["interpolate", ["linear"], ["zoom"], 6, 2.6, 11, 3.6],
+      "circle-color": MAP_COLORS.modern,
+      "circle-opacity": 0.85,
+      "circle-stroke-color": MAP_COLORS.labelHalo,
+      "circle-stroke-width": 1,
     },
   },
   {

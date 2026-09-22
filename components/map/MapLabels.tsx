@@ -35,6 +35,7 @@ interface Placed {
   certainty: FeatureCertainty;
   selected: boolean;
   area: boolean;
+  water?: boolean;
 }
 
 type Pos = [number, number];
@@ -105,7 +106,7 @@ const AREA_KINDS: MapFeature["kind"][] = [
  */
 const boxOf = (p: Placed) => {
   const w = p.text.length * (p.area ? 9.7 : 6.8) + 14;
-  const h = p.area ? 18 : 15;
+  const h = p.selected ? 25 : p.area ? 18 : 19;
   return { x1: p.x - w / 2, y1: p.y - h / 2, x2: p.x + w / 2, y2: p.y + h / 2 };
 };
 
@@ -180,6 +181,7 @@ export function MapLabels({
   );
 
   useEffect(() => {
+    const place = () => {
     const next: Placed[] = [];
     const chrome = reservedBoxes(map);
     const taken: Box[] = [];
@@ -237,6 +239,28 @@ export function MapLabels({
       next.push(candidate);
     }
 
+    // Quiet reference names share the collision system with study labels.
+    // Study features always take precedence over this geographic context.
+    const waters: { text: string; at: Pos; minZoom: number }[] = [
+      { text: "Mediterranean Sea", at: [33.5, 32.7], minZoom: 4 },
+      { text: "Dead Sea", at: [35.47, 31.48], minZoom: 7 },
+      { text: "Sea of Galilee", at: [35.59, 32.82], minZoom: 8 },
+    ];
+    for (const water of waters) {
+      if (map.getZoom() < water.minZoom) continue;
+      const pt = map.project(water.at);
+      const candidate: Placed = {
+        id: `water-${water.text}`, text: water.text, x: pt.x, y: pt.y,
+        kind: "region", certainty: "well-supported", selected: false,
+        area: false, water: true,
+      };
+      const box = boxOf(candidate);
+      if (box.x1 < 8 || box.y1 < 8 || box.x2 > w - 8 || box.y2 > h - 8) continue;
+      if ([...chrome, ...taken].some((b) => overlaps(b, box))) continue;
+      taken.push(box);
+      next.push(candidate);
+    }
+
     /*
      * After commit, deliberately, which is why this is an effect and not a `useMemo`.
      * Placement measures two things that only exist once the browser has laid the frame
@@ -244,8 +268,43 @@ export function MapLabels({
      * control chrome the labels must avoid. Computing it during render would read
      * geometry from the previous layout and put names under the legend.
      */
-    // eslint-disable-next-line react-hooks/set-state-in-effect
     setPlaced(next);
+    };
+
+    place();
+
+    /*
+     * Re-place when the chrome itself changes. Chrome wins every collision, so an open
+     * layers panel or legend rightly suppresses the labels under it; the bug was the
+     * other direction. Closing the panel changed no dependency of this effect, and the
+     * labels stayed suppressed until the next camera move: a reader who opened Layers,
+     * toggled something and closed it was left with a map of unnamed dots. Watching for
+     * `data-map-reserve` mounts and unmounts is what makes the panel's disappearance an
+     * event this effect can see. Mutations inside the label host itself never match the
+     * filter, so placing labels cannot re-trigger it.
+     */
+    const host = map.getContainer().parentElement;
+    if (!host) return;
+    let raf = 0;
+    const involvesChrome = (m: MutationRecord) =>
+      (m.target instanceof HTMLElement && m.target.closest("[data-map-reserve]") !== null) ||
+      [...m.addedNodes, ...m.removedNodes].some(
+        (n) =>
+          n instanceof HTMLElement &&
+          (n.matches("[data-map-reserve]") || n.querySelector("[data-map-reserve]") !== null)
+      );
+    const observer = new MutationObserver((mutations) => {
+      if (!mutations.some(involvesChrome)) return;
+      cancelAnimationFrame(raf);
+      /* One frame later, so the box being measured is the layout after the change. */
+      raf = requestAnimationFrame(place);
+    });
+    observer.observe(host, { childList: true, subtree: true });
+
+    return () => {
+      observer.disconnect();
+      cancelAnimationFrame(raf);
+    };
   }, [anchors, map, selectedId, tick]);
 
   return (
@@ -255,10 +314,19 @@ export function MapLabels({
           key={p.id}
           className={[
             "absolute -translate-x-1/2 -translate-y-1/2 whitespace-nowrap",
-            "font-serif transition-colors duration-200",
-            p.area
-              ? "text-[11px] uppercase tracking-[0.14em]"
-              : "text-[12.5px] tracking-[0.01em]",
+            "transition-colors duration-200",
+            /*
+             * Everything ancient is set in the serif; a modern reference point is set
+             * in the interface sans, italic and grey. The typeface is the claim: this
+             * name belongs to the reader's world, not to the map's.
+             */
+            p.kind === "modern-reference"
+              ? "font-sans text-[10.5px] italic text-[#7D838A]"
+              : p.water
+                ? "font-serif text-[13px] italic tracking-[0.04em] text-[#486E7B]"
+                : p.area
+                  ? "font-serif text-[11px] uppercase tracking-[0.14em]"
+                  : "font-serif text-[12.5px] tracking-[0.01em]",
             /*
              * An area label is tinted to match its own texture, so the name and the
              * fill make the same claim. A reader scanning Joshua 15 sees green "JUDAH"
@@ -267,8 +335,8 @@ export function MapLabels({
              * which kind of statement each shape is. Plain geographic regions stay faint:
              * they are orientation, not argument.
              */
-            p.selected
-              ? "font-semibold text-bronze"
+            p.water || p.kind === "modern-reference" ? "" : p.selected
+              ? "rounded-sm border border-bronze/35 bg-ivory/90 px-1.5 py-0.5 font-semibold text-bronze"
               : p.kind === "allotment"
                 ? "text-forest/70"
                 : p.kind === "remaining-land"

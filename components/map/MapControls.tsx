@@ -62,6 +62,7 @@ export function MapControls({
   fullscreenSupported: boolean;
 }) {
   const [layersOpen, setLayersOpen] = useState(false);
+  const { preferences, setPreferences } = useStudy();
   const panel = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -89,9 +90,19 @@ export function MapControls({
      */
     <div
       data-map-reserve
-      className="absolute top-3 right-3 z-30 flex flex-col items-end gap-2 no-print"
+      className="absolute top-3 right-3 left-3 z-30 flex flex-col items-end gap-2 pointer-events-none no-print"
     >
-      <div className="flex gap-1.5">
+      <div className="pointer-events-auto flex flex-wrap justify-end gap-1.5">
+        <CornerButton
+          onClick={() => setPreferences((p) => ({
+            ...p,
+            map: { ...p.map, basemap: p.map.basemap === "external-terrain" ? "bundled" : "external-terrain" },
+          }))}
+          pressed={preferences.map.basemap === "external-terrain"}
+          title="Show or hide shaded terrain relief"
+        >
+          Relief
+        </CornerButton>
         <CornerButton
           onClick={() => setLayersOpen((v) => !v)}
           pressed={layersOpen}
@@ -125,7 +136,7 @@ export function MapControls({
         </CornerButton>
       </div>
 
-      {layersOpen && <LayerPanel ref={panel} onClose={() => setLayersOpen(false)} />}
+      {layersOpen && <div className="pointer-events-auto max-w-full"><LayerPanel ref={panel} onClose={() => setLayersOpen(false)} /></div>}
     </div>
   );
 }
@@ -143,7 +154,7 @@ function LayerPanel({
   return (
     <div
       ref={ref}
-      className="animate-fade-rise w-80 rounded border border-rule bg-ivory shadow-float"
+      className="animate-fade-rise w-80 max-w-full rounded border border-rule bg-ivory shadow-float"
       role="group"
       aria-label="Map layers"
     >

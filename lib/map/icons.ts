@@ -199,7 +199,7 @@ const PATTERN_PX = 16;
 function drawPattern(ctx: Ctx, name: PatternName) {
   const s = PATTERN_PX;
   ctx.clearRect(0, 0, s, s);
-  ctx.lineWidth = 1;
+  ctx.lineWidth = 0.7;
   ctx.lineCap = "butt";
 
   const diagonal = (color: string, step: number, back = false) => {
@@ -219,19 +219,20 @@ function drawPattern(ctx: Ctx, name: PatternName) {
 
   switch (name) {
     case "hatch-allotment":
-      ctx.globalAlpha = 0.5;
-      diagonal(MAP_COLORS.allotment, 6);
+      ctx.globalAlpha = 0.38;
+      // Spacing divides the tile size so hatching joins without visible seams.
+      diagonal(MAP_COLORS.allotment, 8);
       ctx.globalAlpha = 1;
       break;
     case "hatch-remaining":
-      ctx.globalAlpha = 0.55;
-      diagonal(MAP_COLORS.remaining, 6);
-      diagonal(MAP_COLORS.remaining, 6, true);
+      ctx.globalAlpha = 0.4;
+      diagonal(MAP_COLORS.remaining, 8);
+      diagonal(MAP_COLORS.remaining, 8, true);
       ctx.globalAlpha = 1;
       break;
     case "stipple-peoples":
       ctx.fillStyle = MAP_COLORS.peoples;
-      ctx.globalAlpha = 0.5;
+      ctx.globalAlpha = 0.38;
       for (const [x, y] of [
         [2, 3],
         [7, 9],
@@ -241,23 +242,20 @@ function drawPattern(ctx: Ctx, name: PatternName) {
         [9, 1],
       ]) {
         ctx.beginPath();
-        ctx.arc(x, y, 1.05, 0, Math.PI * 2);
+        ctx.arc(x, y, 0.7, 0, Math.PI * 2);
         ctx.fill();
       }
       ctx.globalAlpha = 1;
       break;
     case "grid-schematic":
-      ctx.strokeStyle = MAP_COLORS.region;
-      ctx.globalAlpha = 0.5;
-      for (let i = 0; i <= s; i += 5) {
-        ctx.beginPath();
-        ctx.moveTo(i, 0);
-        ctx.lineTo(i, s);
-        ctx.stroke();
-        ctx.beginPath();
-        ctx.moveTo(0, i);
-        ctx.lineTo(s, i);
-        ctx.stroke();
+      ctx.fillStyle = MAP_COLORS.region;
+      ctx.globalAlpha = 0.4;
+      for (let x = 4; x < s; x += 8) {
+        for (let y = 4; y < s; y += 8) {
+          ctx.beginPath();
+          ctx.arc(x, y, 0.65, 0, Math.PI * 2);
+          ctx.fill();
+        }
       }
       ctx.globalAlpha = 1;
       break;

@@ -37,7 +37,7 @@ export const DEFAULT_PREFERENCES: Preferences = {
     expandAllSections: false,
   },
   map: {
-    basemap: "bundled",
+    basemap: "external-terrain",
     showLabels: true,
   },
   scripture: {

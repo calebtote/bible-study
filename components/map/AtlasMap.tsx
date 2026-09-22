@@ -8,8 +8,8 @@
  * names are DOM elements rather than glyph ranges from a server. So the failure
  * of any external request degrades the map's appearance and never its content.
  *
- * Shaded relief is the only outward request, it is off unless the reader turns
- * it on, and if it fails the hillshade is removed and the reader is told rather
+ * Shaded relief is the only outward request, it can be disabled by the reader,
+ * and if it fails the hillshade is removed and the reader is told rather
  * than being left with a half drawn map and no explanation.
  */
 
@@ -28,6 +28,7 @@ import {
   DEFAULT_CENTER,
   DEFAULT_ZOOM,
   STUDY_BOUNDS,
+  WIDE_BOUNDS,
   TERRAIN_ATTRIBUTION,
   TERRAIN_TILES,
   buildBaseStyle,
@@ -223,6 +224,7 @@ export function AtlasMap({
         new maplibregl.NavigationControl({ showCompass: false, visualizePitch: false }),
         "bottom-right"
       );
+      map.addControl(new maplibregl.ScaleControl({ maxWidth: 90, unit: "metric" }), "bottom-left");
 
       /* The canvas is focusable and pans with the arrow keys by default. */
       map.getCanvas().setAttribute("tabindex", "0");
@@ -431,14 +433,16 @@ export function AtlasMap({
           type: "hillshade",
           source: SOURCE,
           paint: {
-            "hillshade-exaggeration": 0.42,
-            "hillshade-shadow-color": "#9c8f74",
-            "hillshade-highlight-color": "#fbf7ee",
-            "hillshade-accent-color": "#b9a988",
+            "hillshade-exaggeration": 0.55,
+            "hillshade-shadow-color": "#897D60",
+            "hillshade-highlight-color": "#FFF8E8",
+            "hillshade-accent-color": "#BAAC87",
+            "hillshade-illumination-anchor": "map",
+            "hillshade-illumination-direction": 315,
           },
         },
         /* Under everything the study itself draws, over the land fill. */
-        map.getLayer("lakes") ? "lakes" : undefined
+        map.getLayer("coast") ? "coast" : undefined
       );
     }
 
@@ -484,11 +488,11 @@ export function AtlasMap({
   const resetView = useCallback(() => {
     const map = mapRef.current;
     if (!map) return;
-    map.fitBounds(STUDY_BOUNDS, {
+    map.fitBounds(wide ? WIDE_BOUNDS : STUDY_BOUNDS, {
       padding: 48,
       duration: reduceMotion ? 0 : 600,
     });
-  }, [reduceMotion]);
+  }, [reduceMotion, wide]);
 
   const toggleFullscreen = useCallback(async () => {
     const el = containerRef.current?.parentElement;
@@ -515,10 +519,10 @@ export function AtlasMap({
   }, []);
 
   const fullscreenSupported =
-    typeof document !== "undefined" && Boolean(document.documentElement.requestFullscreen);
+    liveMap !== null && typeof document !== "undefined" && Boolean(document.fullscreenEnabled);
 
   return (
-    <div className={`relative isolate h-full w-full overflow-hidden ${className ?? ""}`}>
+    <div className={`atlas-map relative isolate h-full w-full overflow-hidden ${className ?? ""}`}>
       {/*
         Sized with `h-full w-full` rather than `absolute inset-0`.
 
@@ -533,6 +537,7 @@ export function AtlasMap({
         Every sibling below is absolutely positioned, so nothing is displaced.
       */}
       <div ref={containerRef} className="h-full w-full bg-[#E8DFC9]" />
+      <div className="atlas-paper pointer-events-none absolute inset-0 z-[1]" aria-hidden />
 
       {liveMap && prefs.map.showLabels && (
         <MapLabels

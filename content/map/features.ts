@@ -1050,6 +1050,47 @@ const MOVEMENT: MapFeature[] = [
       ),
     ],
   },
+
+  /* ------------------------------------------------------------------ */
+  /* Modern reference points                                              */
+  /* ------------------------------------------------------------------ */
+
+  /*
+   * Present-day cities, for one purpose: a reader who knows where Tel Aviv and Amman
+   * are can suddenly place everything else. They are context features, so they draw on
+   * every beat while their layer is on, and the layer is off by default because the
+   * ancient map is the subject and these are a ruler held up against it.
+   *
+   * They are deliberately not entities. There is no dossier behind a modern city and
+   * nothing to select; they carry no claim about the ancient landscape at all, which is
+   * also why the renderer draws them in a style nothing ancient uses. Coordinates are
+   * modern city centres, rounded: these are the best-known locations on the whole map.
+   */
+  ...(
+    [
+      ["modern-jerusalem", "Jerusalem", [35.22, 31.78]],
+      ["modern-tel-aviv", "Tel Aviv", [34.78, 32.08]],
+      ["modern-haifa", "Haifa", [34.99, 32.82]],
+      ["modern-gaza", "Gaza", [34.46, 31.5]],
+      ["modern-beersheba", "Beersheba", [34.79, 31.25]],
+      ["modern-amman", "Amman", [35.93, 31.95]],
+      ["modern-damascus", "Damascus", [36.3, 33.51]],
+      ["modern-beirut", "Beirut", [35.51, 33.89]],
+    ] as const
+  ).map(
+    ([id, label, coords]): MapFeature => ({
+      id,
+      geometry: { type: "Point", coordinates: [...coords] },
+      kind: "modern-reference",
+      certainty: "well-supported",
+      layer: "modern-reference",
+      label,
+      explanation:
+        "A present-day city, drawn for orientation only. It makes no claim about the ancient landscape, and several modern cities stand at or near ancient sites without being evidence for them.",
+      applicableMilestoneIds: [],
+      citations: [],
+    })
+  ),
 ];
 
 /* ------------------------------------------------------------------ */
@@ -1071,7 +1112,15 @@ export const SITE_DERIVED_FEATURES: SiteDerivedFeature[] = [
     label: "The five kings against Gibeon",
     explanation:
       "Five city rulers, convened by Adoni-zedek of Jerusalem, striking at Gibeon for making peace with Israel. The connectors run from each city to the target. They are lines and not a filled area on purpose: this alliance lasted a single campaign, and shading the ground between these towns would invent a southern kingdom that never existed. Eglon's location is disputed, so one connector has an uncertain endpoint.",
-    applicableMilestoneIds: [],
+    /*
+     * The siege and the relief march, and not the rout or the cave. Converging
+     * connectors say "these cities are acting together against this place", which is
+     * true while Gibeon is besieged and false the moment the coalition breaks and runs.
+     */
+    applicableMilestoneIds: [
+      "ch10-five-kings-besiege-gibeon",
+      "ch10-night-march-from-gilgal",
+    ],
     memberSiteIds: ["jerusalem", "hebron", "jarmuth", "lachish", "eglon"],
     priority: 4,
     citations: [
@@ -1095,7 +1144,12 @@ export const SITE_DERIVED_FEATURES: SiteDerivedFeature[] = [
     label: "The northern coalition converging on Merom",
     explanation:
       "Jabin of Hazor gathers a larger alliance than the southern one, described as fielding horses and chariots in great number. Almost every connector here is uncertain at one end or both: the muster site at the waters of Merom is disputed, Madon cannot be located at all and so is missing from the diagram entirely, and Achshaph's identification is unsettled. The convergence is what the text describes. The precise geometry is not available.",
-    applicableMilestoneIds: [],
+    /* The muster and the battle at the muster point; by the burning of Hazor the
+     * coalition no longer exists to draw. */
+    applicableMilestoneIds: [
+      "ch11-jabin-gathers-the-north",
+      "ch11-coalition-broken-at-merom",
+    ],
     memberSiteIds: ["hazor", "madon", "shimron", "achshaph", "chinnereth", "dor"],
     priority: 4,
     citations: [
@@ -1118,7 +1172,14 @@ export const SITE_DERIVED_FEATURES: SiteDerivedFeature[] = [
     label: "The four Gibeonite towns",
     explanation:
       "Gibeon with Chephirah, Beeroth and Kiriath-jearim, acting together in Joshua 9. The distance from here to Gilgal is about 30 km, which is what makes the deception audacious: these are near neighbours claiming to have come from a distant country, and their worn-out sandals and mouldy bread were props. Beeroth's location is disputed and Kiriath-jearim's is approximate.",
-    applicableMilestoneIds: [],
+    /* All of chapter 9: the league is the actor in every beat, and 9:17 names the
+     * four towns when Israel reaches them. */
+    applicableMilestoneIds: [
+      "ch9-the-worn-sandals",
+      "ch9-the-oath-sworn",
+      "ch9-the-fraud-discovered",
+      "ch9-woodcutters-and-water-carriers",
+    ],
     memberSiteIds: ["gibeon", "chephirah", "beeroth", "kiriath-jearim"],
     priority: 4,
     citations: [
