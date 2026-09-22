@@ -196,7 +196,7 @@ export const PROFILES: PersonProfile[] = [
       {
         kind: "described as belonging to",
         targetEntityId: "kenizzites",
-        note: "Called the Kenizzite, a designation pointing outside Israel. The text never explains how it sits with his standing in Judah.",
+        note: "Called the Kenizzite, a name that sounds foreign to Israel, while Numbers 13:6 and 1 Chronicles 4:13-15 place him and his line squarely within Judah. How the name and the standing relate is left unstated.",
         scriptureRefs: ["Numbers 32:12", "Joshua 14:6", "Joshua 14:14"],
       },
       {

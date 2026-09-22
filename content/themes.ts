@@ -976,7 +976,7 @@ And in the covenant assembly at [[entity:mount-ebal]] and [[entity:mount-gerizim
 
 Set that against the commands. The devoting of Jericho (6:21), the southern summary (10:40), the hardening in 11:20, and Joshua's closing warning against association and intermarriage with the nations that remain (23:7, 12-13). The same book holds both, and the tension is the content: not a problem to be solved by deciding which verses are serious, but the actual shape of the material.
 
-One practical consequence, stated once and plainly: the herem texts are not a licence. They have been quoted to justify the removal of peoples in later history, and this study does not treat them as authorisation for anything anyone does now. What the book itself leaves on the record is a Canaanite woman in Israel's memory and, according to Matthew, in the Messiah's genealogy.`,
+What the book itself leaves on the record is a Canaanite woman in Israel's memory and, according to Matthew, in the Messiah's genealogy.`,
     chapterNumbers: [2, 6, 8, 9, 10, 11, 14, 15, 23],
     entityIds: [
       "rahab",
@@ -1136,7 +1136,7 @@ Words are memorialised as well as places. At [[entity:mount-ebal]] Joshua writes
 
 The recurring phrase "to this day" is worth watching, because it is not always flattering. It marks Rahab's descendants in Israel (6:25) and it marks the [[entity:jebusites]] still at [[entity:jerusalem]] (15:63), the [[entity:canaanites]] still at [[entity:gezer]] (16:10), and Geshur and Maacath still inside Israel (13:13). The same formula that preserves the triumphs preserves the failures. Whoever compiled this book was not editing them out.
 
-One further observation belongs here and is uncomfortable. Almost none of these monuments can be found. [[entity:gilgal]], where the twelve stones stood, has no agreed location. [[entity:valley-of-achor]] is disputed. [[entity:makkedah]] is unlocated, and this study leaves it off the map rather than inventing a pin. The stones were set up so that children would ask; the stones are gone, and what survived is the text that explains them. That is a result the book did not plan for and one worth sitting with.`,
+One further observation belongs here and is uncomfortable. Almost none of these monuments can be found. [[entity:gilgal]], where the twelve stones stood, has no agreed location. [[entity:valley-of-achor]] is disputed. [[entity:makkedah]] is unlocated, and this study leaves it off the map rather than inventing a pin. The stones were set up so that children would ask; the stones are gone, and what survived is the word that explains them. The book itself put the weight there from the start: the law in Joshua's mouth in chapter 1, the law read entire at Ebal, the covenant written in the book at Shechem. The monuments served the word, and the word outlived the monuments.`,
     chapterNumbers: [4, 5, 6, 7, 8, 10, 13, 15, 16, 22, 24],
     entityIds: [
       "joshua",
@@ -1565,7 +1565,7 @@ Other traditions handle the same texts differently. Dispensationalist theology l
     title: "Obedience and failure",
     hook:
       "Joshua records a generation that did what it was told, and records its failures in the same sentences. The book's last covenant scene includes an instruction to get rid of the foreign gods currently in the camp.",
-    body: `Joshua sets a standard early and keeps measuring against it. The commission ties success to a text: be careful to do according to all the law, do not turn from it to the right or the left, meditate on it day and night (1:7-8). The people accept the terms with an oath of their own (1:16-18). The book then issues its highest verdict on [[entity:joshua]] himself: "He left nothing undone of all that Yahweh commanded Moses" (11:15). The eastern tribes get a comparable commendation: "You have kept all that Moses the servant of Yahweh commanded you" (22:2). Obedience in this book is real and it is achievable.
+    body: `Joshua sets a standard early and keeps measuring against it. The commission ties success to a text: be careful to do according to all the law, do not turn from it to the right or the left, meditate on it day and night (1:7-8). The people accept the terms with an oath of their own (1:16-18). The book then issues its highest verdict on [[entity:joshua]] himself: "He left nothing undone of all that Yahweh commanded Moses" (11:15). The eastern tribes get a comparable commendation: "You have kept all that Moses the servant of Yahweh commanded you" (22:2). Obedience in this book is real, and by the narrator's own verdicts it was actually rendered; what the book never does is present it as anything other than response to what God had already given.
 
 The failures are not marginal, and they are reported by the same narrator. In chapter 7 the defeat at [[entity:ai]] is traced to devoted goods taken at [[entity:jericho]]: "Israel has sinned. Yes, they have even transgressed my covenant" (7:11). The offence is one man's, and the consequence is national before it is individual. In chapter 9 the leadership fails differently: they "sampled their provisions, and didn't ask counsel from Yahweh's mouth" (9:14), and Israel is bound by an oath it obtained through its own carelessness. Neither episode is a lapse from an otherwise clean record; they are the record.
 

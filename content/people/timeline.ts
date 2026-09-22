@@ -882,7 +882,7 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     id: "caleb-is-reckoned-within-judah",
     label: "Caleb the Kenizzite is reckoned within Judah",
     description:
-      "Caleb is called a Kenizzite and is also Judah's representative among the scouts and a recipient of land inside Judah's allotment. The text states both and never explains how or when the one became compatible with the other.",
+      "Caleb is called a Kenizzite and is also Judah's representative among the scouts and a recipient of land inside Judah's allotment. Numbers 13:6 and 1 Chronicles 4:13-15 place him and his line within Judah; how and when the foreign-sounding name came to sit there is left unstated.",
     scriptureRefs: ["Numbers 13:6", "Numbers 32:12", "Joshua 14:6", "Joshua 15:13"],
     sequenceCertainty: "undated",
     narrativeOrder: 585,

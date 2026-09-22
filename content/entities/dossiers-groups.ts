@@ -242,7 +242,7 @@ export const GROUP_DOSSIERS: DossierExtra[] = [
       evidenceLabels: ["biblical-account"],
     },
     uncertainties: {
-      body: "The text repeatedly calls Caleb a Kenizzite while treating him as a leader of Judah, and it never explains how both are true. That is not a problem the study can resolve, and it is more interesting left standing: the man who gets the most emphatic personal commendation in the whole book belongs to a line the genealogies place outside Israel. How the absorption happened, and when, the text does not say.",
+      body: "The text repeatedly calls Caleb a Kenizzite while treating him as a leader of Judah, and it asserts both without pausing to relate them. Genesis 36:11 sets a Kenaz among Esau's descendants; Numbers 13:6 names Caleb a man of Judah without qualification; 1 Chronicles 4:13-15 carries a Kenaz inside Judah's own genealogies. So his standing in Judah is Scripture's claim, not a scribe's oversight, and the open question is how the line came to stand there. If the name reaches back to an absorbed outsider clan, then the man who receives the most emphatic personal commendation in the whole book carries a grafted-in name, which fits how this book treats outsiders who take Yahweh at his word.",
       scriptureRefs: ["Joshua 14:6", "Joshua 14:14"],
       evidenceLabels: ["biblical-account"],
     },

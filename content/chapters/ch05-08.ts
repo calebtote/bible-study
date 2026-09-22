@@ -49,7 +49,7 @@ export const CHAPTERS: Chapter[] = [
         kind: "at-a-glance",
         title: "At a glance",
         body:
-          "Between the river and the first battle the book stops. A whole generation born in the wilderness is circumcised at Gilgal, the reproach of Egypt is rolled away, and Passover is kept in the plains of Jericho. The next day the manna stops and Israel eats Canaan's own grain. Then Joshua meets an armed stranger who refuses to say which side he is on.",
+          "Between the river and the first battle the book stops. A whole generation born in the wilderness is circumcised at Gilgal, the reproach of Egypt is rolled away, and Passover is kept in the plains of Jericho. The next day the manna stops and Israel eats Canaan's own grain. Then Joshua meets the commander of Yahweh's army, who declines his either-or: the question is whose side Joshua is on.",
         scriptureRefs: ["Joshua 5:1-15"],
         citations: [],
         evidenceLabels: ["biblical-account"],
@@ -211,8 +211,8 @@ export const CHAPTERS: Chapter[] = [
         kind: "difficult-questions",
         title: "Difficult questions",
         body:
-          "Circumcising every fighting man within sight of a walled city is, on any military reading, indefensible. The text shows no awareness of the problem and offers no protective detail: no watch posted, no diversion, nothing. Readers respond differently. Some take the silence as the point, the narrative refusing to let Israel's competence matter. Others read chapter 5 as liturgical shaping, a later community's ordering of memory rather than a field report. The book gives no basis for deciding between them.\n\n" +
-          "The figure with the sword is not identified. He accepts [[entity:joshua]]'s prostration and speaks of holy ground, and the account gives him no name, no departure and no further appearance. A long Christian tradition reads him as the pre-incarnate Son; others read an angel of Yahweh; the text itself declines to say. Taking him as divine endorsement of Israel's warfare has to get past his answer, which was no. The study's question on the command to destroy the Canaanites takes that problem up directly.",
+          "Circumcising every fighting man within sight of a walled city is, on any military reading, indefensible. The text shows no awareness of the problem and offers no protective detail: no watch posted, no diversion, nothing. Readers respond differently. Some take the silence as the point, the narrative refusing to let Israel's competence matter. Others read chapter 5 as liturgical shaping, a later community's ordering of memory rather than a field report. Either way the chapter's claim stands: that week Israel's safety rested on God alone.\n\n" +
+          "The figure with the sword accepts [[entity:joshua]]'s prostration, and the sandal command repeats Exodus 3:5 almost word for word; a long Christian tradition, Calvin included, reads him as the pre-incarnate Son, others an angel bearing Yahweh's name and authority. His no answers Joshua's question, not Israel's cause: the offered choice has the sides the wrong way round, and chapter 6 opens with Jericho given into Joshua's hand. God is not enlisted in Israel's war; Israel is summoned into his.",
         scriptureRefs: ["Joshua 5:2-9", "Joshua 5:13-15"],
         citations: [
           {
@@ -226,6 +226,12 @@ export const CHAPTERS: Chapter[] = [
             locator: "on Joshua 5:13-15",
             supportedClaim:
               "Readers in the Reformed expositional tradition identify the commander of Yahweh's army with the pre-incarnate Christ, a reading the text does not itself state",
+          },
+          {
+            sourceId: "calvin-joshua",
+            locator: "on Joshua 5:13-15",
+            supportedClaim:
+              "Calvin identifies the commander of the LORD's army with Christ, and reads the scene as placing Joshua and Israel under God's command rather than God under theirs",
           },
           {
             sourceId: "wolterstorff-reading-joshua",
