@@ -1,0 +1,18 @@
+Bundled geographic outlines in this directory are derived from Natural Earth.
+
+Natural Earth is in the public domain. No permission is needed to use it.
+https://www.naturalearthdata.com/about/terms-of-use/
+
+  land.json, land-wide.json   ne_10m_land / ne_50m_land, via the world-atlas package
+  lakes.json                  ne_10m_lakes
+  rivers.json                 ne_10m_rivers_lake_centerlines
+
+Coordinates are rounded and the data is clipped to the study area. Shorelines
+reflect the modern landscape: the Dead Sea's surface has fallen sharply in living
+memory and its southern basin is largely dry, so the ancient shoreline was not
+identical to the one drawn here.
+
+Optional shaded relief, when enabled in settings, is requested from the AWS Open
+Data terrain tile set (https://registry.opendata.aws/terrain-tiles/), which is
+assembled from public and open elevation sources including SRTM and GMTED2010.
+It is a visual enhancement only. Every piece of study content works without it.
