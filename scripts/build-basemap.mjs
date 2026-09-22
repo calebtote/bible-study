@@ -23,11 +23,33 @@ const CACHE = path.join(ROOT, "scripts", ".cache");
 fs.mkdirSync(OUT, { recursive: true });
 fs.mkdirSync(CACHE, { recursive: true });
 
-/** The study area: the southern Levant with enough margin for context. */
-const STUDY_BBOX = { west: 32.0, south: 28.6, east: 38.2, north: 35.6 };
+/**
+ * Land is clipped wider than the water, and the difference is deliberate.
+ *
+ * The basemap paints sea as a background colour and lays land polygons over it, so
+ * anywhere the land data stops, the map claims ocean. `AtlasMap` fences the camera
+ * to lon 28.5..41.5 and lat 26.5..37.5, which means the land outline has to cover at
+ * least that much or a reader panning east of Amman sails into an invented sea. This
+ * box is the camera fence plus a degree of margin.
+ */
+const LAND_BBOX = { west: 27.5, south: 25.5, east: 42.5, north: 38.5 };
 
-/** The wide view, for Joshua 24's recital and the Before Joshua stages. */
-const WIDE_BBOX = { west: 24.0, south: 22.0, east: 50.0, north: 40.0 };
+/**
+ * Water stays clipped to the southern Levant, which is a curation decision rather
+ * than a performance one. Natural Earth's lake layer is modern: widening this box
+ * pulls in reservoirs like Lake Assad that were filled in the 1970s, and a study of
+ * Joshua should not draw them. The named-waterworks filter below catches some, but
+ * not reliably enough to trust at continental scale. Inside this box the water set
+ * is small enough to have been checked by hand: the Sea of Galilee, the Dead Sea,
+ * and the Jordan.
+ */
+const WATER_BBOX = { west: 32.0, south: 28.6, east: 38.2, north: 35.6 };
+
+/**
+ * The wide view, for Joshua 24's recital and the Before Joshua stages. Again sized
+ * past its camera fence of lon 14..60, lat 14..48.
+ */
+const WIDE_BBOX = { west: 13.0, south: 13.0, east: 61.0, north: 49.0 };
 
 const NE_BASE =
   "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson";
@@ -187,7 +209,7 @@ console.log("Building bundled basemap from Natural Earth (public domain)\n");
 
 /* Land, at two resolutions for two zoom regimes. */
 for (const [name, topoFile, bbox, dp] of [
-  ["land", "land-10m.json", STUDY_BBOX, 4],
+  ["land", "land-10m.json", LAND_BBOX, 4],
   ["land-wide", "land-50m.json", WIDE_BBOX, 3],
 ]) {
   const topo = JSON.parse(
@@ -215,9 +237,9 @@ function roundGeom(g, dp) {
   const lakes = await cached("ne_10m_lakes");
   const out = [];
   for (const f of lakes.features) {
-    if (!f.geometry || !bboxOverlaps(f.geometry.coordinates, STUDY_BBOX)) continue;
+    if (!f.geometry || !bboxOverlaps(f.geometry.coordinates, WATER_BBOX)) continue;
     if (isModernWaterwork(f.properties?.name)) continue;
-    const g = clipPolygonGeometry(f.geometry, STUDY_BBOX);
+    const g = clipPolygonGeometry(f.geometry, WATER_BBOX);
     if (!g) continue;
     out.push({
       type: "Feature",
@@ -233,9 +255,9 @@ function roundGeom(g, dp) {
   const rivers = await cached("ne_10m_rivers_lake_centerlines");
   const out = [];
   for (const f of rivers.features) {
-    if (!f.geometry || !bboxOverlaps(f.geometry.coordinates, STUDY_BBOX)) continue;
+    if (!f.geometry || !bboxOverlaps(f.geometry.coordinates, WATER_BBOX)) continue;
     if (isModernWaterwork(f.properties?.name)) continue;
-    const g = clipLineGeometry(f.geometry, STUDY_BBOX);
+    const g = clipLineGeometry(f.geometry, WATER_BBOX);
     if (!g) continue;
     out.push({
       type: "Feature",

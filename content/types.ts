@@ -448,16 +448,31 @@ export const LAYERS: Record<
       "Rough areas of influence for peoples and city-states. Deliberately drawn as soft zones, not borders.",
     defaultOn: false,
   },
+  /*
+   * On by default, unlike the other two optional layers.
+   *
+   * These are not overlays on the story; for chapters 13 to 21 they are the story.
+   * With them off, a reader opening Joshua 15 got the generic named regions and a note
+   * saying some features were hidden, while the panel beside the map discussed a
+   * boundary they could not see. Worse, allotment and remaining land are the pair the
+   * study most needs to hold together: assigned land and unpossessed land drawn over
+   * each other is the whole argument that victory was not occupation. Defaulting either
+   * off breaks the comparison before the reader can make it.
+   *
+   * Clutter is not a risk here. Both sets carry no `applicableMilestoneIds`, so a
+   * polygon appears only where a milestone names it, which means nothing territorial
+   * shows during the campaign chapters unless that beat is about it.
+   */
   allotments: {
     label: "Tribal allotments",
     description:
       "Land assigned to a tribe. An assignment only; possession is a separate question.",
-    defaultOn: false,
+    defaultOn: true,
   },
   "remaining-land": {
     label: "Remaining land",
     description: "Places and areas the book itself says were not possessed.",
-    defaultOn: false,
+    defaultOn: true,
   },
   "modern-reference": {
     label: "Modern reference",

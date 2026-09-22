@@ -290,7 +290,7 @@ export const GROUP_SEEDS: GroupSeed[] = [
     mappingNote:
       "Shown as the five cities plus the coastal plain they dominate, on the remaining-land layer. The dating question is flagged: if the conquest is placed early, the Philistine presence in Joshua 13 sits awkwardly with the archaeological picture of their settlement.",
     chapters: [13, 15],
-    layer: "remaining",
+    layer: "remaining-land",
     memberSiteIds: ["gaza", "ashkelon", "ashdod", "ekron", "gath"],
     cites: [
       {
@@ -314,7 +314,7 @@ export const GROUP_SEEDS: GroupSeed[] = [
     mappingNote:
       "Anchored to the coastal cities of Sidon and Tyre and the narrow plain behind them. Shown on the remaining-land layer.",
     chapters: [11, 13, 19],
-    layer: "remaining",
+    layer: "remaining-land",
     memberSiteIds: ["sidon", "tyre"],
   },
   {
@@ -327,7 +327,7 @@ export const GROUP_SEEDS: GroupSeed[] = [
     mappingNote:
       "Shown as an approximate area east of the lake, on the remaining-land layer, with the label marked approximate.",
     chapters: [12, 13],
-    layer: "remaining",
+    layer: "remaining-land",
   },
   {
     id: "maacathites",
@@ -338,7 +338,7 @@ export const GROUP_SEEDS: GroupSeed[] = [
       "A group in the far north near Hermon, named alongside the Geshurites among the unconquered.",
     mappingNote: "Approximate area near the Hermon foothills, marked as approximate.",
     chapters: [12, 13],
-    layer: "remaining",
+    layer: "remaining-land",
   },
   {
     id: "moab",

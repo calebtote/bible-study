@@ -71,14 +71,26 @@ export const CHAPTERS: Chapter[] = [
         kind: "what-brought-us-here",
         title: "What brought us here",
         body:
-          "Jericho has fallen, and Ai has been taken on a second attempt after [[entity:achan]]'s theft cost Israel a defeat. Between that recovery and this chapter Israel stood at [[entity:shechem]] to hear the whole law read aloud. So these envoys approach a people who have just publicly rebound themselves to Moses' instructions, among which is a flat prohibition on covenants with the peoples of the land.",
-        scriptureRefs: ["Joshua 8:30-35", "Deuteronomy 7:1-2", "Exodus 23:32"],
+          "Jericho has fallen, and Ai has been taken on a second attempt after [[entity:achan]]'s theft cost Israel a defeat. Between that recovery and this chapter Israel stood at [[entity:shechem]] to hear the whole law read aloud. So these envoys approach a people who have just publicly rebound themselves to Moses' instructions, among which is a flat prohibition on covenants with the peoples of the land.\n\n" +
+          "Those same instructions contain the loophole the envoys aim at. Deuteronomy 20 divides cities in two: one very far off may be offered terms, while the cities of these nearby nations may not. Distance is the whole test, and distance is the one thing the Gibeonites can fake.",
+        scriptureRefs: [
+          "Joshua 8:30-35",
+          "Deuteronomy 7:1-2",
+          "Deuteronomy 20:10-18",
+          "Exodus 23:32",
+        ],
         citations: [
           {
             sourceId: "block-deuteronomy",
             locator: "on Deuteronomy 7",
             supportedClaim:
               "Deuteronomy forbids treaty-making with the peoples of the land as part of its instruction about the nations",
+          },
+          {
+            sourceId: "block-deuteronomy",
+            locator: "on Deuteronomy 20:10-18",
+            supportedClaim:
+              "Deuteronomy's rules of war distinguish distant cities, which may be offered terms, from the nearby nations, making distance the operative criterion",
           },
         ],
         evidenceLabels: ["biblical-account"],
@@ -117,7 +129,7 @@ export const CHAPTERS: Chapter[] = [
         title: "Why it matters",
         body:
           "Israel's leaders discover they have been conned and conclude that this changes nothing, because God's name is attached to the promise. The question is not what Gibeon deserves but whose reputation is in the oath.\n\n" +
-          "Reformed treatments press the point. Calvin locates the sin in swearing rashly, not in refusing to break the oath afterwards, and the Westminster Confession holds that a lawful oath binds even to one's own loss while no oath binds anyone to sin. That is one Christian reading, not the only one.",
+          "Reformed treatments press the point. Calvin locates the sin in swearing rashly, not in refusing to break the oath afterwards, and the Westminster Confession holds that a lawful oath binds even to one's own loss while no oath binds anyone to sin. That is one Christian reading, not the only one. Others put the weight elsewhere, taking the chapter's real subject to be a Canaanite town that survives because of what it had heard about Yahweh, with the oath as the mechanism rather than the point.",
         scriptureRefs: ["Joshua 9:14", "Joshua 9:18-20"],
         citations: [
           {
@@ -125,6 +137,11 @@ export const CHAPTERS: Chapter[] = [
             locator: "on Joshua 9",
             supportedClaim:
               "Calvin locates Israel's fault in the rashness of the oath rather than in the refusal to break it",
+          },
+          {
+            sourceId: "hawk-joshua",
+            supportedClaim:
+              "A reading that treats the Gibeonites' survival, like Rahab's, as the chapter's central concern rather than the ethics of the oath",
           },
           {
             sourceId: "westminster-confession",
@@ -210,7 +227,7 @@ export const CHAPTERS: Chapter[] = [
       "outsiders-and-belonging",
       "obedience-and-failure",
     ],
-    wordCount: 636,
+    wordCount: 477,
   },
 
   /* ================================================================ */
@@ -250,7 +267,7 @@ export const CHAPTERS: Chapter[] = [
           "[[entity:adoni-zedek]] of [[entity:jerusalem]] does the arithmetic. Gibeon is a substantial town whose men are fighters, and it has gone over to Israel. He calls in [[entity:hoham]] of [[entity:hebron]], [[entity:piram]] of [[entity:jarmuth]], [[entity:japhia]] of [[entity:lachish]] and [[entity:debir-king]] of [[entity:eglon]], and the five encamp against Gibeon.\n\n" +
           "Gibeon sends to [[entity:gilgal]]: do not abandon your servants. The treaty Israel was tricked into now obliges it to fight. [[entity:joshua]] marches all night and comes on them suddenly. They break and run west along the only good road off the plateau, and the pursuit follows them down the [[entity:upper-beth-horon]] descent, hailstones killing more than the sword does, as far as [[entity:azekah]].\n\n" +
           "Into this the narrator sets two lines of poetry addressed to sun and moon, quoted from the book of Jashar, and comments that no day was ever like it, because God listened to a man.\n\n" +
-          "The five kings are found hiding in a cave and killed. The chapter then closes with a compressed list of towns struck, and with [[entity:horam]] of [[entity:gezer]] destroyed in the field when he comes to help [[entity:lachish]].",
+          "The five kings are found hiding in a cave and killed. The chapter then closes with a compressed list of towns struck, and with [[entity:horam]] of [[entity:gezer]] destroyed in the field when he comes to help [[entity:lachish]]. The final verse sends the whole army back down to the camp at Gilgal, which is the plainest signal in the chapter that nothing has been garrisoned.",
         scriptureRefs: ["Joshua 10:1-43"],
         citations: [
           {
@@ -267,7 +284,8 @@ export const CHAPTERS: Chapter[] = [
         kind: "what-brought-us-here",
         title: "What brought us here",
         body:
-          "This chapter is the bill for chapter 9. The treaty that looked like an embarrassment drags Israel into a war it did not choose, against five cities at once. Gibeon's defection matters to the southern rulers for the same reason it mattered to Israel: the town commands the plateau road, and losing it opens the ridge from the north.",
+          "This chapter is the bill for chapter 9. The treaty that looked like an embarrassment drags Israel into a war it did not choose, against five cities at once. Gibeon's defection matters to the southern rulers for the same reason it mattered to Israel: the town commands the plateau road, and losing it opens the ridge from the north.\n\n" +
+          "Israel also has to answer from where it still is. The camp is down at [[entity:gilgal]] in the Jordan valley, a day's walk and a thousand metres below the town it is now sworn to protect, and the coalition is already encamped against it.",
         scriptureRefs: ["Joshua 9:15-21", "Joshua 10:1-6"],
         citations: [
           {
@@ -425,7 +443,7 @@ export const CHAPTERS: Chapter[] = [
       "promise-and-fulfillment",
       "judgment-and-mercy",
     ],
-    wordCount: 687,
+    wordCount: 466,
   },
 
   /* ================================================================ */
@@ -481,9 +499,16 @@ export const CHAPTERS: Chapter[] = [
         kind: "what-brought-us-here",
         title: "What brought us here",
         body:
-          "Jabin reacts as [[entity:adoni-zedek]] did: an army has appeared in the hill country and the usual arrangements no longer hold. The difference is scale. Hazor was the dominant power of the north, and what it assembles is drawn from four separate zones of country. The north takes a different kind of fight, and the text concedes that it took a long time.",
+          "Jabin reacts as [[entity:adoni-zedek]] did: an army has appeared in the hill country and the usual arrangements no longer hold. The difference is scale. Hazor was the dominant power of the north, and what it assembles is drawn from four separate zones of country. The north takes a different kind of fight, and the text concedes that it took a long time.\n\n" +
+          "Geography accounts for some of that. The southern campaign turned on one ridge road and one descent; the north is open country cut by broad valleys, so a force built around chariots never has to funnel itself into a pass.",
         scriptureRefs: ["Joshua 10:1-5", "Joshua 11:1-5", "Joshua 11:18"],
-        citations: [],
+        citations: [
+          {
+            sourceId: "aharoni-land-of-bible",
+            supportedClaim:
+              "The northern valleys are open country suited to chariot forces, unlike the single ridge route of the southern campaign",
+          },
+        ],
         evidenceLabels: ["biblical-account"],
       },
       {
@@ -622,7 +647,7 @@ export const CHAPTERS: Chapter[] = [
       "canaanites",
     ],
     themeIds: ["rest", "promise-and-fulfillment", "obedience-and-failure"],
-    wordCount: 680,
+    wordCount: 444,
   },
 
   /* ================================================================ */
@@ -655,6 +680,7 @@ export const CHAPTERS: Chapter[] = [
         body:
           "The chapter falls in two halves. Verses 1 to 6 look east across the Jordan and credit [[entity:moses]]: [[entity:sihon]] of [[entity:heshbon]], whose reach runs from the [[entity:arnon-river]] up to the [[entity:jabbok-river]], and [[entity:og]] of Bashan at [[entity:ashtaroth]] and [[entity:edrei]]. Their land went to Reuben, Gad and half of Manasseh before this book opened.\n\n" +
           "Verses 7 to 24 turn west and credit [[entity:joshua]]. The frame is the pair of limits used in chapter 11, [[entity:baal-gad]] to [[entity:mount-halak]], then the physical zones. Then the list runs, each entry the same shape. The king of [[entity:jericho]], one. The king of [[entity:ai]], one. On through [[entity:jerusalem]], [[entity:hebron]], [[entity:lachish]], [[entity:eglon]], [[entity:gezer]], [[entity:debir]], down to [[entity:hormah]] and [[entity:arad]], north to [[entity:hazor]], [[entity:megiddo]], [[entity:taanach]], [[entity:dor]] and [[entity:tirzah]]. Thirty-one kings in total.\n\n" +
+          "Verse 8 puts the zones and the peoples together, hill country and lowland and Arabah and slopes and wilderness and Negev, Hittite and Amorite and Canaanite and Perizzite and Hivite and Jebusite. That doubled formula is what the book reaches for when it wants to say all of it at once.\n\n" +
           "Nothing is narrated. No city is said to be occupied. The repeated word is \"king\", and the repeated number is one.",
         scriptureRefs: ["Joshua 12:1-24"],
         citations: [
@@ -672,8 +698,15 @@ export const CHAPTERS: Chapter[] = [
         kind: "what-brought-us-here",
         title: "What brought us here",
         body:
-          "The eastern half reaches back before Joshua begins, to the defeats the Gibeonite envoys cited as old news in chapter 9. The western half gathers Jericho and Ai, the southern campaign that Gibeon's treaty triggered, and the northern coalition. The register is the hinge of the book: the fighting ends here, and chapter 13 opens with God telling Joshua that much land remains.",
-        scriptureRefs: ["Numbers 21:21-35", "Joshua 9:10", "Joshua 13:1"],
+          "The eastern half reaches back before Joshua begins, to the defeats the Gibeonite envoys cited as old news in chapter 9. The western half gathers Jericho and Ai, the southern campaign that Gibeon's treaty triggered, and the northern coalition. The register is the hinge of the book: the fighting ends here, and chapter 13 opens with God telling Joshua that much land remains.\n\n" +
+          "One entry has already shown how to read the rest. [[entity:horam]] of [[entity:gezer]] is struck down in chapter 10 while his city is never said to fall, and he is counted here all the same.",
+        scriptureRefs: [
+          "Numbers 21:21-35",
+          "Joshua 9:10",
+          "Joshua 10:33",
+          "Joshua 12:12",
+          "Joshua 13:1",
+        ],
         citations: [],
         evidenceLabels: ["biblical-account"],
       },
@@ -739,8 +772,8 @@ export const CHAPTERS: Chapter[] = [
         title: "Details worth noticing",
         body:
           "Moses is credited with the east, Joshua with the west.\n\n" +
-          "Ten of the thirty-one cannot be placed. [[entity:makkedah]], [[entity:libnah]], [[entity:hormah]] and [[entity:madon]] have no secure location, and Geder, Tappuah, Hepher, Lassharon, Jokneam and Goiim in Gilgal are no better off. Of the twenty-one that can be shown, four are disputed.\n\n" +
-          "[[entity:ai]] and [[entity:arad]] are both in the list: Ai's identification is the sharpest site problem in the book, and the mound at Arad has a long occupation gap in the relevant period.",
+          "Ten of the thirty-one cannot be placed. [[entity:makkedah]], [[entity:libnah]], [[entity:hormah]] and [[entity:madon]] have no secure location, and neither do Geder, Tappuah, Hepher, Lassharon, Jokneam or Goiim in Gilgal. Of the twenty-one that can be shown, four are disputed.\n\n" +
+          "[[entity:ai]] and [[entity:arad]] are both in the list: Ai's identification is the sharpest site problem in the book, and the mound at Arad has a long occupation gap here.",
         scriptureRefs: ["Joshua 12:6", "Joshua 12:7", "Joshua 12:14-24"],
         citations: [
           {
@@ -762,7 +795,7 @@ export const CHAPTERS: Chapter[] = [
         kind: "difficult-questions",
         title: "Difficult questions",
         body:
-          "If thirty-one kings were struck down, why is the country not Israel's? The register claims victories, not real estate, and the book answers the question itself one chapter later by naming what remains.\n\n" +
+          "If thirty-one kings were struck down, why is the country not Israel's? The register claims victories, not real estate, and the book answers one chapter later by naming what remains.\n\n" +
           "To a historian the list is harder. Several named cities have no Late Bronze destruction to point to, and some were not occupied then at all. Scholars split accordingly: some read chapter 12 as an early administrative source, others as a later composition assembling names into a monument. Either way the genre is a list of rulers. A list of kings is not a claim to their cities, and treating it as one has produced more bad maps of Joshua than any other single mistake.",
         scriptureRefs: ["Joshua 12:24", "Joshua 13:1-6"],
         citations: [
@@ -801,6 +834,7 @@ export const CHAPTERS: Chapter[] = [
       "sihon",
       "og",
       "jabin",
+      "horam",
       "heshbon",
       "dibon",
       "ashtaroth",
@@ -846,7 +880,7 @@ export const CHAPTERS: Chapter[] = [
       "land-and-inheritance",
       "obedience-and-failure",
     ],
-    wordCount: 664,
+    wordCount: 480,
   },
 ];
 

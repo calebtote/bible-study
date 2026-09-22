@@ -28,10 +28,13 @@ import {
   type Chapter,
   type Citation,
   type DifficultQuestion,
+  type HistoricalAnchor,
   type Milestone,
   type PersonProfile,
   type Theme,
+  type TimelineEvent,
 } from "../content/types";
+import type { DossierExtra } from "../content/entities/dossiers";
 import {
   BEFORE_STAGE_IDS,
   DIFFICULT_QUESTION_IDS,
@@ -531,8 +534,23 @@ inScope("milestones");
     if (orders.join(",") !== expected.join(",")) {
       fail(`chapter ${chapter} milestone orders are [${orders.join(", ")}]; expected 1..n`);
     }
-    if (list.length > 6) {
-      warn(`chapter ${chapter} has ${list.length} milestones; 2 to 5 is the norm`);
+    /*
+     * The ceiling depends on what kind of chapter it is. A narrative chapter with many
+     * beats usually means the author split one scene too finely. A chapter that is a
+     * register of tribal allotments has exactly as many beats as it has tribes, and
+     * Joshua 19 legitimately runs to seven: six tribes plus Joshua's own inheritance at
+     * Timnath-serah. Warning on that taught the reader of this report to skip it, which
+     * costs more than the warning was ever worth.
+     */
+    const territorial = list.filter(
+      (m) => m.sequenceType === "allotment" || m.sequenceType === "summary"
+    ).length;
+    const ceiling = territorial > list.length / 2 ? 8 : 6;
+    if (list.length > ceiling) {
+      warn(
+        `chapter ${chapter} has ${list.length} milestones, above the ${ceiling} expected for ` +
+          `${ceiling === 8 ? "a territorial" : "a narrative"} chapter`
+      );
     }
     if (list.length < 2) {
       fail(`chapter ${chapter} has only ${list.length} milestone`);
@@ -655,11 +673,11 @@ if (stages) {
 }
 
 const profiles = await optional(
-  "content/people.ts",
-  (m) => m.PERSON_PROFILES as PersonProfile[] | undefined
+  "content/people/profiles.ts",
+  (m) => m.PROFILES as PersonProfile[] | undefined
 );
 if (profiles) {
-  inScope("people.ts");
+  inScope("people/profiles.ts");
   const ids = new Set(profiles.map((p) => p.entityId));
   for (const want of FULL_PROFILE_IDS) {
     if (!ids.has(want)) fail(`missing full profile for "${want}"`);
@@ -682,6 +700,220 @@ if (profiles) {
     }
   }
   notes.push(`${profiles.length} person profiles authored.`);
+}
+
+const timeline = await optional(
+  "content/people/timeline.ts",
+  (m) => m.TIMELINE_EVENTS as TimelineEvent[] | undefined
+);
+if (timeline) {
+  inScope("people/timeline.ts");
+  const seen = new Set<string>();
+  const milestoneIds = new Set(allMilestones.map((m) => m.id));
+
+  for (const e of timeline) {
+    if (seen.has(e.id)) fail(`duplicate timeline event id "${e.id}"`);
+    seen.add(e.id);
+
+    if (!e.label?.trim()) fail(`"${e.id}" has no label`);
+    if (!e.description?.trim()) fail(`"${e.id}" has no description`);
+    if (e.scriptureRefs.length === 0) fail(`"${e.id}" cites no Scripture`);
+    checkEntityRefs(e.entityIds, `timeline event "${e.id}"`);
+    if (e.entityIds.length === 0) {
+      fail(`"${e.id}" names no entity, so it cannot appear on anyone's timeline`);
+    }
+
+    /*
+     * The one rule that keeps the timeline from becoming a chronology: an event
+     * whose order the text does not fix must not be presented as if it did. The
+     * interface renders these three certainties differently, so a mislabelled
+     * event is a visual claim about sequence, not just a metadata slip.
+     */
+    if (!["explicit-sequence", "inferred-sequence", "undated"].includes(e.sequenceCertainty)) {
+      fail(`"${e.id}" has unknown sequenceCertainty "${e.sequenceCertainty}"`);
+    }
+
+    /* Anything past Joshua's death is a spoiler by definition. */
+    if (e.era === "after-joshua" && !e.spoiler) {
+      fail(`"${e.id}" is in the after-joshua era but is not marked spoiler`);
+    }
+
+    /* A link the reader can click has to land somewhere that exists. */
+    if (e.link?.kind === "milestone" && !milestoneIds.has(e.link.milestoneId)) {
+      const chapter = Number(e.link.milestoneId.match(/^ch(\d+)-/)?.[1]);
+      if (Number.isFinite(chapter) && !milestonesByChapter.has(chapter)) {
+        warn(
+          `"${e.id}" links to "${e.link.milestoneId}" in chapter ${chapter}, which is not authored yet`
+        );
+      } else {
+        fail(`"${e.id}" links to unknown milestone "${e.link.milestoneId}"`);
+      }
+    }
+    if (e.link?.kind === "before-stage" && !STAGES.has(e.link.stageId)) {
+      fail(`"${e.id}" links to unknown Before Joshua stage "${e.link.stageId}"`);
+    }
+    if (e.link?.kind === "chapter" && (e.link.chapter < 1 || e.link.chapter > 24)) {
+      fail(`"${e.id}" links to chapter ${e.link.chapter}`);
+    }
+  }
+
+  const byCertainty = (c: string) =>
+    timeline.filter((e) => e.sequenceCertainty === c).length;
+  notes.push(
+    `${timeline.length} timeline events: ${byCertainty("explicit-sequence")} explicit, ` +
+      `${byCertainty("inferred-sequence")} inferred, ${byCertainty("undated")} undated.`
+  );
+}
+
+const anchors = await optional(
+  "content/world-at-joshua-1.ts",
+  (m) => m.HISTORICAL_ANCHORS as HistoricalAnchor[] | undefined
+);
+if (anchors) {
+  inScope("world-at-joshua-1.ts");
+  const seen = new Set<string>();
+  for (const a of anchors) {
+    if (seen.has(a.id)) fail(`duplicate anchor id "${a.id}"`);
+    seen.add(a.id);
+    if (!a.label?.trim()) fail(`"${a.id}" has no label`);
+    if (!a.description?.trim()) fail(`"${a.id}" has no description`);
+    /*
+     * This is the file's whole reason for existing: absolute dates live only here,
+     * and only alongside the reconstruction they belong to. A date with no named
+     * chronology is the exact error the model was built to prevent.
+     */
+    if (
+      !["early-date-15th-century", "late-date-13th-century", "external-fixed-point", "no-consensus"].includes(
+        a.chronology
+      )
+    ) {
+      fail(`"${a.id}" has unknown chronology "${a.chronology}"`);
+    }
+    if (a.approximateDate && a.chronology === "no-consensus") {
+      warn(
+        `"${a.id}" gives a date but its chronology is "no-consensus"; make sure the prose says whose figure it is`
+      );
+    }
+    if (a.citations.length === 0) {
+      fail(`"${a.id}" carries a chronological claim with no citation`);
+    }
+    checkCitations(a.citations, `anchor "${a.id}"`);
+  }
+  notes.push(`${anchors.length} historical anchors, each naming its chronology.`);
+}
+
+/**
+ * Absolute dates outside the anchors. A "c. 1200 BC" dropped into a chapter body
+ * has escaped the one place in the model that is required to say which
+ * reconstruction it assumes, so the scan is over the raw source text.
+ */
+inScope("date discipline");
+{
+  const DATE = /\b(?:c\.\s*)?1[0-9]{3}\s*(?:BC|BCE)\b/g;
+
+  /*
+   * A date is acceptable in prose when it says which reconstruction it belongs to, so
+   * the test is proximity rather than mere presence. Checking the whole file was too
+   * weak to be useful: one qualified date excused every unqualified one beside it, and
+   * conversely a file that handled its dates properly warned forever, which trains the
+   * reader of the report to ignore it. The window is generous because the qualification
+   * usually lands in the next sentence or two rather than the same clause.
+   */
+  const CHRONOLOGY =
+    /\b(?:early|late)\b[^.]{0,40}\b(?:date|chronology)\b|\b(?:fifteenth|thirteenth|15th|13th)[- ]century\b|\bchronology\b/i;
+  const WINDOW = 420;
+
+  const scanned = [
+    ...chapterFiles.map((f) => path.join("content", "chapters", f)),
+    "content/themes.ts",
+    "content/difficult-questions.ts",
+    "content/before-joshua.ts",
+    "content/people/profiles.ts",
+    "content/people/timeline.ts",
+  ];
+  for (const rel of scanned) {
+    const file = path.join(ROOT, rel);
+    if (!fs.existsSync(file)) continue;
+    const text = fs.readFileSync(file, "utf8");
+    const bare = new Set<string>();
+    for (const m of text.matchAll(DATE)) {
+      const at = m.index ?? 0;
+      const around = text.slice(Math.max(0, at - WINDOW), at + WINDOW);
+      if (!CHRONOLOGY.test(around)) bare.add(m[0]);
+    }
+    if (bare.size) {
+      warn(
+        `${rel} states absolute dates with no nearby chronology (${[...bare].join(", ")}). ` +
+          `Name the reconstruction each assumes, or move it into HISTORICAL_ANCHORS.`
+      );
+    }
+  }
+}
+
+const dossiers = await optional(
+  "content/entities/dossiers.ts",
+  (m) => m.DOSSIER_EXTRAS as DossierExtra[] | undefined
+);
+if (dossiers) {
+  inScope("entities/dossiers");
+  const seen = new Set<string>();
+  for (const d of dossiers) {
+    if (seen.has(d.entityId)) fail(`two dossier entries for "${d.entityId}"`);
+    seen.add(d.entityId);
+    if (!ENTITY_IDS.has(d.entityId)) {
+      fail(`dossier entry for unknown entity "${d.entityId}"`);
+    }
+    checkEntityRefs(d.relatedEntityIds, `dossier "${d.entityId}"`);
+
+    const blocks = [
+      ["earlier", d.earlier],
+      ["historical", d.historical],
+      ["uncertainties", d.uncertainties],
+      ["later", d.later],
+    ] as const;
+
+    for (const [name, block] of blocks) {
+      if (!block) continue;
+      if (!block.body?.trim()) fail(`"${d.entityId}" has an empty ${name} block`);
+      checkCitations(block.citations, `dossier "${d.entityId}" ${name}`);
+      checkBodyLinks(block.body ?? "", `dossier "${d.entityId}" ${name}`);
+      for (const label of block.evidenceLabels ?? []) {
+        if (!(label in EVIDENCE_LABELS)) {
+          fail(`"${d.entityId}" ${name} has unknown evidence label "${label}"`);
+        }
+      }
+    }
+
+    /*
+     * The attestation trap. A `historical` block is the one place a reader is most
+     * likely to slide from "the site is identified" to "the story is confirmed", so
+     * a block that claims external attestation has to cite something for it.
+     */
+    if (
+      d.historical?.evidenceLabels?.includes("externally-attested") &&
+      !d.historical.citations?.length
+    ) {
+      fail(
+        `"${d.entityId}" claims external attestation with no citation, which is the ` +
+          `one thing the dossier must never do`
+      );
+    }
+
+    for (const r of d.relationships ?? []) {
+      if (!ENTITY_IDS.has(r.targetEntityId)) {
+        fail(`"${d.entityId}" relates to unknown entity "${r.targetEntityId}"`);
+      }
+    }
+  }
+
+  const disputed = SITE_SEEDS.filter(
+    (s) => s.certainty === "disputed" || s.certainty === "unknown"
+  );
+  const covered = disputed.filter((s) => seen.has(s.id));
+  notes.push(
+    `${dossiers.length} authored dossier entries; ${covered.length} of ${disputed.length} ` +
+      `disputed or unlocated sites have one.`
+  );
 }
 
 /* ------------------------------------------------------------------ */
