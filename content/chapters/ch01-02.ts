@@ -78,8 +78,8 @@ export const CHAPTERS: Chapter[] = [
         kind: "what-brought-us-here",
         title: "What brought us here",
         body:
-          "[[entity:joshua]] is not a new name here. He appears as Moses' aide from the Exodus onward, as one of the twelve men sent to scout Canaan, and as one of only two of that generation permitted to enter it. His appointment has already happened twice: Moses laid hands on him before [[entity:eleazar]] and the assembly, and Moses charged him publicly in front of all Israel. Chapter 1 is God confirming a transfer that Moses had already made.\n\n" +
-          "The eastern arrangement is older too. [[entity:tribe-reuben]] and [[entity:tribe-gad]] asked Moses for the land taken from [[entity:sihon]] and [[entity:og]], and the price Moses set was that their men fight west of the river until the rest of Israel had rest. Verses 12 to 18 are Joshua calling that in, and chapter 22 is where the account is finally settled.",
+          "[[entity:joshua]] is not a new name here. He appears as Moses' aide from the Exodus onward, as one of the twelve men sent to scout Canaan, and as one of only two of that generation permitted to enter it. His appointment has already happened twice: [[ref:Numbers 27:18-23|Moses laid hands on him before]] [[entity:eleazar]] and the assembly, and [[ref:Deuteronomy 31:7-8|Moses charged him publicly in front of all Israel]]. Chapter 1 is God confirming a transfer that Moses had already made.\n\nThe obituary is heavier than it sounds. Deuteronomy closes by saying [[ref:Deuteronomy 34:10-12|no prophet like Moses has arisen since]], so the man now told to lead steps into a place the text has just declared unfillable.\n\n" +
+          "The eastern arrangement is older too. [[entity:tribe-reuben]] and [[entity:tribe-gad]] [[ref:Numbers 32:1-27|asked Moses for the land taken from]] [[entity:sihon]] and [[entity:og]], and the price Moses set was that their men fight west of the river until the rest of Israel had rest. Verses 12 to 18 are Joshua calling that in, and chapter 22 is where the account is finally settled.",
         scriptureRefs: [
           "Numbers 14:6-9",
           "Numbers 27:18-23",
@@ -172,9 +172,20 @@ export const CHAPTERS: Chapter[] = [
         title: "Details worth noticing",
         body:
           "Verse 1 calls Moses the servant of Yahweh and [[entity:joshua]] the servant of Moses. Joshua receives the higher title only at his death, in Joshua 24:29.\n\n" +
+          "The promise of presence opens the charge in verse 5, closes it in verse 9, and returns in verse 17 in the people's mouths. [[ref:Exodus 3:11-12|Moses got the same answer at the burning bush]], and the charge carries an older echo besides: do not fear, the LORD is with us. [[ref:Numbers 14:6-9|Joshua said those words forty years earlier]], against the panic at Kadesh.\n\n" +
+          "Meditate on it day and night has one close relative, [[ref:Psalm 1|the psalm that opens the Psalter]], where the same habit grows a tree planted by water rather than a conqueror.\n\n" +
           "Verse 4's phrase about all the land of the [[entity:hittites]] sits oddly in a description of Canaan, since the Hittite kingdom lay well to the north in Anatolia and Syria. It is one reason commentators read the verse as a horizon sketched in famous landmarks rather than as a surveyed boundary.\n\n" +
           "Three days turns up repeatedly in these opening chapters. The crossing is three days off here, [[entity:rahab]] tells the spies to hide three days in the hills, and the officers move through the camp after three days in chapter 3. The intervals do not obviously line up into one timetable, and the book makes no attempt to reconcile them.",
-        scriptureRefs: ["Joshua 1:1", "Joshua 1:4", "Joshua 1:11", "Joshua 24:29"],
+        scriptureRefs: [
+          "Joshua 1:1",
+          "Joshua 1:4",
+          "Joshua 1:11",
+          "Joshua 1:16-18",
+          "Joshua 24:29",
+          "Exodus 3:11-12",
+          "Numbers 14:6-9",
+          "Psalm 1",
+        ],
         citations: [
           {
             sourceId: "hess-joshua",
@@ -238,6 +249,7 @@ export const CHAPTERS: Chapter[] = [
       "Verse 4 describes a land reaching the Euphrates and Joshua 13:1 says much of it is still unpossessed. What should a map of Joshua 1 actually draw?",
       "Joshua is introduced as Moses' servant and does not get a title of his own until he dies. What is the book doing by keeping him in Moses' shadow through the whole commission?",
       "The eastern tribes already have their land, and are held to [[ref:Numbers 32:20-27|fighting for land they will never live on]] until everyone else has rest. What holds an arrangement like that together?",
+      "In verses 16 to 18 the people answer Joshua with the same words God gave him: only be strong and courageous, may the LORD your God be with you. What changes for a leader when the promise comes back from the people being led?",
     ],
     relatedEntityIds: [
       "joshua",
