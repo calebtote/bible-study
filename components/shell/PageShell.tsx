@@ -3,9 +3,9 @@
  *
  * The study screen is three panes fighting for space. These pages are the
  * opposite: one column, wide margins, and nothing competing with the prose. The
- * measure is capped near 68 characters because that is where a serif text face
- * stops being comfortable, and the generous top space exists so the page opens
- * on a title rather than on a wall.
+ * measure sits around 80 characters, roomy for a serif text face while still a
+ * single comfortable sweep of the eye, and the generous top space exists so the
+ * page opens on a title rather than on a wall.
  *
  * `eyebrow` is the small caps line above the title. It is doing navigational
  * work, not decorative work: a reader arriving from a shared link needs to know
@@ -32,7 +32,7 @@ export function PageShell({
   return (
     <div className="quiet-scroll h-[calc(100dvh-3rem)] overflow-y-auto">
       <div
-        className={`mx-auto px-5 pt-10 pb-24 sm:px-8 ${wide ? "max-w-5xl" : "max-w-2xl"}`}
+        className={`mx-auto px-5 pt-10 pb-24 sm:px-8 ${wide ? "max-w-5xl" : "max-w-3xl"}`}
       >
         <header className="rule-b pb-6">
           <div className="flex flex-wrap items-end justify-between gap-4">
@@ -45,7 +45,7 @@ export function PageShell({
             {aside && <div className="shrink-0">{aside}</div>}
           </div>
           {standfirst && (
-            <p className="mt-3 max-w-xl font-serif text-[15.5px] leading-relaxed text-ink-soft">
+            <p className="mt-3 max-w-2xl font-serif text-[15.5px] leading-relaxed text-ink-soft">
               {standfirst}
             </p>
           )}

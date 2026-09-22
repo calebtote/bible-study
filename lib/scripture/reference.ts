@@ -41,7 +41,9 @@ export function parseRef(raw: string): ParsedRef | null {
     return null;
   }
 
-  const slug = `${book.toLowerCase().replace(/\s+/g, "-")}-${chapter}`;
+  /* "Psalm 95" is how a single psalm is cited; the bundle stores the book as psalms. */
+  const slugBook = book.toLowerCase() === "psalm" ? "psalms" : book.toLowerCase();
+  const slug = `${slugBook.replace(/\s+/g, "-")}-${chapter}`;
 
   return {
     display: text,

@@ -152,11 +152,11 @@ export function MapLegend({
         actually be read rather than in a footnote at the bottom.
       */}
       <p className="bg-ivory-deep px-3.5 py-2.5 text-[11.5px] leading-relaxed text-ink-soft">
-        Two things this map never shows. Winning a battle is not holding a place,
-        so victories are marks at points and never shaded ground. Being assigned
-        land is not possessing it, so allotments are drawn open and hatched, and
-        the land the book says was not taken stays on its own layer while the
-        victories mount up.
+        Two things this map refuses to show. A victory is a mark at a point,
+        because winning a battle and holding the ground are different claims. An
+        allotment is drawn open and hatched, because assignment and possession
+        are different claims too, and the land the book says was never taken
+        keeps its own layer while the victories mount up.
       </p>
 
       <ul className="pb-3">
@@ -280,7 +280,7 @@ export function MapLegend({
                   )
                 }
                 title={EVENT_ICON_MEANING[icon]}
-                body="A mark at a point, not an area. It records that something happened here."
+                body="A mark at a single point, recording that something happened here. It claims nothing about the surrounding ground."
               />
             ))}
           </>
@@ -516,7 +516,7 @@ export function MapLegend({
                   <circle cx="25" cy="4" r="2.4" fill={MAP_COLORS.covenant} />
                 </svg>
               }
-              title="A set of towns, not a territory"
+              title="A scattered set of towns"
               body="Levi's towns, Simeon's towns inside Judah, the cities of refuge. Points only, because the text assigns towns here and not a block of land."
             />
           </>

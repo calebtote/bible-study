@@ -166,7 +166,7 @@ export const CHAPTERS: Chapter[] = [
         body:
           "The knives are flint. Israel had metal, and the text neither explains the choice nor treats it as remarkable; the same stone tools appear in Exodus 4.\n\n" +
           "Joshua 5:2 says to circumcise Israel *a second time*, which has puzzled readers since antiquity and reads differently in the Greek tradition. Commentators offer solutions; none has settled the matter.\n\n" +
-          "Gibeath-haaraloth is named once and never again. [[entity:gilgal]] is explained by a play on a verb meaning to roll, which is how the text links the place to the rolled-away reproach. That is a wordplay, not a linguistic derivation.\n\n" +
+          "Gibeath-haaraloth is named once and never again. [[entity:gilgal]] is explained by a play on a verb meaning to roll, which is how the text links the place to the rolled-away reproach. The text is punning, and knows it.\n\n" +
           "Exodus 16 already reports that the manna lasted until Israel reached the edge of Canaan. Joshua 5:12 supplies the date, and pairs the last of the manna with the first of the local grain inside a single verse.\n\n" +
           "Two details tie the closing scene to earlier ones. A messenger with a drawn sword had stood in [[entity:balaam]]'s road, and the instruction to remove sandals repeats what [[entity:moses]] heard at the bush.",
         scriptureRefs: [
@@ -401,8 +401,8 @@ export const CHAPTERS: Chapter[] = [
         kind: "details-worth-noticing",
         title: "Details worth noticing",
         body:
-          "Seven organises the chapter: seven priests, seven horns, seven circuits on the seventh of seven days. The instrument is the ram's horn, the same one that announces the jubilee, not a signalling trumpet.\n\n" +
-          "The ark travels in the middle of the formation, with armed men before and behind. They are an escort, not a striking force, and they assault nothing.\n\n" +
+          "Seven organises the chapter: seven priests, seven horns, seven circuits on the seventh of seven days. The instrument is the ram's horn that announces the jubilee, an instrument of proclamation.\n\n" +
+          "The ark travels in the middle of the formation, with armed men before and behind. They are an escort, and they assault nothing.\n\n" +
           "The Hebrew of 6:20 says the wall fell in its place, under itself. It does not describe a breach or a section coming down, which is part of why the verse has drawn so much attention.\n\n" +
           "The metal is consigned to the treasury of Yahweh's house. Chapter 7 turns on exactly that clause, so the inventory here is not housekeeping.\n\n" +
           "[[entity:rahab]]'s family is put *outside* the camp, and the chapter then says she lived in the midst of Israel to this day, which is a later writer's note about a Canaanite household that was still there.\n\n" +
@@ -1049,12 +1049,12 @@ export const MILESTONES: Milestone[] = [
     scriptureRefs: ["Joshua 5:11-12", "Exodus 16:35"],
     narrative:
       "The day after Passover Israel eats unleavened cakes and parched grain from the produce of the land. The manna stops, and does not come again.\n\n" +
-      "This is a notice, not a scene. It reports the end of a forty-year arrangement in a single sentence and fixes no place, which is why the map here shows a region rather than a march. Nothing advances.\n\n" +
+      "This is a one-sentence notice. It closes a forty-year arrangement and fixes no place, which is why the map here shows a region and no march. Nothing advances.\n\n" +
       "What it changes is how Israel is fed. Until now food arrived daily and required no ground. From this verse on the people live on Canaan's harvests, which means depending on rainfall in the hills, on springs like Jericho's, and on holding or sharing the fields that produce the grain. Provision becomes agricultural, and therefore territorial. A good deal of what follows in the book, including the long complaints about land not yet possessed, is an argument about who works which fields.",
     entityIds: ["jericho", "gilgal", "region-jordan-valley", "region-hill-country-ephraim"],
     mapFeatureIds: ["region-jordan-valley", "site-jericho", "site-gilgal"],
     mapCaption:
-      "The manna ends and Israel begins eating grain grown in Canaan; the map shows the region the notice covers, not a movement.",
+      "The manna ends and Israel begins eating grain grown in Canaan; the map shows the region the notice covers, and nothing travels.",
     whatChanged:
       "Nothing moves, and that is the point. What changes is the economy behind the camp: Israel's food now comes from ground inside Canaan rather than from the wilderness.",
     geographyExplanation:
@@ -1169,7 +1169,7 @@ export const MILESTONES: Milestone[] = [
     mapCaption:
       "Once a day for six days the column circles Jericho and goes back to camp; the inset shows the order of march rather than real ground.",
     whatChanged:
-      "The map registers a repeated loop, not an advance. At the end of six days Israel is exactly where it was at the start and Jericho is untouched.",
+      "The map registers a repeated loop. At the end of six days Israel is exactly where it was at the start and Jericho is untouched.",
     geographyExplanation:
       "The circuit is short. Tell es-Sultan covers only a few hectares, so a walk around its base is a matter of several hundred metres, and the whole formation stays in view of the walls the entire time. Going out from [[entity:gilgal]] and back each day adds a few kilometres in each direction across flat, open plain some 250 metres below sea level, in heat that makes a midday march unpleasant even in spring. None of this is difficult ground, and that is the point worth taking from the map: the terrain neither helps nor hinders. The schematic inset is honest about the fact that what the text describes is the arrangement of the column, not the shape of the landscape.",
     sequenceType: "event",
@@ -1284,9 +1284,9 @@ export const MILESTONES: Milestone[] = [
       "region-jordan-valley",
     ],
     mapCaption:
-      "Jericho is left a ruin under an oath against rebuilding while word of Joshua spreads; the wide view shows the reach of the report, not a march.",
+      "Jericho is left a ruin under an oath against rebuilding while word of Joshua spreads; the wide view shows how far the report travels.",
     whatChanged:
-      "Nothing moves. Jericho is now a ruin under a curse rather than a city, and the wide frame stands for a reputation travelling, not for ground held.",
+      "Nothing moves. Jericho is now a ruin under a curse, and the wide frame stands for a reputation travelling.",
     geographyExplanation:
       "The oasis is too valuable to stay empty for long, which is what gives the curse its force. A perennial spring at the foot of the western hills, on the natural crossing between the Transjordan plateau and the central highlands, is the sort of place people rebuild whether or not anyone has sworn an oath about it, and the later notice about Hiel of [[entity:bethel]] shows exactly that happening. The wider frame also shows why a reputation would travel here: the valley is a corridor, and the routes leaving it climb west toward [[entity:bethel]] and [[entity:ai]] or run north and south along the river. News moves along those lines faster than armies do, and the next two chapters turn on what the hill-country towns had heard.",
     sequenceType: "summary",
@@ -1323,7 +1323,7 @@ export const MILESTONES: Milestone[] = [
     scriptureRefs: ["Joshua 7:1", "Joshua 6:18-19"],
     narrative:
       "Chapter 7 opens by looking back into chapter 6. While [[entity:jericho]] was being destroyed, [[entity:achan]] took some of what had been devoted, and the reader is told so before anyone in the camp knows.\n\n" +
-      "The verse is a narrator's aside, not a scene. It gives no time of day, no location inside the city and no witnesses; the burying under the tent floor is reported later, in Achan's own words. Nothing in Israel moves because of this verse, which is why the map here recalls [[entity:jericho]] and the camp rather than drawing an advance.\n\n" +
+      "The verse is a narrator's aside. It gives no time of day, no location inside the city and no witnesses; the burying under the tent floor is reported later, in Achan's own words. Nothing in Israel moves because of this verse, which is why the map here recalls [[entity:jericho]] and the camp rather than drawing an advance.\n\n" +
       "What it does establish is the chapter's structure. Israel is about to act on information it does not have, and the reader will watch it do so. The defeat at [[entity:ai]] arrives as a mystery to everyone in the story and to nobody reading it.",
     entityIds: ["achan", "joshua", "jericho", "gilgal", "ai", "tribe-judah"],
     mapFeatureIds: ["site-jericho", "site-gilgal"],
@@ -1354,7 +1354,7 @@ export const MILESTONES: Milestone[] = [
     narrative:
       "[[entity:joshua]] sends men up from [[entity:gilgal]] to look at [[entity:ai]], east of [[entity:bethel]]. They come back confident: the place is small, do not make the whole army climb, two or three thousand will do. About three thousand go.\n\n" +
       "The men of Ai come out and beat them. The account is specific about direction. Israel is chased from in front of the gate as far as a place called Shebarim, which nobody can now locate, and struck *on the descent*. That is not a detail about distance; it is a detail about slope. A force that has climbed more than a kilometre out of the valley is running back down it with pursuit behind.\n\n" +
-      "Thirty-six men die, and the hearts of the people melt and become like water. The number is small against the force sent and smaller still against Israel's strength. The chapter treats the collapse of confidence, not the casualties, as the disaster.",
+      "Thirty-six men die, and the hearts of the people melt and become like water. The number is small against the force sent and smaller still against Israel's strength. For the chapter, the disaster is the collapse of confidence; the casualty count barely registers.",
     entityIds: [
       "joshua",
       "ai",

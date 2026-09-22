@@ -206,12 +206,12 @@ export const SEQUENCE_TYPES: Record<
   summary: {
     label: "Summary statement",
     mapRule:
-      "A compressed report covering an unspecified span. The map shows scope, not a journey; no route animation.",
+      "A compressed report covering an unspecified span. The map shows the scope of the report; nothing travels.",
   },
   allotment: {
     label: "Territorial description",
     mapRule:
-      "An assignment of land, not a march or a conquest. Shown as an approximate region, never as controlled ground.",
+      "Land assigned by lot and described by boundary. Drawn as an approximate region, which says nothing about who held the ground.",
   },
   retrospective: {
     label: "Retrospective",
@@ -377,7 +377,7 @@ export const CERTAINTY_STYLES: Record<
   approximate: {
     label: "Approximate",
     description:
-      "The general area is known; the drawn point or line is a convenience, not a survey.",
+      "The general area is known; the drawn point or line places it for the eye without claiming survey precision.",
   },
   disputed: {
     label: "Disputed",
@@ -387,12 +387,12 @@ export const CERTAINTY_STYLES: Record<
   schematic: {
     label: "Schematic",
     description:
-      "A diagram, not a map. Drawn to explain a relationship rather than to assert a position on the ground.",
+      "A diagram explaining a relationship. Where it sits on the ground is beyond what the evidence gives.",
   },
   unknown: {
     label: "Location unknown",
     description:
-      "No location is asserted. Listed in the register and dossiers, absent from the map on purpose.",
+      "No location is asserted. It appears in the register and dossiers, and the map leaves it out on purpose.",
   },
 };
 
@@ -629,7 +629,7 @@ export interface Theme {
   entityIds: string[];
   scriptureRefs: string[];
   citations: Citation[];
-  /** Named Reformed emphases, presented as one Christian reading among others. */
+  /** Theological reflection continuing the theme, alongside other traditions' readings. */
   reformedPerspective?: { body: string; citations: Citation[] };
   /** Distinguishes explicit NT citation from later Christian typology. */
   newTestament?: {

@@ -141,7 +141,7 @@ export const CHAPTERS: Chapter[] = [
         kind: "why-it-matters",
         title: "Why it matters",
         body:
-          "The chapter's argument is continuity, not novelty. The land is the land sworn to the fathers; the instruction is the instruction given to Moses; the presence promised is the presence Moses had. Joshua is handed nothing of his own. Even the courage he is commanded to have is grounded in someone else's promise.\n\n" +
+          "The chapter's whole argument is continuity. The land is the land sworn to the fathers; the instruction is the instruction given to Moses; the presence promised is the presence Moses had. Joshua is handed nothing of his own. Even the courage he is commanded to have is grounded in someone else's promise.\n\n" +
           "Reformed readings press that hardest. Woudstra takes the land grant as one administration of a single covenant running from [[entity:abraham]] forward, so Joshua's task is to administer an inheritance rather than to win one, and Calvin reads verse 8 as making obedience the condition of the blessing without making it the ground of the gift. That is one Christian reading among several. Others put the accent on the conditionality itself, hearing in verses 7 and 8 a warning aimed past Joshua at later readers who had already lost the land.",
         scriptureRefs: ["Joshua 1:5-9", "Genesis 15:18-21", "Deuteronomy 17:18-20"],
         citations: [
@@ -604,7 +604,7 @@ export const MILESTONES: Milestone[] = [
     whatChanged:
       "Nothing is entered and nothing is taken. This is a territorial description, so the map widens its frame and adds no advance, no route and no shaded holding.",
     geographyExplanation:
-      "The four markers are chosen for recognisability, not precision. Three of them are real and fixed: the Great Sea on the west, the Lebanon range in the north, the desert margin in the south. The fourth, the Euphrates, lies several hundred kilometres north-east of the Jordan, well beyond any ground this book narrates Israel as entering. The distance is the information. Between the Jordan and the Euphrates sit the Syrian steppe and the territory of powers that Joshua never mentions. Reading the verse as a claim to that country produces a map contradicted twelve chapters later by Joshua 13, where Lebanon and the northern valley appear among the land still to be possessed. The same range therefore belongs on two layers at once, as terrain and as territory not taken, and both are accurate.",
+      "The four markers are chosen because everyone knows them. Three are real and fixed: the Great Sea on the west, the Lebanon range in the north, the desert margin in the south. The fourth, the Euphrates, lies several hundred kilometres north-east of the Jordan, well beyond any ground this book narrates Israel as entering. The distance is the information. Between the Jordan and the Euphrates sit the Syrian steppe and the territory of powers that Joshua never mentions. Reading the verse as a claim to that country produces a map contradicted twelve chapters later by Joshua 13, where Lebanon and the northern valley appear among the land still to be possessed. The same range therefore belongs on two layers at once, as terrain and as territory not taken, and both are accurate.",
     sequenceType: "allotment",
     viewport: {
       center: [36.2, 32.8],

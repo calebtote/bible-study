@@ -17,8 +17,40 @@
 
 import { Fragment, useMemo } from "react";
 import { ENTITY_BY_ID } from "@/content/entities";
+import { RefPopover } from "@/components/scripture/RefPopover";
 
 export type EntityClick = (entityId: string) => void;
+
+/*
+ * Scripture references in running prose, e.g. "Judges 1:27-28" or "Joshua 24".
+ * Each one becomes a popover showing the verses in place, because a cross
+ * reference the reader has to go and look up is a cross reference most readers
+ * will not follow. Only books whose text the study can actually show are
+ * matched; a book outside that set stays plain prose, since a reference that
+ * opens an apology is worse than one that opens nothing.
+ */
+const REF_IN_PROSE =
+  /\b((?:[12]\s(?:Samuel|Kings|Chronicles)|Genesis|Exodus|Leviticus|Numbers|Deuteronomy|Joshua|Judges|Psalms?|Isaiah|Jeremiah|Ezekiel|Micah|Habakkuk|Matthew|Acts|Romans|Hebrews|James)\s\d+(?::\d+(?:\s?[-–]\s?\d+)?)?)\b/g;
+
+/** Plain text with its scripture references made glanceable. */
+function TextWithRefs({ text }: { text: string }) {
+  /* One capture group, so split alternates prose and reference. */
+  const parts = text.split(REF_IN_PROSE);
+  if (parts.length === 1) return <>{text}</>;
+  return (
+    <>
+      {parts.map((part, i) =>
+        i % 2 === 1 ? (
+          <RefPopover key={i} refText={part}>
+            {part}
+          </RefPopover>
+        ) : (
+          <Fragment key={i}>{part}</Fragment>
+        )
+      )}
+    </>
+  );
+}
 
 const TOKEN = /(\[\[entity:[a-z0-9-]+\]\]|\*\*[^*]+\*\*|\*[^*]+\*)/g;
 
@@ -95,14 +127,22 @@ function Inline({
         if (part.startsWith("**") && part.endsWith("**")) {
           return (
             <strong key={i} className="font-semibold">
-              {part.slice(2, -2)}
+              <TextWithRefs text={part.slice(2, -2)} />
             </strong>
           );
         }
         if (part.startsWith("*") && part.endsWith("*")) {
-          return <em key={i}>{part.slice(1, -1)}</em>;
+          return (
+            <em key={i}>
+              <TextWithRefs text={part.slice(1, -1)} />
+            </em>
+          );
         }
-        return <Fragment key={i}>{part}</Fragment>;
+        return (
+          <Fragment key={i}>
+            <TextWithRefs text={part} />
+          </Fragment>
+        );
       })}
     </>
   );

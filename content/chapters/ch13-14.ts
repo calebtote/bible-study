@@ -715,7 +715,7 @@ export const MILESTONES: Milestone[] = [
     mapCaption:
       "Reuben's assigned area: the tableland between the Arnon gorge and the plains of Moab opposite Jericho.",
     whatChanged:
-      "An approximate area appears east of the Jordan, from the Arnon north to the plains of Moab. It records an assignment Moses made before this book opened, not a fresh conquest.",
+      "An approximate area appears east of the Jordan, from the Arnon north to the plains of Moab. It records an assignment Moses made before this book opened; nothing here is newly conquered.",
     geographyExplanation:
       "Reuben's ground is a plateau, and Hebrew has a word for it that means the level place. It sits at roughly 700 to 800 m, catching just enough rain along its western edge for grain and thinning eastward into steppe and then desert. Its southern limit is the [[entity:arnon-river]], the modern Wadi Mujib, a canyon several hundred metres deep, which works as a border precisely because crossing it costs a day rather than an hour. Its western limit is the escarpment falling to the [[entity:jordan-river]], more than a kilometre of descent within a few horizontal kilometres, with [[entity:mount-nebo]] on the rim looking across at [[entity:jericho]]. Open, exposed, excellent for flocks, and almost impossible to hold: there are no natural strongpoints on a tableland, which is one reason this particular ground is fought over again long after Joshua.",
     sequenceType: "allotment",

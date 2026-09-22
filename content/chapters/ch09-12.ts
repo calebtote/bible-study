@@ -129,7 +129,7 @@ export const CHAPTERS: Chapter[] = [
         title: "Why it matters",
         body:
           "Israel's leaders discover they have been conned and conclude that this changes nothing, because God's name is attached to the promise. The question is not what Gibeon deserves but whose reputation is in the oath.\n\n" +
-          "Reformed treatments press the point. Calvin locates the sin in swearing rashly, not in refusing to break the oath afterwards, and the Westminster Confession holds that a lawful oath binds even to one's own loss while no oath binds anyone to sin. That is one Christian reading, not the only one. Others put the weight elsewhere, taking the chapter's real subject to be a Canaanite town that survives because of what it had heard about Yahweh, with the oath as the mechanism rather than the point.",
+          "Calvin locates the sin in the rash swearing itself; once sworn, he holds, the oath stood. The Westminster Confession states the principle in general terms: a lawful oath binds even to one's own loss, while no oath binds anyone to sin. Others put the weight elsewhere, taking the chapter's real subject to be a Canaanite town that survives because of what it had heard about Yahweh, with the oath as the mechanism.",
         scriptureRefs: ["Joshua 9:14", "Joshua 9:18-20"],
         citations: [
           {
@@ -302,7 +302,7 @@ export const CHAPTERS: Chapter[] = [
         title: "The surrounding world",
         body:
           "Verses 28 to 39 run through town after town in an almost identical formula, and verse 40 then claims four whole regions in one sentence. Assyrian, Egyptian and Hittite conquest reports use the same repertoire of total claims and stock phrases, and a ninth-century Moabite king describes his own campaigns in language very like Joshua's, including the vocabulary of devoting a place to destruction. The idiom belonged to the region, not to Israel alone.\n\n" +
-          "So verse 40 is a summary heading, not a census: this chapter itself reports the king of Gezer dying in the field while his city goes untouched.",
+          "So verse 40 is a summary heading. The same chapter reports the king of Gezer dying in the field while his city goes untouched, which tells you how the heading was meant to be read.",
         scriptureRefs: ["Joshua 10:28-40", "Joshua 10:33", "Joshua 13:1"],
         citations: [
           {
@@ -330,7 +330,7 @@ export const CHAPTERS: Chapter[] = [
         title: "Why it matters",
         body:
           "The one thing the chapter states outright about the day is not astronomical. It is that Yahweh listened to the voice of a man, and fought for Israel. The panic, the hail and the sky are all attributed to God, not to Israel's tactics.\n\n" +
-          "Harder to hold alongside that: the rescue Israel mounts is a rescue of Canaanites, undertaken because a promise was made to them, and the campaign that follows is reported with the flat brutality the ancient genre supplies. Neither half cancels the other, and neither licenses anybody's violence now.",
+          "Harder to hold alongside that: the rescue Israel mounts is a rescue of Canaanites, undertaken because a promise was made to them, and the campaign that follows is reported with the flat brutality the ancient genre supplies. Neither half cancels the other.",
         scriptureRefs: ["Joshua 10:8", "Joshua 10:14", "Joshua 10:42"],
         citations: [
           {
@@ -658,7 +658,7 @@ export const CHAPTERS: Chapter[] = [
     number: 12,
     title: "The register of defeated kings",
     summary:
-      "A closing ledger: two kings east of the Jordan under Moses, thirty-one west of it under Joshua. It is a list of rulers beaten, not a map of land held, and several of the cities named reappear later among those Israel did not possess.",
+      "A closing ledger: two kings east of the Jordan under Moses, thirty-one west of it under Joshua. It counts rulers beaten, and several of the cities named here reappear later among those Israel never possessed.",
     phase: "campaigns-and-consequences",
     scriptureRange: "Joshua 12:1-24",
     milestoneIds: ["ch12-transjordan-kings", "ch12-thirty-one-kings"],
@@ -960,7 +960,7 @@ export const MILESTONES: Milestone[] = [
     mapCaption:
       "The covenant is sworn at Israel's camp in the Jordan valley, not at Gibeon.",
     whatChanged:
-      "Four towns on the plateau are now inside Israel's obligations without a single soldier moving. The change is legal, not territorial, and the map should not shade anything.",
+      "Four towns on the plateau are now inside Israel's obligations without a single soldier moving. The change is legal; no ground changes hands, and the map shades nothing.",
     geographyExplanation:
       "The camp lies on the valley floor about two hundred and fifty metres below sea level, in a hot oasis strip beside the Jordan. Envoys arriving here have descended from the highlands, and the descent is part of why worn-out gear reads as plausible: the road from the plateau to the valley is hard on footwear. The camp's position also explains the negotiation. Israel is still based east of the hill country, with Jericho and Ai taken but the plateau ahead unentered, so a delegation from over the horizon was exactly the kind of thing Israel had no independent way to check.",
     sequenceType: "event",
@@ -1057,7 +1057,7 @@ export const MILESTONES: Milestone[] = [
       "site-kiriath-jearim",
     ],
     mapCaption:
-      "Four town points, connected. Their standing inside Israel is a matter of oath, not of ground held.",
+      "Four town points, connected. Their standing inside Israel rests on an oath.",
     whatChanged:
       "The towns remain inhabited by their own people under Israelite obligation. This is a change of status, so the map adds no conquest marker and draws no polygon.",
     geographyExplanation:
@@ -1583,7 +1583,7 @@ export const MILESTONES: Milestone[] = [
     whatChanged:
       "Nothing new is captured. This is the reach of the campaigns stated in one sentence, and it must not be drawn as controlled territory: the same book says two chapters later that much land remains unpossessed.",
     geographyExplanation:
-      "The two limits are chosen for their visibility, not their precision. Mount Hermon, above two thousand eight hundred metres and snow-capped for much of the year, is visible from most of Galilee and functions in these summaries as the obvious northern marker; Baal-gad is placed somewhere in the valley below it. At the other end, Mount Halak is described only as rising toward Seir, the Edomite hills, and no site has ever been agreed. Naming a campaign's extent by a famous mountain at one end and an unidentifiable one at the other is a reminder of what this kind of sentence is: a statement of reach in recognisable landmarks, not a surveyed boundary. The three cities where the Anakim remained are all on the coastal plain, the flat ground Israel does not take.",
+      "The two limits are chosen because you can see them from far away. Mount Hermon, above two thousand eight hundred metres and snow-capped for much of the year, is visible from most of Galilee and functions in these summaries as the obvious northern marker; Baal-gad is placed somewhere in the valley below it. At the other end, Mount Halak is described only as rising toward Seir, the Edomite hills, and no site has ever been agreed. Naming a campaign's extent by a famous mountain at one end and an unidentifiable one at the other is a reminder of what this kind of sentence is: a statement of reach in recognisable landmarks, not a surveyed boundary. The three cities where the Anakim remained are all on the coastal plain, the flat ground Israel does not take.",
     sequenceType: "summary",
     viewport: {
       center: [35.2, 32.1],

@@ -855,12 +855,6 @@ export const METHODOLOGY_NOTES: {
     id: "theological-standpoint",
     title: "Theological standpoint",
     body:
-      "The orientation is Christian, and Reformed emphases are labelled as such where they appear rather than presented as the plain sense of the text. Other Christian readings are represented in their own terms, and on the hardest questions the study includes positions it does not hold. Jewish interpretation of these chapters has its own long history, which this study touches only occasionally and does not attempt to represent adequately.",
-  },
-  {
-    id: "misuse-note",
-    title: "A necessary caution",
-    body:
-      "Joshua has been used to justify conquest, displacement, and violence in later history, including against indigenous peoples and in modern territorial conflicts. This study treats the campaigns as a bounded episode within the biblical narrative and does not treat them as authorisation for anyone's violence now. That is stated plainly on the relevant pages rather than left to inference.",
+      "The orientation is Christian and broadly Reformed. Other Christian readings are represented in their own terms, and on the hardest questions the study includes positions it does not hold. Jewish interpretation of these chapters has its own long history, which this study touches only occasionally and does not attempt to represent adequately.",
   },
 ];

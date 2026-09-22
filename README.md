@@ -96,32 +96,7 @@ enforced by types rather than left to prose.
   historical dating.
 - Identification of a site is distinguished from confirmation of an event there.
 
-Theological material is Christian in orientation, and Reformed readings are
-labelled as Reformed rather than presented as the only Christian reading. For
-difficult passages the text's claims, the literary function, the historical
-questions, the major interpretations and what remains unresolved are kept
-separate. Ancient Israel's campaigns are never presented as authorising modern
-violence.
-
-## Limitations
-
-Worth knowing before relying on it.
-
-- **Coordinates are curated, not surveyed.** Sites are placed from published
-  identifications, with certainty labelled per feature. Nine sites are
-  deliberately left unlocated. Disputed identifications carry a question mark on
-  the map.
-- **Nothing here is peer-reviewed.** Sources are cited per claim and are real
-  and checkable, but the synthesis is editorial. For a contested question, read
-  the sources rather than the summary.
-- **Shaded relief is the only external dependency,** and it is scenery. It comes
-  from a public elevation tile service and removes itself after two failures,
-  with a notice explaining the flat terrain. Every other map layer is bundled.
-- **No artifact photography is bundled.** Licensing images for redistribution was
-  out of scope, so archaeological and artifact material is described and cited
-  rather than shown.
-- **Approximate polygons are approximate.** People groups and regions are drawn
-  as labelled areas with provenance, not as bordered states. They indicate where
-  the text locates a group, at a resolution the evidence supports.
-- **The ESV needs a key and a network.** Without either, the study reads in the
-  World English Bible, which is bundled and public domain.
+Theological material is Christian in orientation and broadly Reformed, with
+other Christian traditions represented in their own terms. For difficult
+passages the text's claims, the literary function, the historical questions,
+the major interpretations and what remains unresolved are kept separate.

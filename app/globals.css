@@ -122,6 +122,28 @@ body {
   background-color: var(--color-bronze-wash);
 }
 
+/*
+ * A scripture cross reference in running prose. Quieter than an entity link on
+ * purpose: entities are forest with a bronze underline and lead somewhere, while
+ * a reference only opens a glance at the verses, so it gets a dotted underline in
+ * its own colour and no colour change of the text. The two kinds of link can sit
+ * in one sentence, and the reader can tell from the underline what each will do.
+ */
+.ref-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--color-bronze);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2.5px;
+  cursor: help;
+  border-radius: 2px;
+}
+
+.ref-link:hover {
+  background-color: var(--color-bronze-wash);
+}
+
 /* Focus. Visible everywhere, because the whole study must be keyboard usable. */
 :focus-visible {
   outline: 2px solid var(--color-forest);

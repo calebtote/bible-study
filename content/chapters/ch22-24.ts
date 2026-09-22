@@ -322,7 +322,7 @@ Intermarriage was the ordinary way populations merged here, through households r
         title: "Why it matters",
         body: `This is where an honest map earns its keep. Everything the book conceded along the way is visible at once: a described inheritance reaching water Israel never controlled, and a remaining-land layer covering the best of the country. The promise has been kept, the work is unfinished, and the unfinished part is now a danger rather than a target.
 
-Reformed readings press the asymmetry: what God promised he did, and what Israel had to do it has not done, so the land is held by a faithfulness not its own. That is one Christian reading among others, and either way the last word is the curse.`,
+The asymmetry presses itself: what God promised he did, and what Israel had to do it has not done, so the land is held by a faithfulness not its own. Either way the last word is the curse.`,
         scriptureRefs: ["Joshua 23:4-5", "Joshua 23:14-16"],
         citations: [
           {
@@ -539,7 +539,7 @@ Shechem itself was a substantial centre with a fortress-temple, and its ruler ap
         title: "Why it matters",
         body: `Israel's founding story begins with an ancestor's father serving other gods beyond a river. The recital leaves nothing for Israel to claim: not the land, not the cities, not the vineyards, not even a respectable origin.
 
-A book about receiving land closes with three burials, and the land receives its people: Joshua in his own portion, [[entity:joseph]] in his father's field, [[entity:eleazar]] in the hills. No monument to victory, three graves and a stone that listens. Reformed readers hear in that a covenant sustained by God's action rather than Israel's, which is one Christian reading among others.`,
+A book about receiving land closes with three burials, and the land receives its people: Joshua in his own portion, [[entity:joseph]] in his father's field, [[entity:eleazar]] in the hills. No monument to victory: three graves, and a stone that listens. In that quiet ending is a covenant sustained by God's own faithfulness, which outlasts the men who buried each other.`,
         scriptureRefs: ["Joshua 24:2", "Joshua 24:13", "Joshua 24:29-33"],
         citations: [
           {
@@ -792,7 +792,7 @@ Shiloh is the right place for it in more than one sense. This is where the tent 
     scriptureRefs: ["Joshua 22:13-20"],
     narrative: `Before the army moves, Israel sends Phinehas son of Eleazar with ten clan heads, one from each tribe, into Gilead. The composition matters: a priest for the cultic question and a full slate of tribal representatives for the political one.
 
-Their speech is an indictment, not an inquiry. This is treachery against the God of Israel. Have you learned nothing from Peor, where a plague fell on the congregation? If you rebel today, tomorrow God will be angry with all of Israel. Remember Achan, who did not perish alone in his sin. They offer one way out: if the eastern land is unclean, come across and take a share among us instead, but do not build a rival altar.
+Their speech arrives as an indictment. This is treachery against the God of Israel. Have you learned nothing from Peor, where a plague fell on the congregation? If you rebel today, tomorrow God will be angry with all of Israel. Remember Achan, who did not perish alone in his sin. They offer one way out: if the eastern land is unclean, come across and take a share among us instead, but do not build a rival altar.
 
 It is worth noticing what the delegation is for. They have come a long way to make an accusation, and by making it in person they have also, without intending to, created the chance for an answer.`,
     entityIds: [
@@ -923,7 +923,7 @@ Joshua's first words are an appeal to what they have seen with their own eyes. E
     whatChanged:
       "Nothing changes geographically. The chapter adds no place to the map and takes none away.",
     geographyExplanation:
-      "This is a summary looking back over years, not a located episode, so the honest view is the whole country at once. The two features the chapter itself names are the Jordan in the east and the Great Sea in the west, and those are the frame Joshua uses for the inheritance. Between them lies everything the book has described and rather less than everything it has claimed.",
+      "This is a summary looking back over years, so the honest view is the whole country at once. The two features the chapter itself names are the Jordan in the east and the Great Sea in the west, and those are the frame Joshua uses for the inheritance. Between them lies everything the book has described and rather less than everything it has claimed.",
     sequenceType: "summary",
     viewport: {
       center: [35.15, 32.3],
@@ -953,7 +953,7 @@ Joshua's first words are an appeal to what they have seen with their own eyes. E
 
 Then the charge. Be very courageous to keep the book of the law of Moses, turning neither right nor left. Do not go among the nations that remain, do not mention the names of their gods, do not swear by them, do not serve them, do not bow to them. Hold fast to the LORD, and love him.
 
-This is a retrospect, not an advance. The map recalls the campaigns and adds no new ground, because the chapter reports no movement and no battle. Every place it could point to is already on the map from earlier chapters.`,
+This is a retrospect. The map recalls the campaigns and adds no new ground, because the chapter reports no movement and no battle. Every place it could point to is already on the map from earlier chapters.`,
     entityIds: [
       "joshua",
       "moses",
@@ -977,7 +977,7 @@ This is a retrospect, not an advance. The map recalls the campaigns and adds no 
     mapCaption:
       "The campaign places return in memory only: the map recalls them and adds no fresh advance.",
     whatChanged:
-      "Nothing. Earlier places are recalled, not re-entered, and no new territory appears.",
+      "Nothing. Earlier places are recalled from a distance, and no new territory appears.",
     geographyExplanation:
       "Spread across the map, the campaigns are conspicuously a highland story. Jericho at the valley mouth, the Benjamin plateau, the southern ridge, the northern hills: these are the places Joshua can point to. The ground the review does not mention is the ground the next milestone is about, and it is the flat, wealthy, well-connected part of the country.",
     sequenceType: "retrospective",
@@ -1237,7 +1237,7 @@ From there: I took Abraham from beyond the River and led him through Canaan, and
       "site-shechem",
     ],
     mapCaption:
-      "A recital of memory, not a route: the view spans from beyond the Euphrates to Egypt because the speech does, and no movement is drawn and no ground is claimed.",
+      "A recital of memory: the view spans from beyond the Euphrates to Egypt because the speech does. No movement is drawn and no ground is claimed.",
     whatChanged:
       "Nothing. This milestone is retrospective: it recalls places from Genesis through Numbers and adds no advance, no route and no territory. The far ends of the recital, beyond the River and Egypt, are outside this study's site register and are deliberately not pinned.",
     geographyExplanation:

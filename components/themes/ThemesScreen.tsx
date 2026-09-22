@@ -323,26 +323,12 @@ function ThemeDetail({
         <Citations citations={theme.citations} />
       </div>
 
-      {/*
-        Labelled, and labelled where the reader cannot miss it. The brief is
-        explicit that Reformed emphases appear as one Christian reading rather than
-        as the plain sense of the text, so the heading carries the label and the
-        standing sentence below says what the label means.
-      */}
+      {/* Theological reflection, continuing the theme in the same voice. */}
       {theme.reformedPerspective && (
-        <section className="mt-5 rounded border border-water/40 bg-[#eef2f4] px-4 py-3.5">
-          <h3 className="font-serif text-[14.5px] font-semibold text-[#3f6377]">
-            A Reformed reading
-          </h3>
-          <p className="mt-1 text-[11.5px] leading-relaxed text-[#4F7385]">
-            One Christian tradition&apos;s emphasis, named so you can weigh it as such.
-            Other Christian readings of this theme are held in good faith.
-          </p>
-          <div className="mt-2.5">
-            <Prose body={theme.reformedPerspective.body} onEntityClick={onEntityClick} />
-            <Citations citations={theme.reformedPerspective.citations} />
-          </div>
-        </section>
+        <div className="rule-t mt-6 pt-5">
+          <Prose body={theme.reformedPerspective.body} onEntityClick={onEntityClick} />
+          <Citations citations={theme.reformedPerspective.citations} />
+        </div>
       )}
 
       {theme.newTestament && (

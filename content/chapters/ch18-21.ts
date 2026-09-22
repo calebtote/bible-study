@@ -109,7 +109,7 @@ export const CHAPTERS: Chapter[] = [
         kind: "why-it-matters",
         title: "Why it matters",
         body:
-          "Joshua's question treats delay as a spiritual problem rather than a logistical one. Nothing in the chapter suggests the seven tribes lacked the means; what they lack is the will to go up and live on ground already assigned to them. A gift can be genuine and unclaimed at the same time, and the book is content to leave that uncomfortable.\n\nReformed readers, Calvin among them, take the lot in the same direction: not a gamble but a submission of the division to God's decision, which is why the text says Joshua cast lots *before the LORD*. That is a Reformed emphasis and not the only Christian reading; others weigh the lot as a practical safeguard that stopped the strongest tribes simply taking the best ground. Either way the land is handed out rather than seized.",
+          "Joshua's question treats delay as a spiritual problem rather than a logistical one. Nothing in the chapter suggests the seven tribes lacked the means; what they lack is the will to go up and live on ground already assigned to them. A gift can be genuine and unclaimed at the same time, and the book is content to leave that uncomfortable.\n\nCalvin took the lot as a submission of the division to God's decision, which is why the text says Joshua cast lots *before the LORD*. Others weigh it as a practical safeguard that stopped the strongest tribes simply taking the best ground. Either way the land is handed out; nobody seizes it.",
         scriptureRefs: ["Joshua 18:3", "Joshua 18:6-10"],
         citations: [
           {
@@ -528,7 +528,7 @@ export const CHAPTERS: Chapter[] = [
         kind: "why-it-matters",
         title: "Why it matters",
         body:
-          "The geography is the legal provision. A law that says an accidental killer may be protected is worth nothing if the nearest protection is a week away, so the six towns are spread deliberately, three along the length of the western highland and three across the eastern plateau, and every one of them sits on or beside a road. Mercy here is measured in walking distance.\n\nIt is also a limit placed on Israel, not on outsiders. The person the law restrains is the grieving relative with a legitimate claim, and the person it shelters may be a resident foreigner. None of this licenses anyone's violence now; it is the opposite, an early insistence that killing be examined before it is answered.",
+          "The geography is the legal provision. A law that says an accidental killer may be protected is worth nothing if the nearest protection is a week away, so the six towns are spread deliberately, three along the length of the western highland and three across the eastern plateau, and every one of them sits on or beside a road. Mercy here is measured in walking distance.\n\nIt is also a limit Israel places on itself. The person the law restrains is the grieving relative with a legitimate claim, and the person it shelters may be a resident foreigner: an early insistence that killing be examined before it is answered.",
         scriptureRefs: ["Joshua 20:7-9", "Numbers 35:15"],
         citations: [
           {
@@ -715,7 +715,7 @@ export const CHAPTERS: Chapter[] = [
         kind: "why-it-matters",
         title: "Why it matters",
         body:
-          "Levi has no polygon on this map and never will, and that absence is the content. One tribe in twelve holds no ground, lives inside everyone else's inheritance, and is supported by what the others bring. Scattering it means no region of Israel is without someone whose living depends on the sanctuary and whose job is teaching the law.\n\nLeviticus 25:23 gives the principle the arrangement rests on: the land is not finally Israel's to own, because it is the LORD's. Levi is the visible case of that, holding towns and pasture on the same terms everyone else holds farms, only without the farm. Reformed writers have read Levi's portion as a standing sign that the inheritance was never really the soil; that reading is one Christian option among several, not the plain sense of the chapter.",
+          "Levi has no polygon on this map and never will, and that absence is the content. One tribe in twelve holds no ground, lives inside everyone else's inheritance, and is supported by what the others bring. Scattering it means no region of Israel is without someone whose living depends on the sanctuary and whose job is teaching the law.\n\nLeviticus 25:23 gives the principle the arrangement rests on: the land is not finally Israel's to own, because it is the LORD's. Levi is the visible case of that, holding towns and pasture on the same terms everyone else holds farms, only without the farm. Levi's portion stands as a sign that the inheritance was never really the soil, a reading the chapter invites without quite stating.",
         scriptureRefs: ["Joshua 21:41-42", "Leviticus 25:23", "Deuteronomy 18:1-2"],
         citations: [
           {
@@ -1030,7 +1030,7 @@ export const MILESTONES: Milestone[] = [
     mapCaption:
       "Benjamin's allotted area: a narrow band from the Jordan to the western plateau, with Jerusalem's site on its southern edge.",
     whatChanged:
-      "An approximate allotment area appears between Judah and Ephraim. It is an assignment, not a record of control: the Jebusites are still in Jerusalem and the Gibeonites hold four towns inside it under treaty.",
+      "An approximate allotment area appears between Judah and Ephraim. It records an assignment only: the Jebusites are still in Jerusalem and the Gibeonites hold four towns inside it under treaty.",
     geographyExplanation:
       "Benjamin is small and strategically dense, which is the whole point of it. Roughly forty kilometres from the [[entity:jordan-river]] to [[entity:kiriath-jearim]] and under twenty north to south, it spans from 250 m below sea level to nearly 900 m at [[entity:bethel]], and it contains both practical approaches into the central highlands: the climb from [[entity:jericho]] by the ascent of Adummim, and the [[entity:upper-beth-horon]] descent to the coastal plain. The watershed road from [[entity:jerusalem]] to Bethel runs straight through it. Whoever holds this plateau controls who gets into the hill country and who gets out, which is why so much of Joshua, and of later Israelite history, happens inside so little ground.",
     sequenceType: "allotment",

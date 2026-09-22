@@ -18,6 +18,7 @@
 import { useState } from "react";
 import { parseRef } from "@/lib/scripture/reference";
 import { Passage } from "./Passage";
+import { RefPopover } from "./RefPopover";
 
 export function ScriptureRefs({
   refs,
@@ -81,34 +82,14 @@ export function ScriptureRefs({
 }
 
 /**
- * A single reference rendered inline in running prose.
- *
- * Used where a reference belongs to one sentence rather than to a whole section,
- * such as a relationship note in a dossier.
+ * A single reference rendered inline in running prose, such as a relationship
+ * note in a dossier. The verses open in a popover beside the reference, so a
+ * glance at the passage never disturbs the sentence it belongs to.
  */
 export function ScriptureRef({ reference }: { reference: string }) {
-  const [open, setOpen] = useState(false);
   const parsed = parseRef(reference);
 
   if (!parsed) return <span className="text-ink-faint">{reference}</span>;
 
-  return (
-    <>
-      <button
-        type="button"
-        onClick={() => setOpen((v) => !v)}
-        aria-expanded={open}
-        className="text-forest underline decoration-rule-strong underline-offset-2 hover:decoration-forest"
-      >
-        {parsed.display}
-      </button>
-      {open && (
-        <Passage
-          reference={reference}
-          className="animate-fade-rise mt-2 mb-1"
-          showReference={false}
-        />
-      )}
-    </>
-  );
+  return <RefPopover refText={reference}>{parsed.display}</RefPopover>;
 }
