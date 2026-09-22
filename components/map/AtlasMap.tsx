@@ -72,7 +72,21 @@ type Status = {
   geographyMissing: string[];
   /** Relief was requested and the tiles did not come. */
   reliefFailed: boolean;
+  /** The map itself never came up: MapLibre failed to load or to start. */
+  startFailed: boolean;
 };
+
+/**
+ * How long the map gets to come up before the empty pane explains itself.
+ *
+ * Generous, because a slow first load on a weak connection is normal and the notice
+ * would be wrong. The case this exists for is a load that will never finish: the
+ * MapLibre chunk is the one lazily imported module in the app, and a dev server
+ * reached from a non-allowed origin quietly never delivers it — no error, no failed
+ * request, just an import that stays pending while the rest of the study works.
+ * Without a deadline that is indistinguishable from "still loading", forever.
+ */
+const START_DEADLINE_MS = 15_000;
 
 const MOTION_QUERY = "(prefers-reduced-motion: reduce)";
 
@@ -104,6 +118,7 @@ export function AtlasMap({
   const [status, setStatus] = useState<Status>({
     geographyMissing: [],
     reliefFailed: false,
+    startFailed: false,
   });
   const [legendOpen, setLegendOpen] = useState(false);
   const [fullscreen, setFullscreen] = useState(false);
@@ -128,6 +143,16 @@ export function AtlasMap({
   useEffect(() => {
     let cancelled = false;
     let map: MlMap | null = null;
+
+    /*
+     * If nothing below reaches `load` in time, say so. The creation path is async, so
+     * every way it can die — a rejected import, a hung import, a WebGL context refused —
+     * would otherwise leave the same silent beige rectangle, and a reader has no way to
+     * tell that apart from a map that is about to appear.
+     */
+    const deadline = setTimeout(() => {
+      if (!cancelled) setStatus((s) => ({ ...s, startFailed: true }));
+    }, START_DEADLINE_MS);
 
     (async () => {
       const el = containerRef.current;
@@ -208,6 +233,7 @@ export function AtlasMap({
 
       map.on("load", () => {
         if (cancelled || !map) return;
+        clearTimeout(deadline);
         registerMapImages(map as unknown as Parameters<typeof registerMapImages>[0]);
 
         map.addSource(FEATURES_SOURCE, { type: "geojson", data: emptyCollection() });
@@ -215,6 +241,8 @@ export function AtlasMap({
         for (const spec of FEATURE_LAYER_SPECS) map.addLayer(spec);
 
         setLiveMap(map);
+        /* Came up after all; a slow start is not a failed one. */
+        setStatus((s) => (s.startFailed ? { ...s, startFailed: false } : s));
       });
 
       /*
@@ -257,10 +285,14 @@ export function AtlasMap({
         const hits = map.queryRenderedFeatures(e.point, { layers });
         map.getCanvas().style.cursor = hits.length ? "pointer" : "";
       });
-    })();
+    })().catch(() => {
+      /* A throw anywhere above lands here rather than as an unhandled rejection. */
+      if (!cancelled) setStatus((s) => ({ ...s, startFailed: true }));
+    });
 
     return () => {
       cancelled = true;
+      clearTimeout(deadline);
       map?.remove();
       mapRef.current = null;
       setLiveMap(null);
@@ -550,9 +582,20 @@ export function AtlasMap({
         because a reader who sees a plainer map needs to know whether they are
         missing study content or only scenery.
       */}
-      {(status.geographyMissing.length > 0 || status.reliefFailed) && (
+      {(status.startFailed && !liveMap) ||
+      status.geographyMissing.length > 0 ||
+      status.reliefFailed ? (
         <div className="pointer-events-none absolute inset-x-3 bottom-12 z-20 flex justify-center">
           <p className="pointer-events-auto max-w-md rounded border border-rule bg-ivory/95 px-3 py-2 text-xs leading-relaxed text-ink-soft shadow-float">
+            {status.startFailed && !liveMap && (
+              <span>
+                The interactive map has not started. Every place drawn here is also named
+                in the text beside the map, so the study itself is fully readable.
+                Reloading usually resolves it; if this keeps happening on a development
+                server reached over the network, the server needs that address in{" "}
+                <code>allowedDevOrigins</code>.{" "}
+              </span>
+            )}
             {status.geographyMissing.length > 0 && (
               <span>
                 The bundled coastline and river outlines did not load, so the map is
@@ -568,7 +611,7 @@ export function AtlasMap({
             )}
           </p>
         </div>
-      )}
+      ) : null}
     </div>
   );
 }
