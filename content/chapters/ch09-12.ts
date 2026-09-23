@@ -42,7 +42,7 @@ export const CHAPTERS: Chapter[] = [
         kind: "at-a-glance",
         title: "At a glance",
         body:
-          "The men of Gibeon cannot win a battle, so they win a treaty instead. With cracked wineskins and mouldy bread as evidence of a long road, they extract a sworn covenant from Israel's leaders. Within three days Israel learns that these people live about thirty kilometres away. The oath stands. The Gibeonites become woodcutters and water carriers at the altar.",
+          "The men of Gibeon seek a treaty to escape the fate of Jericho and Ai. With cracked wineskins and mouldy bread as evidence of a long road, they extract a sworn covenant from Israel's leaders. Within three days Israel learns that these people live about thirty kilometres away. The oath stands. The Gibeonites become woodcutters and water carriers at the altar.",
         scriptureRefs: ["Joshua 9:1-27"],
         citations: [],
         evidenceLabels: ["biblical-account"],
@@ -71,7 +71,7 @@ export const CHAPTERS: Chapter[] = [
         kind: "what-brought-us-here",
         title: "What brought us here",
         body:
-          "Jericho has fallen, and Ai has been taken on a second attempt after [[entity:achan]]'s theft cost Israel a defeat. Between that recovery and this chapter Israel stood at [[entity:shechem]] to hear the whole law read aloud. So these envoys approach a people who have just publicly rebound themselves to Moses' instructions, among which is a flat prohibition on covenants with the peoples of the land.\n\n" +
+          "Jericho has fallen, and Ai has been taken on a second attempt after [[entity:achan]]'s theft cost Israel a defeat. Between that recovery and this chapter Israel stood at [[entity:shechem]] to hear the whole law read aloud. So these envoys approach a people who have just publicly renewed their commitment to Moses' instructions, among which is a flat prohibition on covenants with the peoples of the land.\n\n" +
           "Those same instructions contain the loophole the envoys aim at. Deuteronomy 20 divides cities in two: one very far off may be offered terms, while the cities of these nearby nations may not. Distance is the whole test, and distance is the one thing the Gibeonites can fake.",
         scriptureRefs: [
           "Joshua 8:30-35",
@@ -101,7 +101,7 @@ export const CHAPTERS: Chapter[] = [
         title: "The surrounding world",
         body:
           "A treaty here was an oath sworn before gods expected to act against whoever broke it. That is why Israel's leaders treat the agreement as unbreakable once sworn: the name invoked was Yahweh's, so the cost of breaking it would fall on Israel. The Gibeonites' repeated \"we are your servants\" is standard vassal language.\n\n" +
-          "Gibeon is firmly identified: el-Jib yielded jar handles inscribed with the town's name, and Late Bronze remains thinner than a description of a great city would suggest. The label Hivite has nothing behind it, and 2 Samuel 21 calls the same group Amorites.",
+          "Gibeon is firmly identified: el-Jib yielded jar handles inscribed with the town's name, and Late Bronze remains thinner than a description of a great city would suggest. The identification of the Hivites lacks secure independent evidence, and 2 Samuel 21 calls the same group Amorites.",
         scriptureRefs: ["Joshua 9:8", "Joshua 9:11", "2 Samuel 21:1-2"],
         citations: [
           {
@@ -129,7 +129,7 @@ export const CHAPTERS: Chapter[] = [
         title: "Why it matters",
         body:
           "Israel's leaders discover they have been conned and conclude that this changes nothing, because God's name is attached to the promise. The question is not what Gibeon deserves but whose reputation is in the oath.\n\n" +
-          "Calvin locates the sin in the rash swearing itself; once sworn, he holds, the oath stood. The Westminster Confession states the principle in general terms: a lawful oath binds even to one's own loss, while no oath binds anyone to sin. Others put the weight elsewhere, taking the chapter's real subject to be a Canaanite town that survives because of what it had heard about Yahweh, with the oath as the mechanism.",
+          "In a Reformed reading, Calvin locates the sin in the rash swearing itself; once sworn, he holds, the oath stood. The Westminster Confession states the principle in general terms: a lawful oath binds even to one's own loss, while no oath binds anyone to sin. Others put the weight elsewhere, taking the chapter's real subject to be a Canaanite town that survives because of what it had heard about Yahweh, with the oath as the mechanism.",
         scriptureRefs: ["Joshua 9:14", "Joshua 9:18-20"],
         citations: [
           {
@@ -209,7 +209,7 @@ export const CHAPTERS: Chapter[] = [
     ],
     discussionQuestions: [
       "The Gibeonites mention Egypt, Sihon and Og but never Jericho or Ai. What does that omission tell you about how carefully the ruse was built?",
-      "Gibeon sits about thirty kilometres from Gilgal, one day's walk over the plateau. Why did nobody in Israel test the claim before swearing?",
+      "Gibeon lies roughly thirty kilometres from the proposed area of Gilgal, up a steep ascent to the plateau. Why did nobody in Israel test the claim before swearing?",
       "Joshua 9:14 names the failure as not asking counsel of God, not as making peace. Does that change how you read what follows?",
       "Israel's leaders keep an oath they were tricked into. When is honouring a commitment obtained dishonestly the right thing to do, and when is it not?",
       "Set the Gibeonites beside Rahab in Joshua 2:9-11. Both heard the same reports about the same God. Was the disguise necessary?",
@@ -277,7 +277,7 @@ export const CHAPTERS: Chapter[] = [
           "[[entity:adoni-zedek]] of [[entity:jerusalem]] does the arithmetic. Gibeon is a substantial town whose men are fighters, and it has gone over to Israel. He calls in [[entity:hoham]] of [[entity:hebron]], [[entity:piram]] of [[entity:jarmuth]], [[entity:japhia]] of [[entity:lachish]] and [[entity:debir-king]] of [[entity:eglon]], and the five encamp against Gibeon.\n\n" +
           "Gibeon sends to [[entity:gilgal]]: do not abandon your servants. The treaty Israel was tricked into now obliges it to fight. [[entity:joshua]] marches all night and comes on them suddenly. They break and run west along the only good road off the plateau, and the pursuit follows them down the [[entity:upper-beth-horon]] descent, hailstones killing more than the sword does, as far as [[entity:azekah]].\n\n" +
           "Into this the narrator sets two lines of poetry addressed to sun and moon, quoted from the book of Jashar, and comments that no day was ever like it, because God listened to a man.\n\n" +
-          "The five kings are found hiding in a cave and killed. The chapter then closes with a compressed list of towns struck, and with [[entity:horam]] of [[entity:gezer]] destroyed in the field when he comes to help [[entity:lachish]]. The final verse sends the whole army back down to the camp at Gilgal, which is the plainest signal in the chapter that nothing has been garrisoned.",
+          "The five kings are found hiding in a cave and killed. The chapter then closes with a compressed list of towns struck, and with [[entity:horam]] of [[entity:gezer]] destroyed in the field when he comes to help [[entity:lachish]]. The final verse sends the whole army back down to the camp at Gilgal, without any report of garrisons or permanent settlement.",
         scriptureRefs: ["Joshua 10:1-43"],
         citations: [
           {
@@ -312,7 +312,7 @@ export const CHAPTERS: Chapter[] = [
         title: "The surrounding world",
         body:
           "Verses 28 to 39 run through town after town in an almost identical formula, and verse 40 then claims four whole regions in one sentence. Assyrian, Egyptian and Hittite conquest reports use the same repertoire of total claims and stock phrases, and a ninth-century Moabite king describes his own campaigns in language very like Joshua's, including the vocabulary of devoting a place to destruction. The idiom belonged to the region, not to Israel alone.\n\n" +
-          "So verse 40 is a summary heading. The same chapter reports the king of Gezer dying in the field while his city goes untouched, which tells you how the heading was meant to be read.",
+          "So verse 40 is a summary heading. The same chapter reports the king of Gezer dying in the field without reporting the capture of his city, which tells you how the heading was meant to be read.",
         scriptureRefs: ["Joshua 10:28-40", "Joshua 10:33", "Joshua 13:1"],
         citations: [
           {
@@ -365,7 +365,7 @@ export const CHAPTERS: Chapter[] = [
           "The two places named in the poem are the top and the bottom of the same road. Gibeon sits on the plateau; the valley of [[entity:aijalon]] opens at the foot of the Beth-horon descent.\n\n" +
           "The five kings and their cities are listed in full twice within verses 1-5. Repetition that dense is a choice, and what it communicates is worth asking; [[ref:Isaiah 40:15|Isaiah 40:15]] offers a scale for weighing gathered nations.\n\n" +
           "The promise of verse 8 rewards a slow read, tense included. Verses 8-15 then reward a plain list: what does the LORD do in this battle, and what does Israel do? The same accounting runs through the formula of verses 28-39, where one clause recurs at verses 30, 32 and 42 with only its object changing.\n\n" +
-          "Verse 21 closes the pursuit with a note about what no man did. Verse 25 says aloud what the feet-on-necks scene of verse 24 was meant to fix in the commanders' minds, with most of the land still unfought. The kings' deaths are public and severe, and [[ref:Matthew 18:1-9|Matthew 18:1-9]] is often read alongside to ask why.\n\n" +
+          "Verse 21 closes the pursuit with a note about what no man did. Verse 25 says aloud what the feet-on-necks scene of verse 24 was meant to fix in the commanders' minds, with much of the land still unconquered. The kings' deaths are public and severe, and [[ref:Matthew 18:1-9|Matthew 18:1-9]] is often read alongside to ask why.\n\n" +
           "[[entity:makkedah]] is named seven times in the chapter and cannot be located. Neither can [[entity:libnah]]. Both are absent from the map on purpose.",
         scriptureRefs: [
           "Joshua 10:1-5",
@@ -395,8 +395,8 @@ export const CHAPTERS: Chapter[] = [
         kind: "difficult-questions",
         title: "Difficult questions",
         body:
-          "Joshua 10:12-14 is heavily argued, and this study does not pick a winner. Five live readings. A poetic fragment quoted from an older collection, which the text itself flags by naming the book of Jashar. A request for shade or darkness rather than extra daylight, since the Hebrew verbs can carry the sense of ceasing to shine. Sun-and-moon language drawn from celestial omen texts, making this a plea for a sign of victory rather than a change in the solar system. An annular solar eclipse, resting on a particular rendering of two verbs and on one chronology. And a lengthened day, with verse 14 meant as plainly as it reads.\n\n" +
-          "Each carries a cost: the omen and darkness readings work harder on verse 13b, the eclipse commits to a date, and the plain miracle leaves the mechanics unexplained.",
+          "Joshua 10:12-14 is heavily argued, and this study does not pick a winner. Five readings remain in discussion: A poetic fragment quoted from an older collection, which the text itself flags by naming the book of Jashar. A request for shade or darkness rather than extra daylight, since the Hebrew verbs can carry the sense of ceasing to shine. Sun-and-moon language drawn from celestial omen texts, making this a plea for a sign of victory rather than a change in the solar system. An annular solar eclipse, resting on a particular rendering of two verbs and on one chronology. And a lengthened day, with verse 14 meant as plainly as it reads.\n\n" +
+          "Each carries a cost: the omen and darkness readings work harder on verse 13b, the eclipse commits to a date, and the lengthened-day reading leaves the mechanics unexplained.",
         scriptureRefs: ["Joshua 10:12-14"],
         citations: [
           {
@@ -430,7 +430,7 @@ export const CHAPTERS: Chapter[] = [
       "Israel fights this battle because of an oath it was tricked into. What does it cost Israel, and what does keeping it say about the oath?",
       "The night march climbs roughly a thousand metres from the Jordan valley to the plateau. What does arriving at dawn, unannounced, buy Joshua?",
       "The poem names Gibeon and the valley of Aijalon, the two ends of the Beth-horon road. How does knowing that terrain change how you hear the lines?",
-      "Verse 40 says Joshua left no one remaining in the whole south; verse 33 says the king of Gezer was killed while his city stood. How do you hold both?",
+      "Verse 40 says Joshua left no one remaining in the whole south; verse 33 reports the death of Gezer's king without reporting the capture of his city. How do you hold both?",
       "Makkedah is named repeatedly and cannot be found. Does an unlocatable place in a detailed account trouble you, or is that what you would expect?",
     ],
     relatedEntityIds: [
@@ -494,7 +494,7 @@ export const CHAPTERS: Chapter[] = [
         kind: "at-a-glance",
         title: "At a glance",
         body:
-          "News travels north. Jabin of Hazor, ruler of the largest city in the land, assembles a coalition with chariotry and musters at the waters of Merom. Israel attacks first, the horses are hamstrung and the chariots burned, and Hazor alone of the mound-cities is put to the torch. The chapter then compresses years of fighting into a summary and says the land had rest.",
+          "News travels north. Jabin of Hazor, ruler of the largest city in the land, assembles a coalition with chariotry and musters at the waters of Merom. Israel attacks first, the horses are hamstrung and the chariots burned, and Hazor alone among the cities on their mounds in this campaign is put to the torch. The chapter then compresses years of fighting into a summary and says the land had rest.",
         scriptureRefs: ["Joshua 11:1-23"],
         citations: [],
         evidenceLabels: ["biblical-account"],
@@ -525,7 +525,7 @@ export const CHAPTERS: Chapter[] = [
         title: "What brought us here",
         body:
           "Jabin reacts as [[entity:adoni-zedek]] did, and the shape is now familiar: Joshua 9:1-2, 10:1-5 and 11:1-5 all open the same way, and the pattern they share is worth naming. The difference is scale. Hazor was the dominant power of the north, and what it assembles is drawn from four separate zones of country. The north takes a different kind of fight, and the text concedes that it took a long time.\n\n" +
-          "Geography accounts for some of that. The southern campaign turned on one ridge road and one descent; the north is open country cut by broad valleys, so a force built around chariots never has to funnel itself into a pass.",
+          "Geography accounts for some of that. The southern campaign turned on one ridge road and one descent; the north is open country cut by broad valleys, giving chariot forces more room to manoeuvre where the terrain is open.",
         scriptureRefs: ["Joshua 10:1-5", "Joshua 11:1-5", "Joshua 11:18"],
         citations: [
           {
@@ -569,7 +569,7 @@ export const CHAPTERS: Chapter[] = [
         kind: "why-it-matters",
         title: "Why it matters",
         body:
-          "\"The land had rest from war\" is the first time the book says anything like it, and rest is one of Joshua's governing ideas: not leisure but the end of being at risk.\n\n" +
+          "\"The land had rest from war\" is the first time the book says anything like it, and rest is one of Joshua's governing ideas: relief from warfare rather than leisure.\n\n" +
           "Read that sentence slowly, because two chapters later God tells Joshua that very much land remains to be possessed. Both statements stand in the same book, and the honest reading holds them together. Rest means the organised resistance is broken and the campaigns are over. It does not mean the map is filled in.",
         scriptureRefs: ["Joshua 11:23", "Joshua 13:1", "Joshua 21:44"],
         citations: [
@@ -628,7 +628,7 @@ export const CHAPTERS: Chapter[] = [
         title: "Difficult questions",
         body:
           "Hazor is the best test case in the book for what archaeology can and cannot settle. The Late Bronze destruction was violent. Two excavators of the same site have published different conclusions about who did it: Ben-Tor argues for an external attacker and takes Israel as the best candidate, while Zuckerman read the same evidence as the city's own population turning on its rulers. Egyptians and rival Canaanite cities have also been proposed. A burnt layer does not carry a signature.\n\n" +
-          "The chapter also holds its hardest sentence: God hardened their hearts so that they would come out to battle. The wording recalls Pharaoh in Exodus 7-11, where Pharaoh hardens his own heart and God hardens it inside one narrative, and Paul takes the same hardening up in [[ref:Romans 9:14-18|Romans 9:14-18]] without apology. Scripture frames it as judicial rather than arbitrary: [[ref:Genesis 15:16|Genesis 15:16 had put the Amorites under a sentence deferred until their iniquity was full]], and [[ref:Deuteronomy 9:4-5|Deuteronomy 9:4-5]] blocks the inference Israel would love to draw, that its own righteousness earned the land. The hardening hands nations over to a battle they had already chosen; how divine agency and theirs fit together is the same question Romans 9 presses, and it should be let press.",
+          "The chapter also holds its hardest sentence: God hardened their hearts so that they would come out to battle. The wording recalls Pharaoh in Exodus 7-11, where Pharaoh hardens his own heart and God hardens it inside one narrative, and Paul takes the same hardening up in [[ref:Romans 9:14-18|Romans 9:14-18]] without apology. Scripture frames it as judicial rather than arbitrary: [[ref:Genesis 15:16|Genesis 15:16 had put the Amorites under a sentence deferred until their iniquity was full]], and [[ref:Deuteronomy 9:4-5|Deuteronomy 9:4-5]] blocks the inference Israel would love to draw, that its own righteousness earned the land. The hardening hands nations over to a battle they had already chosen; how divine agency and theirs fit together is the same question Romans 9 presses, and deserves careful attention.",
         scriptureRefs: [
           "Joshua 11:10-13",
           "Joshua 11:20",
@@ -790,7 +790,7 @@ export const CHAPTERS: Chapter[] = [
         title: "Why it matters",
         body:
           "Put the list beside what the same book says later. [[entity:jerusalem]] is here at verse 10; Joshua 15:63 says Judah could not drive out its inhabitants. [[entity:gezer]] is here at verse 12; Joshua 16:10 says the Canaanites there were not driven out. [[entity:megiddo]], [[entity:taanach]] and [[entity:dor]] are here at verses 21 to 23; Joshua 17:11-13 says Manasseh could not take them. Five of the thirty-one, defeated and unpossessed, in one book.\n\n" +
-          "That is not a contradiction the editor missed. Defeating a king in the field, burning a city, being allotted land, and living on it are four different things, and Joshua keeps them apart. Chapter 12 records the first; chapter 13 says how much of the rest is still owed.",
+          "That is not a contradiction the editor missed. Defeating a king in the field, burning a city, being allotted land, and living on it are four different things, and Joshua keeps them apart. Chapter 12 records the first; chapter 13 names land that remains to be possessed.",
         scriptureRefs: [
           "Joshua 12:10-23",
           "Joshua 15:63",
@@ -878,7 +878,7 @@ export const CHAPTERS: Chapter[] = [
     discussionQuestions: [
       "Jerusalem, Gezer, Megiddo, Taanach and Dor are all in this list and all later named as not possessed. What does the book gain by keeping both records?",
       "The register names no battles at all. What does a bare list communicate that a narrative would not?",
-      "Ten of the thirty-one cities cannot be located, and four more are disputed. How should a study map show a list it can only half place?",
+      "Ten of the thirty-one cities cannot be located, and four more are disputed. How should a study map show a list whose locations are partly unknown or disputed?",
       "The eastern kings are credited to Moses and the western to Joshua. Why might the book be careful about that division here of all places?",
       "Chapter 12 ends with a total and chapter 13 begins with a deficit. Which of the two would you say the book wants you to remember?",
     ],
@@ -949,7 +949,7 @@ export const MILESTONES: Milestone[] = [
     title: "Worn sandals and mouldy bread",
     scriptureRefs: ["Joshua 9:3-13"],
     narrative:
-      "The people of Gibeon act on intelligence. They know what happened at Jericho and Ai, and they know that Israel is under orders to destroy the peoples of the land while being permitted to treat with cities far away. So they manufacture distance. Old sacks, split wineskins, patched sandals, and bread gone dry and mouldy are laid out as evidence of a long road, and the envoys walk down to the camp at Gilgal to ask for a covenant.\n\nThe fiction they build is a document of the gap they need. They speak of Egypt and of Sihon and Og, events old enough to have travelled far. They say nothing of Jericho or Ai, a week's news that would place them close. Everything in the performance is designed to answer the one question Deuteronomy makes decisive: how far away do you live?",
+      "The people of Gibeon act on intelligence. They know what happened at Jericho and Ai, and they know that Israel is under orders to destroy the peoples of the land while being permitted to treat with cities far away. So they manufacture distance. Old sacks, split wineskins, patched sandals, and bread gone dry and mouldy are laid out as evidence of a long road, and the envoys walk down to the camp at Gilgal to ask for a covenant.\n\nTheir story depends on appearing to have travelled a great distance. They speak of Egypt and of Sihon and Og, events old enough to have travelled far. They say nothing of Jericho or Ai, recent news that might betray their proximity. Everything in the performance is designed to answer the one question Deuteronomy makes decisive: how far away do you live?",
     entityIds: [
       "gibeon",
       "chephirah",
@@ -974,9 +974,9 @@ export const MILESTONES: Milestone[] = [
     mapCaption:
       "The four Gibeonite towns sit on the Benjamin plateau, roughly thirty kilometres west of the camp at Gilgal.",
     whatChanged:
-      "Nothing moves yet. The map's job here is to show the lie: four towns one day's walk from Israel's camp, presented as a far country.",
+      "The envoys travel to Gilgal. The map shows the distance their story conceals: four towns one day's walk from Israel's camp, presented as a far country.",
     geographyExplanation:
-      "Thirty kilometres is the whole argument. From the valley floor near Jericho, an ordinary walker reaches the Benjamin plateau in a day, and the plateau is visible from the hills above the camp. Gibeon, Chephirah, Beeroth and Kiriath-jearim cluster within about twelve kilometres of one another around the watershed road north of Jerusalem. Israel had already walked the ridge to Ai and Bethel, barely fifteen kilometres from Gibeon. The claim of a very long journey was not merely false, it was checkable in an afternoon, which is why the failure to enquire is the fault the narrator names.",
+      "Thirty kilometres is the whole argument. From the valley floor near Jericho, an ordinary walker reaches the Benjamin plateau in a day, and the plateau is visible from the hills above the camp. Gibeon, Chephirah, Beeroth and Kiriath-jearim cluster within about twelve kilometres of one another around the watershed road north of Jerusalem. Israel had already walked the ridge to Ai and Bethel, barely fifteen kilometres from Gibeon. The claimed distance was false. The narrator identifies Israel's failure to seek God's counsel, rather than its failure to measure the journey, as the decisive omission.",
     sequenceType: "event",
     viewport: {
       center: [35.34, 31.86],
@@ -1016,7 +1016,7 @@ export const MILESTONES: Milestone[] = [
     whatChanged:
       "Four towns on the plateau are now inside Israel's obligations without a single soldier moving. The change is legal; no ground changes hands, and the map shades nothing.",
     geographyExplanation:
-      "The camp lies on the valley floor about two hundred and fifty metres below sea level, in a hot oasis strip beside the Jordan. Envoys arriving here have descended from the highlands, and the descent is part of why worn-out gear reads as plausible: the road from the plateau to the valley is hard on footwear. The camp's position also explains the negotiation. Israel is still based east of the hill country, with Jericho and Ai taken but the plateau ahead unentered, so a delegation from over the horizon was exactly the kind of thing Israel had no independent way to check.",
+      "The camp lies on the valley floor about two hundred and fifty metres below sea level, in a hot oasis strip beside the Jordan. Envoys arriving here have descended from the highlands, and the descent is part of why worn-out gear reads as plausible: the road from the plateau to the valley is hard on footwear. The camp's position also explains the negotiation. Israel is still based east of the hill country, with Jericho and Ai taken and the assembly at Ebal already narrated. The leaders nevertheless accept the envoys' account of their distant home.",
     sequenceType: "event",
     viewport: { center: [35.5083, 31.8686], zoom: 11 },
     citations: [
@@ -1061,7 +1061,7 @@ export const MILESTONES: Milestone[] = [
     mapCaption:
       "Israel marches to the four towns it has just sworn not to destroy.",
     whatChanged:
-      "Israel is on the plateau for the first time, and the four towns are visible as what they are: neighbours. No territory is taken and none should be coloured.",
+      "Israel reaches the Gibeonite towns on the plateau, and the four towns are visible as what they are: neighbours. No territory is taken and none should be coloured.",
     geographyExplanation:
       "The towns ring the southern end of the Benjamin plateau, a relatively level shelf around seven hundred metres above sea level where the north-south watershed road meets the routes running west to the coastal plain. Kiriath-jearim sits lowest and furthest west, toward the Sorek approaches; Beeroth lies north on the ridge road; Chephirah is west of Gibeon. Whoever holds this cluster holds the junction. That is why the towns were worth protecting to Israel, and why, in the next chapter, five southern kings consider their defection an emergency.",
     sequenceType: "event",
@@ -1149,7 +1149,7 @@ export const MILESTONES: Milestone[] = [
     title: "Five kings besiege Gibeon",
     scriptureRefs: ["Joshua 10:1-6"],
     narrative:
-      "Adoni-zedek of Jerusalem reads the treaty as a strategic disaster and says so plainly: Gibeon is a great city, greater than Ai, and its men are fighters. A town of that weight changing sides threatens every ruler on the southern ridge. He writes to four others, Hoham of Hebron, Piram of Jarmuth, Japhia of Lachish and Debir of Eglon, and the five bring their forces up to Gibeon and besiege it.\n\nNote what this alliance is. Five men who each governed one town and its fields, combining for one operation against a neighbour who had defected. It has no capital, no shared border and no existence after this campaign. Gibeon, under siege, sends word down to Gilgal with a claim on the oath Israel swore: do not abandon your servants. The chapter's whole action is set in motion by a promise obtained under false pretences.",
+      "Adoni-zedek of Jerusalem reads the treaty as a strategic disaster and says so plainly: Gibeon is a great city, greater than Ai, and its men are fighters. A town of that weight changing sides threatens every ruler on the southern ridge. He sends word to four others, Hoham of Hebron, Piram of Jarmuth, Japhia of Lachish and Debir of Eglon, and the five bring their forces up to Gibeon and besiege it.\n\nNote what this alliance is. Five men who each governed one town and its fields, combining for one operation against a neighbour who had defected. It has no capital, no shared border and no existence after this campaign. Gibeon, under siege, sends word down to Gilgal with a claim on the oath Israel swore: do not abandon your servants. The chapter's whole action is set in motion by a promise obtained under false pretences.",
     entityIds: [
       "adoni-zedek",
       "hoham",
@@ -1223,7 +1223,7 @@ export const MILESTONES: Milestone[] = [
     whatChanged:
       "Israel's army moves from the valley floor to the plateau in a single night. This is the movement the whole southern campaign hangs on.",
     geographyExplanation:
-      "This is the hardest piece of ground in the book to cross quickly. Gilgal lies near Jericho on a valley floor about two hundred and fifty metres below sea level. Gibeon stands roughly seven hundred metres above it. That is close to a thousand metres of ascent over about thirty kilometres, done in darkness, up the wadi routes that climb from the oasis to the watershed. The gradient is not even; the worst of it comes in the middle, on slopes that force a column into single file. Doing it at night removes the one thing the defenders on the plateau had, which is a long sightline down the ascent. The coalition expected any relief force to be seen coming for hours.",
+      "This is the hardest piece of ground in the book to cross quickly. Gilgal lies near Jericho on a valley floor about two hundred and fifty metres below sea level. Gibeon stands roughly seven hundred metres above sea level. That is close to a thousand metres of ascent over about thirty kilometres, done in darkness, up the wadi routes that climb from the oasis to the watershed. The gradient is not even; the worst of it comes in the middle, on slopes that force a column into single file. Doing it at night removes the one thing the defenders on the plateau had, which is a long sightline down the ascent. The coalition expected any relief force to be seen coming for hours.",
     sequenceType: "event",
     viewport: {
       center: [35.35, 31.86],
@@ -1401,7 +1401,7 @@ export const MILESTONES: Milestone[] = [
     mapCaption:
       "The towns the summary names, shown as points across the south. Two of them, Makkedah and Libnah, cannot be placed at all.",
     whatChanged:
-      "A run of southern towns is reported struck, and the army returns to Gilgal. Nothing here is held: this view must not be drawn as a filled southern territory.",
+      "A run of southern towns is reported struck, and the army returns to Gilgal. Permanent occupation is not reported here, so the map does not shade the south as controlled territory.",
     geographyExplanation:
       "The named towns trace the two systems the south is built from. Lachish, Eglon and Libnah belong to the Shephelah and its valleys, the approach routes from the coastal plain; Hebron and Debir sit on and below the southern ridge, nine hundred metres up in country where terraced farming works and cavalry does not. Gezer stands apart at the north-west corner, guarding where the Aijalon route meets the coastal highway, and its king dies without his city falling. The outer markers of verse 41, Kadesh-barnea in the far southern desert and Gaza on the coast, are the widest limits the writer can name, and they enclose ground that Israel demonstrably did not settle: Gaza appears three chapters later among the land still to be possessed.",
     sequenceType: "summary",
@@ -1563,7 +1563,7 @@ export const MILESTONES: Milestone[] = [
     title: "Hazor burned",
     scriptureRefs: ["Joshua 11:10-15"],
     narrative:
-      "Joshua turns back for Hazor, kills its king, and burns the city. The reason given is its standing: Hazor had been the head of all those kingdoms. Then comes a sentence that many readers skip. Of the cities that stood on their mounds, Israel burned none of them, except Hazor only.\n\nSo the chapter that sounds most total is also the chapter that distinguishes most carefully. Kings were killed and cities were captured, but the towns were left standing, because Israel intended to live in them. One city was burned, and it was the one that had been the regional power. That is a targeted act against a centre of authority rather than a policy of levelling the country.\n\nThe archaeology confirms the scale of what is claimed here and cannot confirm who did it. Both halves of that sentence belong in any honest account.",
+      "Joshua turns back for Hazor, kills its king, and burns the city. The reason given is its standing: Hazor had been the head of all those kingdoms. Then comes a sentence that many readers skip. Of the cities that stood on their mounds, Israel burned none of them, except Hazor only.\n\nSo the chapter that sounds most total is also the chapter that distinguishes most carefully. Kings were killed and cities were captured, but most towns were left standing. The chapter does not explain why Hazor alone was burned. One city was burned, and it was the one that had been the regional power. That is a targeted act against a centre of authority rather than a policy of levelling the country.\n\nExcavation shows Hazor's large size and a violent destruction, but it does not establish who caused that destruction. Both halves of that sentence belong in any honest account.",
     entityIds: ["joshua", "jabin", "hazor", "moses", "region-huleh-basin"],
     mapFeatureIds: ["site-hazor", "site-waters-of-merom"],
     mapCaption:
@@ -1633,11 +1633,11 @@ export const MILESTONES: Milestone[] = [
       "site-ashdod",
     ],
     mapCaption:
-      "The widest view in the book so far, shown as scope rather than possession. Mount Halak, the southern limit, cannot be placed.",
+      "The campaign's broad extent is shown as scope rather than possession. Mount Halak, the southern limit, cannot be placed.",
     whatChanged:
       "Nothing new is captured. This is the reach of the campaigns stated in one sentence, and it must not be drawn as controlled territory: the same book says two chapters later that much land remains unpossessed.",
     geographyExplanation:
-      "The two limits are chosen because you can see them from far away. Mount Hermon, above two thousand eight hundred metres and snow-capped for much of the year, is visible from most of Galilee and functions in these summaries as the obvious northern marker; Baal-gad is placed somewhere in the valley below it. At the other end, Mount Halak is described only as rising toward Seir, the Edomite hills, and no site has ever been agreed. Naming a campaign's extent by a famous mountain at one end and an unidentifiable one at the other is a reminder of what this kind of sentence is: a statement of reach in recognisable landmarks, not a surveyed boundary. The three cities where the Anakim remained are all on the coastal plain, the flat ground Israel does not take.",
+      "The summary uses mountain landmarks to describe its reach. Mount Hermon, above two thousand eight hundred metres and snow-capped for much of the year, is visible from most of Galilee and functions in these summaries as the obvious northern marker; Baal-gad is placed somewhere in the valley below it. At the other end, Mount Halak is described only as rising toward Seir, the Edomite hills, and no site has ever been agreed. Naming a campaign's extent by a famous mountain at one end and an unidentifiable one at the other is a reminder of what this kind of sentence is: a statement of reach in recognisable landmarks, not a surveyed boundary. The three cities where the Anakim remained are all on the coastal plain, the flat ground Israel does not take.",
     sequenceType: "summary",
     viewport: {
       center: [35.2, 32.1],
@@ -1750,7 +1750,7 @@ export const MILESTONES: Milestone[] = [
     title: "Thirty-one kings west of the Jordan",
     scriptureRefs: ["Joshua 12:7-24"],
     narrative:
-      "Then the list. The king of Jericho, one. The king of Ai, one. Jerusalem, Hebron, Jarmuth, Lachish, Eglon, Gezer, Debir, Geder, Hormah, Arad, Libnah, Adullam, Makkedah, Bethel, Tappuah, Hepher, Aphek, Lassharon, Madon, Hazor, Shimron Meron, Achshaph, Taanach, Megiddo, Kedesh, Jokneam in Carmel, Dor, Goiim in Gilgal, Tirzah. Thirty-one kings.\n\nNow set five of those entries beside the rest of the book. Jerusalem, verse 10: Joshua 15:63 says Judah could not drive out the people living there. Gezer, verse 12: Joshua 16:10 says the Canaanites in Gezer were not driven out. Megiddo, Taanach and Dor, verses 21 to 23: Joshua 17:11-13 says Manasseh could not take them.\n\nThe same book lists these cities as defeated and as unpossessed. Both statements are in the register's own volume, and a map that fills in this list with a colour has flatly contradicted the text it claims to illustrate.",
+      "Then the list. The king of Jericho, one. The king of Ai, one. Jerusalem, Hebron, Jarmuth, Lachish, Eglon, Gezer, Debir, Geder, Hormah, Arad, Libnah, Adullam, Makkedah, Bethel, Tappuah, Hepher, Aphek, Lassharon, Madon, Hazor, Shimron Meron, Achshaph, Taanach, Megiddo, Kedesh, Jokneam in Carmel, Dor, Goiim in Gilgal, Tirzah. Thirty-one kings.\n\nNow set five of those entries beside the rest of the book. Jerusalem, verse 10: Joshua 15:63 says Judah could not drive out the people living there. Gezer, verse 12: Joshua 16:10 says the Canaanites in Gezer were not driven out. Megiddo, Taanach and Dor, verses 21 to 23: Joshua 17:11-13 says Manasseh could not take them.\n\nThe same book lists these cities' kings as defeated while reporting that their inhabitants were not driven out. Both statements are in the register's own volume, and a map that fills in this list with a colour has flatly contradicted the text it claims to illustrate.",
     entityIds: [
       "joshua",
       "jericho",

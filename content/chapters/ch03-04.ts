@@ -34,7 +34,7 @@ export const CHAPTERS: Chapter[] = [
   {
     id: "ch3",
     number: 3,
-    title: "A river in flood, and a box carried into it",
+    title: "A river in flood, and the ark carried into it",
     summary:
       "Israel comes down to the Jordan, waits three days, and is told to follow the ark at a distance because it does not know the way. The priests carry it into a river at its spring height, the water is cut off far upstream, and the nation crosses on the riverbed opposite Jericho.",
     phase: "preparation-and-entry",
@@ -82,9 +82,9 @@ export const CHAPTERS: Chapter[] = [
         kind: "what-brought-us-here",
         title: "What brought us here",
         body:
-          "Joshua 1:11 started a clock: pass through the camp, prepare provisions, because within three days you cross this Jordan. Chapter 2 spent those days somewhere else, on a roof inside [[entity:jericho]] and then in the hills west of the river, and the two men came back with a report about the fear inside the city rather than a report about the water." +
+          "Joshua 1:11 started a clock: pass through the camp, prepare provisions, because within three days you cross this Jordan. Chapter 2 follows the spies elsewhere, on a roof inside [[entity:jericho]] and then in the hills west of the river, and the two men came back with a report about the fear inside the city rather than a report about the water." +
           "\n\n" +
-          "Chapter 3 returns to the clock and to the obstacle. The camp has been at [[entity:shittim]] on the plains east of the river since the closing chapters of Numbers, close enough to see the far bank for years. What has never been solved is how a nation on foot gets across a river at the wrong time of year.",
+          "Chapter 3 returns to the preparations and the obstacle. The three-day notices in chapters 1 to 3 do not establish a single clear timetable. The camp has been at [[entity:shittim]] on the plains east of the river since the closing chapters of Numbers, near the river they must now cross. What has never been solved is how a nation on foot gets across a river at the wrong time of year.",
         scriptureRefs: ["Joshua 1:10-11", "Joshua 2:22-24", "Numbers 25:1"],
         citations: [],
         evidenceLabels: ["biblical-account"],
@@ -94,7 +94,7 @@ export const CHAPTERS: Chapter[] = [
         kind: "surrounding-world",
         title: "The surrounding world",
         body:
-          "The Jordan is not a river in a plain. It runs down the floor of a tectonic rift, dropping below sea level soon after the [[entity:sea-of-chinnereth]] and continuing down to the [[entity:salt-sea]], the lowest exposed land on earth. Inside the broad valley floor the river has cut a second, narrower trench, the Zor, walled by soft marl banks that undercut and collapse." +
+          "The Jordan is not a river in a plain. It runs down the floor of a tectonic rift, flowing below sea level from the [[entity:sea-of-chinnereth]] down to the [[entity:salt-sea]], the lowest exposed land on earth. Inside the broad valley floor the river has cut a second, narrower trench, the Zor, walled by soft marl banks that undercut and collapse." +
           "\n\n" +
           "Its flood is seasonal. Winter rain and snowmelt off [[entity:mount-hermon]] and the northern highlands reach the lower valley in spring, when the grain harvest falls in the valley, the season Joshua 3:15 names. Before modern damming and extraction the spring river spread well out of its channel across the Zor." +
           "\n\n" +
@@ -126,9 +126,9 @@ export const CHAPTERS: Chapter[] = [
         kind: "why-it-matters",
         title: "Why it matters",
         body:
-          "What goes at the head of the column is not a commander and not a standard. It is a box carried by priests, and the nation is told to stay the better part of a kilometre behind it. The chapter repeats the phrase ark of the covenant to the point of insistence. Whatever else is happening on this day, the claim being made is that the presence of God is going first and the army is following, an order of march with [[ref:Numbers 10:33-36|a precedent from the wilderness years]]." +
+          "What goes at the head of the column is not a commander and not a standard. It is the ark of the covenant, carried by priests, and the nation is told to stay the better part of a kilometre behind it. The chapter repeats the phrase ark of the covenant to the point of insistence. Whatever else is happening on this day, the claim being made is that the presence of God is going first and the army is following, an order of march with [[ref:Numbers 10:33-36|a precedent from the wilderness years]]." +
           "\n\n" +
-          "The second claim is about continuity. The generation that saw the sea opened at the exodus has died in the wilderness; this generation is given the same act in its own river, and Joshua 4:23 will say so outright. Reformed writers read that as a seal on the succession from [[entity:moses]] to [[entity:joshua]] and on a covenant that holds unchanged across a change of leader. That is one Christian reading among several rather than the only one, but the chapter itself does connect the water to Joshua's standing: God tells him this is the day he will be magnified in Israel's sight.",
+          "The second claim is about continuity. The condemned wilderness generation has died; the people now entering the land receive a crossing that recalls the exodus, and Joshua 4:23 will say so outright. Reformed writers read that as a seal on the succession from [[entity:moses]] to [[entity:joshua]] and on a covenant that holds unchanged across a change of leader. That is one Christian reading among several rather than the only one, but the chapter itself does connect the water to Joshua's standing: God tells him this is the day he will be magnified in Israel's sight.",
         scriptureRefs: ["Joshua 3:3-4", "Joshua 3:7", "Joshua 3:11", "Joshua 4:23"],
         citations: [
           {
@@ -154,7 +154,7 @@ export const CHAPTERS: Chapter[] = [
           "\n\n" +
           "The reason attached to the two thousand cubits is unusual: you have not passed this way before. The gap is what makes a marker at the front of a long column visible from the back." +
           "\n\n" +
-          "God's names shift: the living God is among you in verse 10, while verses 11 and 13 give the ark's owner a longer title, in verse 13 stacked onto the divine name itself, beside the promise about the water. What each claims repays a slow look." +
+          "The titles for God develop through the passage. Verse 10 calls him the living God; verses 11 and 13 call him the Lord of all the earth. The promise about the river is thus tied to his authority over the land Israel is entering." +
           "\n\n" +
           "The twelve men of verse 12 are appointed, then dropped until chapter 4, a loose thread. It is the third gap in a row: verse 7 makes a promise without the how, verse 8 orders the priests without the why." +
           "\n\n" +
@@ -162,7 +162,7 @@ export const CHAPTERS: Chapter[] = [
           "\n\n" +
           "The priests do two opposite things, going first and then stopping. They stand in the middle of the channel until the whole nation is across, keeping the ark in the riverbed for the entire crossing rather than at the head of a procession." +
           "\n\n" +
-          "Verse 16 looks both ways along the river in one sentence, heaped up far to the north, failed away to the south, more than anyone standing on the bank could see.",
+          "Verse 16 looks both ways along the river in one sentence, heaped up far to the north and cut off to the south, more than anyone standing on the bank could see.",
         scriptureRefs: [
           "Joshua 3:4",
           "Joshua 3:7",
@@ -200,7 +200,7 @@ export const CHAPTERS: Chapter[] = [
           "\n\n" +
           "*Was it a landslide?* Collapses of the marl terraces near the Damiyeh area have blocked the Jordan on record, so a local collapse can stop this river; whether one did here is another matter. The chapter names no mechanism of any kind; it times the cut-off to the moment the priests' feet touch the water and attributes it to God. Saying a landslide explains Joshua 3 adds something to the chapter; so does saying it would make this less an act of God. Both go past what is written." +
           "\n\n" +
-          "*Where are Adam and Zarethan?* [[entity:adam-city]] is usually placed at Tell ed-Damiyeh. [[entity:zarethan]] is disputed, with Tell es-Sa'idiyeh and Tell Umm Hamad proposed. The general shape of the account, a blockage well upstream of the crossing, survives that uncertainty; precise distances do not, and we do not give them.",
+          "*Where are Adam and Zarethan?* [[entity:adam-city]] is usually placed at Tell ed-Damiyeh. [[entity:zarethan]] is disputed, with Tell es-Sa'idiyeh and Tell Umm Hamad proposed. The general shape of the account, a blockage well upstream of the crossing, survives that uncertainty; precise distances remain uncertain, so any distances given here are approximate.",
         scriptureRefs: ["Joshua 3:13", "Joshua 3:15", "Joshua 3:16"],
         citations: [
           {
@@ -292,7 +292,7 @@ export const CHAPTERS: Chapter[] = [
         body:
           "The twelve men appointed in the previous chapter finally get their task. Each takes a stone from the place where the priests' feet stood, to carry over and set down. [[entity:joshua]] also sets up twelve stones in the middle of the Jordan where the priests had stood, and verse 9 says they are there to this day. How that set relates to the stones carried out is not explained." +
           "\n\n" +
-          "About forty thousand armed men of [[entity:tribe-reuben]], [[entity:tribe-gad]] and [[entity:tribe-manasseh-east]] pass over in front of the others, which is the Numbers 32 agreement being kept where everyone can see it. On that day God magnifies Joshua in the sight of all Israel, and they hold him in the awe they held [[entity:moses]] in." +
+          "About forty thousand armed men of [[entity:tribe-reuben]], [[entity:tribe-gad]] and [[entity:tribe-manasseh-east]] pass over in front of the others, which is the Numbers 32 agreement being kept where everyone can see it. On that day God magnifies Joshua in the sight of all Israel, and they revere him as they revered [[entity:moses]]." +
           "\n\n" +
           "When the nation is over, the priests carry the ark up out of the channel, and the moment their feet reach dry ground the Jordan returns and runs over its banks as before. The people come up on the tenth day of the first month and camp at [[entity:gilgal]], and there Joshua sets up the twelve stones. Then he says what they are for: when your children ask what these stones mean, tell them Israel crossed this Jordan on dry ground, because God dried it as he dried the sea at the exodus.",
         scriptureRefs: ["Joshua 4:1-9", "Joshua 4:10-14", "Joshua 4:15-24"],
@@ -313,7 +313,7 @@ export const CHAPTERS: Chapter[] = [
         body:
           "Chapter 3 left two things unfinished. Twelve men had been appointed with nothing to do, and the priests were standing in the middle of a riverbed with a nation filing past them. Chapter 4 closes both." +
           "\n\n" +
-          "Behind it stands an older arrangement. In Numbers 32 [[entity:tribe-reuben]] and [[entity:tribe-gad]] asked for the land east of the Jordan and were granted it on one condition: their fighting men would cross over armed and go ahead of their brothers until Israel held its inheritance. Joshua 1:12-15 restated the terms to them, and they agreed. This chapter is where that promise comes due, in public, at the one moment when going back would still be easy.",
+          "Behind it stands an older arrangement. In Numbers 32 [[entity:tribe-reuben]] and [[entity:tribe-gad]] asked for the land east of the Jordan and were granted it on one condition: their fighting men would cross over armed and go ahead of their brothers until Israel held its inheritance. Joshua 1:12-15 restated the terms to them, and they agreed. This chapter is where that promise comes due, in public, as they cross into the land they have promised to help the others take.",
         scriptureRefs: ["Joshua 3:12", "Joshua 3:17", "Numbers 32:20-32", "Joshua 1:12-15"],
         citations: [
           {
@@ -330,7 +330,7 @@ export const CHAPTERS: Chapter[] = [
         kind: "surrounding-world",
         title: "The surrounding world",
         body:
-          "Setting up unworked standing stones was an ordinary thing to do in this world. Upright stones turn up at sanctuaries and open-air installations across the Bronze and Iron Age southern Levant, and the Hebrew Bible knows the practice well enough to legislate against some uses of it while narrating others without objection." +
+          "Setting up unworked standing stones was common in this region. Upright stones turn up at sanctuaries and open-air installations across the Bronze and Iron Age southern Levant, and the Hebrew Bible knows the practice well enough to legislate against some uses of it while narrating others without objection." +
           "\n\n" +
           "The functions vary: witness to an agreement, boundary marker, grave, memorial of an event, or representation of a deity. What the archaeology supplies is the vocabulary, not this monument. Nothing excavated can be attached to Joshua 4, and since [[entity:gilgal]] has no established location there is nowhere in particular to look." +
           "\n\n" +
@@ -364,7 +364,7 @@ export const CHAPTERS: Chapter[] = [
         body:
           "This is where the book says why it bothers with geography. The stones are set up so that a question can be asked. When your children ask their fathers what these stones mean, you tell them. The monument is not aimed at God and not at the inhabitants of the land; it is a prompt placed in a landscape so that a generation which crossed nothing has something to point at and a reason to want the story." +
           "\n\n" +
-          "That makes remembering a physical arrangement rather than an effort of will. Deuteronomy 6 and Exodus 12 use the same form, a child's question answered with an account of rescue, [[ref:Psalm 145:4|the Psalms treat the handover between generations as praise]], and here the answer is anchored to a spot on the ground. Reformed writers have drawn from this the principle that covenant signs are given to be explained to children and point away from themselves to what God did, which is one Christian reading rather than the only one. The chapter's own claim is narrower and harder to argue with: without something standing where it can be tripped over, the question does not get asked at all.",
+          "That makes remembering a physical arrangement rather than an effort of will. Deuteronomy 6 and Exodus 12 use the same form, a child's question answered with an account of rescue, [[ref:Psalm 145:4|the Psalms treat the handover between generations as praise]], and here the answer is anchored to a spot on the ground. Reformed writers have drawn from this the principle that covenant signs are given to be explained to children and point away from themselves to what God did, which is one Christian reading rather than the only one. The chapter gives the stones a specific purpose: to prompt children to ask about the crossing and parents to tell its story.",
         scriptureRefs: ["Joshua 4:6-7", "Joshua 4:21-24", "Deuteronomy 6:20-25", "Exodus 12:26-27"],
         citations: [
           {
@@ -436,9 +436,9 @@ export const CHAPTERS: Chapter[] = [
         kind: "difficult-questions",
         title: "Difficult questions",
         body:
-          "*One set of stones or two?* Verses 8 and 20 have stones lifted out of the channel and set up at the camp. Verse 9 has Joshua set up twelve stones in the middle of the river. Readers have taken it three ways: two monuments, one visible and one submerged; a back-reference in verse 9 to the same stones; or a difficulty in the text itself. The Hebrew allows argument, and to this day in verse 9 is a claim by someone who could not have been looking at them. The chapter does not settle it." +
+          "*One set of stones or two?* Verses 8 and 20 have stones lifted out of the channel and set up at the camp. Verse 9 has Joshua set up twelve stones in the middle of the river. Readers have taken it three ways: two monuments, one visible and one submerged; a back-reference in verse 9 to the same stones; or a difficulty in the text itself. The Hebrew allows argument, and the phrase to this day in verse 9 raises a further question about how the river stones were remembered or seen. The chapter does not settle it." +
           "\n\n" +
-          "*Where is Gilgal?* Nowhere we can name. Proposals include Khirbet el-Mafjir and Khirbet en-Nitla; none has carried. The map pin stands for the area the text describes. So the one object in Joshua whose whole purpose is to be stood in front of and asked about cannot be visited." +
+          "*Where is Gilgal?* Nowhere we can name. Proposals include Khirbet el-Mafjir and Khirbet en-Nitla; none has gained general acceptance. The map pin stands for the area the text describes. So the one object in Joshua whose whole purpose is to be stood in front of and asked about cannot be visited." +
           "\n\n" +
           "*Does the Levantine practice support the account?* It shows the act described would have been legible in that world; it does not attest this monument, and nothing found can be tied to it.",
         scriptureRefs: ["Joshua 4:8", "Joshua 4:9", "Joshua 4:19-20"],
@@ -461,7 +461,7 @@ export const CHAPTERS: Chapter[] = [
     ],
     discussionQuestions: [
       "Joshua says the stones exist so that a child's question has an answer. What does it change about the way you read the rest of the book to know that its geography was recorded for that purpose?",
-      "One set of stones stands at the camp and, in verse 9, one set stands in the middle of the river where nobody can see it. What would each set be for?",
+      "If verse 9 describes a second set of stones in the river, how might its purpose differ from that of the stones at the camp?",
       "The eastern tribes cross armed and at the front, and the text makes a point of it happening in front of everyone. Why report it that way rather than simply record that they kept the agreement?",
       "Gilgal cannot be located. How much does losing the place cost a chapter whose whole concern is a monument standing in one particular spot?",
       "The river goes back to flood the moment the priests step out of it. What does that detail do that the crossing on its own would not?",
@@ -503,7 +503,7 @@ export const MILESTONES: Milestone[] = [
     narrative:
       "Joshua rises early and the whole camp moves. From [[entity:shittim]] on the plains east of the river the column comes down to the [[entity:jordan-river]] and stops there, and for three days nothing else happens. The waiting is not dead space in the account. It is the last interval in which Israel is an encamped people rather than a people in the land, and it is spent in sight of the thing in the way." +
       "\n\n" +
-      "Neither verse says what the three days are for. Chapter 1 had already announced a three day clock and chapter 2 had used those days on the far bank, so a reader arrives at the water with the sense of a schedule being kept rather than a delay being suffered. At the end of the three days the officers go through the camp with instructions, and the chapter starts moving again.",
+      "Neither verse says what the three days are for. Chapter 1 had announced a crossing within three days, while chapter 2 described the spies hiding for three days. How those intervals fit this wait is not explained. At the end of the three days the officers go through the camp with instructions, and the chapter starts moving again.",
     entityIds: ["joshua", "shittim", "jordan-river", "jordan-crossing-region", "region-jordan-valley"],
     mapFeatureIds: [
       "route-shittim-to-jordan",
@@ -840,7 +840,7 @@ export const MILESTONES: Milestone[] = [
     narrative:
       "The people come up out of the Jordan on the tenth day of the first month and camp at [[entity:gilgal]], on the eastern side of [[entity:jericho]], and there [[entity:joshua]] sets up the twelve stones they had taken from the river." +
       "\n\n" +
-      "This is the first Israelite camp west of the Jordan, and it becomes the base for everything that follows, the place the army returns to after Jericho, after Ai, after Gibeon and after the southern campaign. It is also a place we cannot find. No site has been securely identified with Gilgal, proposals have been made and none has carried, and the pin on the map marks the area the text describes rather than a location. The chapter's monument therefore stands somewhere in a few square kilometres of valley floor that we can point at only in general terms.",
+      "This is the first Israelite camp west of the Jordan, and it becomes the base for everything that follows, the place the army returns to after Jericho, after Ai, after Gibeon and after the southern campaign. It is also a place we cannot find. No site has been securely identified with Gilgal, several sites have been proposed without general agreement, and the pin on the map marks the area the text describes rather than a location. The chapter's monument therefore stands somewhere in a few square kilometres of valley floor that we can point at only in general terms.",
     entityIds: ["gilgal", "jericho", "joshua", "jordan-crossing-region", "region-jordan-valley"],
     mapFeatureIds: [
       "site-gilgal",
@@ -849,7 +849,7 @@ export const MILESTONES: Milestone[] = [
       "route-jordan-crossing",
     ],
     mapCaption:
-      "Gilgal, shown as an area rather than a point, on the plain between the river and Jericho.",
+      "Gilgal is marked approximately on the plain between the river and Jericho; its exact site is unknown.",
     whatChanged:
       "Israel has a camp inside the land. The stones out of the riverbed are standing on dry ground, and the base for the next several chapters is established.",
     geographyExplanation:
@@ -881,7 +881,7 @@ export const MILESTONES: Milestone[] = [
     title: "What do these stones mean?",
     scriptureRefs: ["Joshua 4:21-24"],
     narrative:
-      "[[entity:joshua]] says what the stones are for, and the instruction is addressed to people who are not there. When your children ask their fathers what these stones mean, you tell them Israel came over this Jordan on dry ground. Then the reason widens twice. God dried the Jordan as he dried the sea at the exodus, so the two are one act rather than two wonders; and the purpose reaches past Israel, so that all the peoples of the earth may know his hand, and so that Israel may hold him in awe always." +
+      "[[entity:joshua]] says what the stones are for, and the instruction is addressed to people who are not there. When your children ask their fathers what these stones mean, you tell them Israel came over this Jordan on dry ground. Then the reason widens twice. God dried the Jordan as he dried the sea at the exodus, linking the two crossings as acts of the same God; and the purpose reaches past Israel, so that all the peoples of the earth may know his hand, and so that Israel may hold him in awe always." +
       "\n\n" +
       "Nothing moves in these verses. They are the chapter explaining its own method. An object is put in the ground because a question will one day be asked in front of it, and the answer to that question is the story. It is the clearest statement in the book of why it records where things happened at all.",
     entityIds: ["joshua", "gilgal", "jordan-river", "jordan-crossing-region", "salt-sea"],

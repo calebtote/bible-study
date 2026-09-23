@@ -49,7 +49,7 @@ export const CHAPTERS: Chapter[] = [
         kind: "at-a-glance",
         title: "At a glance",
         body:
-          "Between the river and the first battle the book stops. A whole generation born in the wilderness is circumcised at Gilgal, the reproach of Egypt is rolled away, and Passover is kept in the plains of Jericho. The next day the manna stops and Israel eats Canaan's own grain. Then Joshua meets the commander of Yahweh's army, who declines his either-or: the question is whose side Joshua is on.",
+          "Between the river and the first battle the book stops. A whole generation born in the wilderness is circumcised at Gilgal, the reproach of Egypt is rolled away, and Passover is kept in the plains of Jericho. Israel eats Canaan's grain, and the manna stops the following day. Then Joshua meets the commander of Yahweh's army, who declines his either-or: the question is whose side Joshua is on.",
         scriptureRefs: ["Joshua 5:1-15"],
         citations: [],
         evidenceLabels: ["biblical-account"],
@@ -61,7 +61,7 @@ export const CHAPTERS: Chapter[] = [
         body:
           "News of the crossing reaches the kings of the [[entity:amorites]] beyond the Jordan and the kings of the [[entity:canaanites]] by the sea, and their courage drains away. That is the situation in which God tells [[entity:joshua]] to make flint knives.\n\n" +
           "Every male born on the desert march is circumcised at a place the text calls Gibeath-haaraloth, the hill of the foreskins. The generation that left Egypt had been circumcised; the generation that replaced it had not. The camp then waits while the men heal, which is a long pause for a fighting force inside hostile territory. God says the reproach of Egypt has been rolled away, and the site is named [[entity:gilgal]], a word the text ties to that rolling.\n\n" +
-          "On the fourteenth day of the month they keep Passover in the plains of [[entity:jericho]]. The next day they eat unleavened bread and parched grain from the produce of the land, and the manna stops.\n\n" +
+          "On the fourteenth day of the month they keep Passover in the plains of [[entity:jericho]]. The next day they eat unleavened bread and parched grain from the produce of the land. The manna stops the day after they eat it.\n\n" +
           "Then [[entity:joshua]] is near Jericho and sees a man standing with a drawn sword. He asks the soldier's question: are you for us or for our adversaries? The answer refuses both. The figure names himself commander of Yahweh's army, and [[entity:joshua]] falls on his face and is told to take off his sandals, because the ground is holy.",
         scriptureRefs: ["Joshua 5:1-15"],
         citations: [
@@ -80,7 +80,7 @@ export const CHAPTERS: Chapter[] = [
         title: "What brought us here",
         body:
           "Israel crossed the [[entity:jordan-river]] on the tenth day of the first month and camped at [[entity:gilgal]], where twelve stones from the riverbed were set up. Behind that lies forty years in which the generation that refused to enter died out. Numbers and Deuteronomy both record that failure; Joshua 5 adds that the sons born on the way had not been circumcised. The text states this and does not explain it.\n\n" +
-          "Two of the three pieces here reach back to Egypt. [[ref:Exodus 12:1-14|Passover was instituted the night Israel left]], and [[ref:Exodus 12:43-49|the law ties eating it to being circumcised]], which makes the order of this chapter a legal requirement rather than a mood. [[ref:Exodus 16:11-15|The manna began a month after the sea crossing]], with [[ref:Exodus 16:35|the notice that Israel ate it until they came to the border of Canaan]]. Chapter 5 is where that clause runs out.",
+          "Two of the three pieces here reach back to Egypt. [[ref:Exodus 12:1-14|Passover was instituted the night Israel left]], and [[ref:Exodus 12:43-49|the law ties eating it to being circumcised]], which explains why circumcision precedes the meal. [[ref:Exodus 16:11-15|The manna began a month after the sea crossing]], with [[ref:Exodus 16:35|the notice that Israel ate it until they came to the border of Canaan]]. Chapter 5 is where that clause runs out.",
         scriptureRefs: [
           "Joshua 4:19",
           "Exodus 12:43-49",
@@ -147,7 +147,7 @@ export const CHAPTERS: Chapter[] = [
         title: "Why it matters",
         body:
           "The first thing Israel does inside Canaan is not military. It submits to a knife and eats a meal about being brought out of Egypt. Reformed theology reads circumcision and Passover as signs and seals of the covenant, visible marks that attach a promise to a particular people, and Calvin treats the delay before battle as evidence that the promise rather than Israel's readiness carries the campaign. That is a Reformed reading, and other Christian traditions weight the two rites differently.\n\n" +
-          "The last scene resists being used. [[entity:joshua]] asks a question with two options and is given neither. The commander does not enlist in Israel's army; Joshua is told to worship. Whatever this chapter authorises, it is not the assumption that God stands with whoever is holding the sword, and nothing in it transfers to any later war.",
+          "The last scene resists being used. [[entity:joshua]] asks a question with two options and is given neither. Joshua bows before the commander and is told to remove his sandals. Whatever this chapter authorises, it is not the assumption that God stands with whoever is holding the sword, and nothing in it transfers to any later war.",
         scriptureRefs: ["Joshua 5:9", "Joshua 5:13-15"],
         citations: [
           {
@@ -172,7 +172,7 @@ export const CHAPTERS: Chapter[] = [
         body:
           "The knives are flint. Israel had metal, and the text neither explains the choice nor treats it as remarkable; the same stone tools appear in Exodus 4.\n\n" +
           "Joshua 5:2 says to circumcise Israel *a second time*, which has puzzled readers since antiquity and reads differently in the Greek tradition. Commentators offer solutions; none has settled the matter.\n\n" +
-          "Gibeath-haaraloth is named once and never again. [[entity:gilgal]] is explained by a play on a verb meaning to roll, which is how the text links the place to the rolled-away reproach. The text is punning, and knows it.\n\n" +
+          "Gibeath-haaraloth is named once and never again. [[entity:gilgal]] is explained by a play on a verb meaning to roll, which is how the text links the place to the rolled-away reproach. The wordplay connects the name with the event.\n\n" +
           "Exodus 16 already reports that the manna lasted until Israel reached the edge of Canaan. Joshua 5:12 supplies the date, and pairs the last of the manna with the first of the local grain inside a single verse.\n\n" +
           "Two details tie the closing scene to earlier ones. A messenger with a drawn sword had stood in [[entity:balaam]]'s road, and the instruction to remove sandals repeats what [[entity:moses]] heard at the bush.\n\n" +
           "Verse 1 is the second time Canaan has heard the report of Yahweh's works. [[ref:Joshua 2:8-13|Rahab heard the same news]]; the difference between her response and the kings' is worth pinning down. Psalm 2, especially Psalm 2:11-12, speaks to kings who hear such reports.\n\n" +
@@ -211,7 +211,7 @@ export const CHAPTERS: Chapter[] = [
         kind: "difficult-questions",
         title: "Difficult questions",
         body:
-          "Circumcising every fighting man within sight of a walled city is, on any military reading, indefensible. The text shows no awareness of the problem and offers no protective detail: no watch posted, no diversion, nothing. Readers respond differently. Some take the silence as the point, the narrative refusing to let Israel's competence matter. Others read chapter 5 as liturgical shaping, a later community's ordering of memory rather than a field report. Either way the chapter's claim stands: that week Israel's safety rested on God alone.\n\n" +
+          "Circumcising the wilderness-born men near a hostile city leaves the camp vulnerable while they recover. Verse 1 reports the surrounding kings' fear, but the chapter describes no protective measures during the recovery. Readers respond differently. Some take the silence as the point, the narrative refusing to let Israel's competence matter. Others read chapter 5 as liturgical shaping, a later community's ordering of memory rather than a field report. Either way the chapter's claim stands: that week Israel's safety rested on God alone.\n\n" +
           "The figure with the sword accepts [[entity:joshua]]'s prostration, and the sandal command repeats Exodus 3:5 almost word for word; a long Christian tradition, Calvin included, reads him as the pre-incarnate Son, others an angel bearing Yahweh's name and authority. His no answers Joshua's question, not Israel's cause: the offered choice has the sides the wrong way round, and chapter 6 opens with Jericho given into Joshua's hand. God is not enlisted in Israel's war; Israel is summoned into his.",
         scriptureRefs: ["Joshua 5:2-9", "Joshua 5:13-15"],
         citations: [
@@ -248,7 +248,7 @@ export const CHAPTERS: Chapter[] = [
       },
     ],
     discussionQuestions: [
-      "The camp spends days recovering from circumcision within sight of Jericho's walls. What does the narrative gain by refusing to explain how Israel got away with that?",
+      "The camp spends days recovering from circumcision within sight of Jericho's walls. How does the report of the kings' fear in verse 1 shape your reading of that vulnerable moment?",
       "The manna stops the day after Israel eats Canaan's grain. What changes for a people who now depend on a harvest they did not plant?",
       "The reproach of Egypt is declared rolled away forty years after Israel left Egypt. Why might the text place that announcement here rather than at the sea?",
       "Joshua offers the commander two options and is told neither. Where do you hear the question 'are you for us or for them' asked in a way this answer would unsettle?",
@@ -283,7 +283,7 @@ export const CHAPTERS: Chapter[] = [
     number: 6,
     title: "Seven days around Jericho",
     summary:
-      "Israel takes its first city by walking around it, and then destroys everything in it except one household and the metal. The chapter is also where this study's honesty about archaeology is most tested.",
+      "Israel takes its first city by walking around it, and then destroys everything in it except one household and the metal. The account also raises difficult questions about destruction and the archaeological evidence.",
     phase: "campaigns-and-consequences",
     scriptureRange: "Joshua 6:1-27",
     milestoneIds: [
@@ -312,7 +312,7 @@ export const CHAPTERS: Chapter[] = [
           "[[entity:jericho]] is shut up tight because of Israel; nobody goes out and nobody comes in. God's first word to [[entity:joshua]] is in the past tense: I have given Jericho into your hand.\n\n" +
           "The instructions are a liturgy, not a plan of attack. Armed men go in front, then seven priests carrying seven rams' horns, then the ark, then a rear guard. The people are ordered not to shout or let a word out of their mouths. For six days they walk around the city once and go back to camp.\n\n" +
           "On the seventh they rise at dawn and go round seven times. At the seventh circuit the priests blow, [[entity:joshua]] tells the people to shout, and the wall falls flat. Israel goes up into the city, each man straight in front of him.\n\n" +
-          "Then the chapter reports what *herem* means in practice. Men and women, young and old, cattle, sheep and donkeys are put to the sword. The two men who had lodged with [[entity:rahab]] bring her out with her father, mother, brothers and all who belonged to her, and they are settled outside the camp. The city is burned. Silver, gold, bronze and iron go into the treasury of Yahweh's house. [[entity:joshua]] swears a curse on anyone who rebuilds the place.",
+          "Then the chapter reports what *herem*, the irrevocable devotion of the city to God, means in practice. Men and women, young and old, cattle, sheep and donkeys are put to the sword. The two men who had lodged with [[entity:rahab]] bring her out with her father, mother, brothers and all who belonged to her, and they are settled outside the camp. The city is burned. Silver, gold, bronze and iron go into the treasury of Yahweh's house. [[entity:joshua]] swears a curse on anyone who rebuilds the place.",
         scriptureRefs: ["Joshua 6:1-27"],
         citations: [
           {
@@ -328,7 +328,7 @@ export const CHAPTERS: Chapter[] = [
         kind: "what-brought-us-here",
         title: "What brought us here",
         body:
-          "Two chapters ago [[entity:joshua]] sent two men into [[entity:jericho]] and they were hidden by [[entity:rahab]], who bargained for her family's lives and was told to gather them into her house and hang a scarlet cord in the window. That arrangement is still outstanding when the walls come down.\n\n" +
+          "In chapter 2 [[entity:joshua]] sent two men into [[entity:jericho]] and they were hidden by [[entity:rahab]], who bargained for her family's lives and was told to gather them into her house and hang a scarlet cord in the window. That arrangement is still outstanding when the walls come down.\n\n" +
           "Since then Israel has crossed the [[entity:jordan-river]], camped at [[entity:gilgal]], been circumcised, kept Passover, and stopped receiving manna. The armed figure of chapter 5 has just told [[entity:joshua]] that the ground is holy and declined to take a side.\n\n" +
           "The instruction behind the destruction is older. Deuteronomy sets the nearby nations apart from distant cities, which may be offered terms, and puts the peoples of Canaan under *herem*, a word meaning devoted or given over irrevocably. Jericho is where that command first meets a real city, and the first thing the chapter does with it is make an exception.",
         scriptureRefs: [
@@ -352,7 +352,7 @@ export const CHAPTERS: Chapter[] = [
         kind: "surrounding-world",
         title: "The surrounding world",
         body:
-          "Tell es-Sultan, the mound identified as Jericho, is one of the most-dug sites in the Levant, and the two registers here have to be kept apart.\n\n" +
+          "Tell es-Sultan, identified as Jericho, has been extensively excavated. Its remains must be distinguished from the events the narrative describes.\n\n" +
           "What excavation established: the mound has an extraordinarily long occupation, with Neolithic architecture and massive Middle Bronze Age fortifications. Kathleen Kenyon concluded that those great walls belong to the Middle Bronze Age and that Late Bronze occupation at the site was slight. Piotr Bienkowski's technical study is the standard statement of that case. Bryant Wood argued that Kenyon's Middle Bronze destruction should be redated to the end of Late Bronze I, which would place a destroyed city in the fifteenth century; Bienkowski replied in print, and the exchange has not been resolved. Current excavation under Lorenzo Nigro continues, mostly on the earlier periods.\n\n" +
           "What the text claims is a walled city with a king, taken in a single action and burned.\n\n" +
           "Those two things do not add up to a confirmation. On the mainstream reading there is little at the site to correspond to a Late Bronze city at all, and that absence is itself contested. It is worth distinguishing *no evidence* from *evidence against*; neither phrase settles this, and excavation has not confirmed the narrative.",
@@ -397,7 +397,7 @@ export const CHAPTERS: Chapter[] = [
         kind: "why-it-matters",
         title: "Why it matters",
         body:
-          "Nothing Israel does in this chapter would take a city. It walks, carries a box, blows horns, and shouts. The narrative is arranged so that the only agent who could account for the result is God, and the claim is stated before the event rather than after it: I have given Jericho into your hand. That sentence is worth setting beside [[ref:Joshua 1:3|the book's opening grant]]; what the one verse has done to the other by 6:2 is worth working out. It is worth counting how many times 6:1-14 mentions the ark, and how often a command from the LORD is followed by the people doing exactly that; the narrator repeats both patterns for a reason worth naming. Paul's argument in 1 Corinthians 1:18-25 has often been read alongside a strategy this unlikely.\n\n" +
+          "Nothing Israel does in this chapter would take a city. It walks, carries the ark, blows horns and shouts. The narrative is arranged so that the only agent who could account for the result is God, and the claim is stated before the event rather than after it: I have given Jericho into your hand. That sentence is worth setting beside [[ref:Joshua 1:3|the book's opening grant]]; what the one verse has done to the other by 6:2 is worth working out. It is worth counting how many times 6:1-14 mentions the ark, and how often a command from the LORD is followed by the people doing exactly that; the narrator repeats both patterns for a reason worth naming. Paul's argument in 1 Corinthians 1:18-25 has often been read alongside a strategy this unlikely.\n\n" +
           "Reformed readers have taken Jericho as the pattern case of what they call holy war, in which the battle is Yahweh's and the human contribution is obedience and worship, and Calvin presses the point that the procession was designed to make Israel's strength irrelevant. That is one Christian reading. Others place the weight on [[entity:rahab]], taking the chapter's real hinge to be the survival of a Canaanite household inside a story of total destruction, so that the exception rather than the rule tells you where the book is going.",
         scriptureRefs: [
           "Joshua 6:2",
@@ -427,7 +427,7 @@ export const CHAPTERS: Chapter[] = [
         title: "Details worth noticing",
         body:
           "Seven organises the chapter: seven priests, seven horns, seven circuits on the seventh of seven days. The instrument is the ram's horn that announces the jubilee, an instrument of proclamation.\n\n" +
-          "The ark travels in the middle of the formation, with armed men before and behind. They are an escort, and they assault nothing.\n\n" +
+          "The ark travels in the middle of the formation, with armed men before and behind. They are an escort, and they make no assault during the procession.\n\n" +
           "The Hebrew of 6:20 says the wall fell in its place, under itself. It does not describe a breach or a section coming down, which is part of why the verse has drawn so much attention.\n\n" +
           "The metal is consigned to the treasury of Yahweh's house. Chapter 7 turns on exactly that clause, so the inventory here is not housekeeping.\n\n" +
           "[[entity:rahab]]'s family is put *outside* the camp, and the chapter then says she lived in the midst of Israel to this day, which is a later writer's note about a Canaanite household that was still there.\n\n" +
@@ -461,7 +461,7 @@ export const CHAPTERS: Chapter[] = [
         kind: "difficult-questions",
         title: "Difficult questions",
         body:
-          "The chapter says that everything breathing in [[entity:jericho]] was killed, children included, at God's command and as an act of worship. That is what the text says, and no amount of context makes it comfortable. Leviticus 18:24-30, Deuteronomy 9:4-6, Genesis 15:12-21 and Jeremiah 18:7-8 each supply part of the Torah's and the prophets' own frame for it, and are worth reading before deciding anything.\n\n" +
+          "The chapter describes the killing of Jericho's inhabitants, children included, under the command to devote the city to God; Rahab's household is spared. That is what the text says, and no amount of context makes it comfortable. Leviticus 18:24-30, Deuteronomy 9:4-6, Genesis 15:12-21 and Jeremiah 18:7-8 each supply part of the Torah's and the prophets' own frame for it, and are worth reading before deciding anything.\n\n" +
           "The responses in print do not converge. Some argue that the language is the conventional hyperbole of ancient conquest accounts, which routinely claim total destruction of populations that demonstrably survived. Some read Jericho as a garrison rather than a town full of families. Some hold that the command was genuine, limited to one people at one moment, and not repeatable. Some conclude that the portrait of God here cannot be reconciled with the portrait in the Gospels, and say so. The study's question on the command to destroy the Canaanites sets these out at length, alongside the separate question of how destruction language works.\n\n" +
           "Two things can be said without choosing. The chapter itself immediately exempts a Canaanite family, which is hard to square with a straightforward ethnic programme. And the book's own claim is that Yahweh gave the city, not that Israel earned or deserved it, which removes any ground for a later people reading their own wars into this one.",
         scriptureRefs: [
@@ -512,7 +512,7 @@ export const CHAPTERS: Chapter[] = [
       "Israel is ordered to keep silent for six days and then shout on command. What does a week of saying nothing do to the people doing it?",
       "The metal from Jericho is consigned to the treasury rather than destroyed. Why does that exception matter for what happens in the next chapter?",
       "Genesis 12:1-3 promised Abraham a land and a blessing reaching all the families of the earth. Where does each of those promises surface in the fall of Jericho and the sparing of Rahab?",
-      "Rahab's household is brought out of a city under total destruction and then settled outside the camp. What does 'outside the camp' say about where she stands at the end of the chapter?",
+      "Rahab's household is brought out of a city under total destruction and then settled outside the camp. How does that placement relate to the later statement in verse 25 that Rahab lived among Israel?",
       "Nothing in the chapter softens what was done to Jericho's children. What is lost if a reader moves straight to the theology without staying with that verse?",
     ],
     relatedEntityIds: [
@@ -540,7 +540,7 @@ export const CHAPTERS: Chapter[] = [
     number: 7,
     title: "Devoted things and a rout downhill",
     summary:
-      "One man takes what was set apart, and a small force sent up to Ai is chased back down the slope with thirty-six dead. A lot narrows the nation to a single household, which is executed in the Valley of Achor.",
+      "One man takes what was set apart, and a small force sent up to Ai is chased back down the slope with thirty-six dead. The selection narrows to Achan, who confesses and is taken with his household and possessions to the Valley of Achor for punishment.",
     phase: "campaigns-and-consequences",
     scriptureRange: "Joshua 7:1-26",
     milestoneIds: [
@@ -556,7 +556,7 @@ export const CHAPTERS: Chapter[] = [
         kind: "at-a-glance",
         title: "At a glance",
         body:
-          "Someone has taken what was devoted. Israel does not know it, sends a small force up to Ai, and is chased back down the slope with thirty-six dead. Joshua is told the problem is inside the camp. A lot narrows from tribe to clan to household to one man, Achan, who confesses. He and his family are taken to the Valley of Achor and stoned.",
+          "A small Israelite force is routed at Ai, leaving thirty-six dead. Joshua learns that someone has taken devoted goods. The selection narrows to Achan, who confesses and is taken with his family and possessions to the Valley of Achor. The account describes stoning and burning; its wording leaves the family's fate debated.",
         scriptureRefs: ["Joshua 7:1-26"],
         citations: [],
         evidenceLabels: ["biblical-account"],
@@ -569,7 +569,7 @@ export const CHAPTERS: Chapter[] = [
           "The chapter opens by telling the reader something Israel does not know. [[entity:achan]], of the tribe of [[entity:tribe-judah]], has taken from the devoted things, and Yahweh's anger is already burning.\n\n" +
           "[[entity:joshua]] sends men to look at [[entity:ai]]. They report that it is small: do not tire the whole army, two or three thousand will do. About three thousand go up. The men of Ai come out, chase them from in front of the gate as far as Shebarim, and strike them on the descent. Thirty-six die, and the people's hearts melt.\n\n" +
           "[[entity:joshua]] tears his clothes and lies before the ark until evening. His complaint is blunt: why did you bring this people over the [[entity:jordan-river]] at all? God's answer is to tell him to stand up. Israel has sinned; devoted things are in the camp; I will not go with you again until they are gone.\n\n" +
-          "The next morning a lot narrows the nation to a tribe, a clan, a household, a man. [[entity:achan]] admits it: a fine cloak from Shinar, two hundred shekels of silver, a bar of gold, buried under his tent. He says he saw, coveted, and took. He, his sons and daughters, his livestock, his tent and the goods are taken to a valley and stoned, then burned under a heap of stones.",
+          "The next morning a lot narrows the nation to a tribe, a clan, a household, a man. [[entity:achan]] admits it: a fine cloak from Shinar, two hundred shekels of silver, a bar of gold, buried under his tent. He says he saw, coveted, and took. He is taken with his family and possessions to a valley. Stoning and burning follow, then a heap of stones; the family's fate is discussed below.",
         scriptureRefs: ["Joshua 7:1-26"],
         citations: [
           {
@@ -640,8 +640,8 @@ export const CHAPTERS: Chapter[] = [
         kind: "why-it-matters",
         title: "Why it matters",
         body:
-          "Israel loses a battle it should have won, against a town its own scouts called small, and the chapter locates the cause inside the camp rather than on the field. Victory turns out not to be something Israel possesses. The divine sentence is conditional in a way chapter 1's promise was not: I will not be with you any more unless you remove the devoted thing. Joshua's prayer, for its part, stakes everything on the LORD's great name (7:9), an appeal worth setting beside John 12:27-28.\n\n" +
-          "Reformed theology has read this as covenant solidarity, the community treated as one body whose members are answerable for each other, and Calvin uses the chapter to argue that hidden sin is a public matter. That is one Christian reading among several. It does not dissolve the difficulty, which is that thirty-six men die for a theft they did not commit and a family is executed alongside the man who confessed. The study's question on Achan's household stays with that rather than explaining it away.",
+          "Israel loses a battle it should have won, against a town its own scouts called small, and the chapter locates the cause inside the camp rather than on the field. Victory turns out not to be something Israel possesses. The warning makes the consequence of disobedience explicit: I will not be with you any more unless you remove the devoted thing. Joshua's prayer, for its part, stakes everything on the LORD's great name (7:9), an appeal worth setting beside John 12:27-28.\n\n" +
+          "Reformed theology has read this as covenant solidarity, the community treated as one body whose members are answerable for each other, and Calvin uses the chapter to argue that hidden sin is a public matter. That is one Christian reading among several. It does not dissolve the difficulty, which is that thirty-six men die for a theft they did not commit and his family is brought to the place of punishment alongside him. The study's question on Achan's household stays with that rather than explaining it away.",
         scriptureRefs: ["Joshua 7:12", "Joshua 7:11", "Joshua 7:9", "John 12:27-28"],
         citations: [
           {
@@ -815,7 +815,7 @@ export const CHAPTERS: Chapter[] = [
         kind: "what-brought-us-here",
         title: "What brought us here",
         body:
-          "The last chapter ended with a family under a heap of stones and Yahweh's anger turned away. Chapter 8 begins with the words Israel needed after the rout: do not fear and do not be dismayed. The order to take all the people answers the scouts' advice in chapter 7 that a detachment would do.\n\n" +
+          "The last chapter ended with punishment in the Valley of Achor and Yahweh's anger turned away. Chapter 8 begins with the words Israel needed after the rout: do not fear and do not be dismayed. The order to take all the people answers the scouts' advice in chapter 7 that a detachment would do.\n\n" +
           "One clause is new. At [[entity:jericho]] everything was devoted and the metal went to the treasury; that is what [[entity:achan]] died over. Here God explicitly grants Israel the livestock and the spoil, which matches the allowance Deuteronomy makes elsewhere. That difference is the line the previous chapter was drawn over.\n\n" +
           "The second half of the chapter carries out an older instruction. Deuteronomy told Israel that when it crossed the Jordan it was to set the blessing on [[entity:mount-gerizim]] and the curse on [[entity:mount-ebal]], build an altar of unworked stones, and write the law on them. Joshua 8:30-35 reports that being done.",
         scriptureRefs: [
@@ -913,7 +913,7 @@ export const CHAPTERS: Chapter[] = [
         kind: "details-worth-noticing",
         title: "Details worth noticing",
         body:
-          "The ambush party is thirty thousand in one verse and five thousand in another. The chapter does not reconcile the figures and neither will this study.\n\n" +
+          "Verses 3 and 12 name forces of thirty thousand and five thousand. Readers differ over whether these describe separate detachments or differing accounts of the same ambush; the relationship is not explained.\n\n" +
           "What [[entity:joshua]] holds out is a *kidon*, the word used later for Goliath's weapon. He keeps it extended until the destruction is complete, which readers have long compared with [[entity:moses]]'s raised hand at the sea and against Amalek.\n\n" +
           "The king is hanged and then taken down at sunset. [[ref:Deuteronomy 21:22-23|Deuteronomy requires exactly that]], so the narrative is observing a rule even here.\n\n" +
           "Three heaps of stones now stand in the book: twelve from the riverbed in Joshua 4:1-9, one over [[entity:achan]], one over the king of [[entity:ai]] at his own gate. The phrasing repeats; what each heap is there to recall does not.\n\n" +
@@ -995,7 +995,7 @@ export const CHAPTERS: Chapter[] = [
       "Israel wins this time with a feint and an ambush rather than with horns and a shout. What changes when the two accounts sit side by side?",
       "God explicitly permits at Ai the spoil that was forbidden at Jericho, and Achan died over that difference. How does the permission read after chapter 7?",
       "The chapter moves from a burning town to a covenant assembly thirty-five kilometres north without describing the journey. What does that silence tell you about what the chapter is organised around?",
-      "The altar on Ebal is built of stones no iron has touched, in a chapter that has just listed iron among the plunder of a burned city. What do you make of the restriction?",
+      "The altar on Ebal is built of stones no iron has touched, following the account in chapter 6 that set Jericho's iron apart for the treasury. What do you make of the restriction?",
       "The reading of the law includes the sojourners living among Israel. What does their presence in the assembly do to the chapter's earlier verses?",
     ],
     relatedEntityIds: [
@@ -1032,14 +1032,14 @@ export const MILESTONES: Milestone[] = [
     scriptureRefs: ["Joshua 5:1-9", "Genesis 34:24-25"],
     narrative:
       "The kings west of the river hear what happened at the [[entity:jordan-river]] and lose their nerve. Israel does not exploit it. Instead God orders flint knives, and every male born during the forty years is circumcised at a rise the text calls Gibeath-haaraloth.\n\n" +
-      "The men then stay in camp until they are healed. How long is not said, though Genesis 34 assumes several days of incapacity after the same operation. For that stretch Israel's entire fighting strength is out of action a short walk from a walled city, wherever exactly the camp stood. Nothing in the account explains why no one attacked.\n\n" +
+      "The men then stay in camp until they are healed. How long is not said, though Genesis 34 assumes several days of incapacity after the same operation. For that stretch the newly circumcised men are recovering a short walk from a walled city, wherever exactly the camp stood. The account reports the kings' fear but gives no details of camp defences.\n\n" +
       "When it is done God says the reproach of Egypt has been rolled away, and the place is called [[entity:gilgal]]. The camp there becomes Israel's base for everything in chapters 6 to 10, though its exact site has never been securely identified.",
     entityIds: ["joshua", "gilgal", "jericho", "jordan-river", "amorites", "canaanites"],
     mapFeatureIds: ["site-gilgal", "site-jericho", "site-jordan-river", "region-jordan-valley"],
     mapCaption:
-      "Israel camps at Gilgal on the plain below Jericho while every man in the army recovers from circumcision.",
+      "Israel camps at Gilgal on the plain below Jericho while the newly circumcised men recover.",
     whatChanged:
-      "Nothing moves. The camp pitched at the end of chapter 4 stays where it is. The only change on the map is that it now has a name, Gilgal, and the pin marks an area rather than a known spot, because the identification is disputed.",
+      "Nothing moves. The camp pitched at the end of chapter 4 stays where it is. The chapter now explains the name Gilgal, already used in chapter 4, and the pin marks an area rather than a known spot, because the identification is disputed.",
     geographyExplanation:
       "The plain between the [[entity:jordan-river]] and [[entity:jericho]] is a floor roughly 250 metres below sea level, ten to fifteen kilometres across, hot for most of the year, with the Judean escarpment rising steeply to the west. Springs, above all the one at Jericho, make the oasis liveable; away from them the plain is dry scrub. A camp here has water from the river a few kilometres east, flat ground enough for a large group, and no defensive advantage whatever. It also sits at the foot of every route climbing into the hill country, which makes it the natural staging point for anything going west and the natural place to be caught by anything coming down. Gilgal's position is known only approximately, so the map shows the neighbourhood of the camp, not its edge.",
     sequenceType: "event",
@@ -1067,8 +1067,8 @@ export const MILESTONES: Milestone[] = [
     scriptureRefs: ["Joshua 5:10", "Exodus 12:43-49"],
     narrative:
       "On the fourteenth day of the first month, at evening, Israel keeps Passover on the plain east of [[entity:jericho]]. The date matters: they crossed the [[entity:jordan-river]] on the tenth, which is the day the law sets for selecting the lamb.\n\n" +
-      "This is only the third Passover the Pentateuch records. [[ref:Exodus 12:21-28|The first was kept in Egypt on the night of departure]], [[ref:Numbers 9:1-5|the second at Sinai a year later]]. Nothing is said about the forty years between. Exodus 12 restricts the meal to the circumcised, which is why the knives came first.\n\n" +
-      "The scene is a memorial kept by people who were not there. Almost everyone eating had been born after the exodus. They are being told, by a meal, that the deliverance belongs to them.",
+      "This is the third Passover observance recorded across the Pentateuch and Joshua. [[ref:Exodus 12:21-28|The first was kept in Egypt on the night of departure]], [[ref:Numbers 9:1-5|the second at Sinai a year later]]. Nothing is said about the forty years between. Exodus 12 restricts the meal to the circumcised, which is why the knives came first.\n\n" +
+      "The meal includes a generation born after the exodus, remembering a deliverance they did not witness. They are being told, by a meal, that the deliverance belongs to them.",
     entityIds: ["joshua", "gilgal", "jericho", "jordan-river", "egypt-new-kingdom"],
     mapFeatureIds: ["site-gilgal", "site-jericho", "region-jordan-valley"],
     mapCaption:
@@ -1101,7 +1101,7 @@ export const MILESTONES: Milestone[] = [
     title: "The manna stops",
     scriptureRefs: ["Joshua 5:11-12", "Exodus 16:35"],
     narrative:
-      "The day after Passover Israel eats unleavened cakes and parched grain from the produce of the land. The manna stops, and does not come again.\n\n" +
+      "The day after Passover Israel eats unleavened cakes and parched grain from the produce of the land. The manna stops the following day and does not come again.\n\n" +
       "This is a one-sentence notice. It closes a forty-year arrangement and fixes no place, which is why the map here shows a region and no march. Nothing advances.\n\n" +
       "What it changes is how Israel is fed. Until now food arrived daily and required no ground. From this verse on the people live on Canaan's harvests, which means depending on rainfall in the hills, on springs like Jericho's, and on holding or sharing the fields that produce the grain. Provision becomes agricultural, and therefore territorial. A good deal of what follows in the book, including the long complaints about land not yet possessed, is an argument about who works which fields.",
     entityIds: ["jericho", "gilgal", "region-jordan-valley", "region-hill-country-ephraim"],
@@ -1143,16 +1143,16 @@ export const MILESTONES: Milestone[] = [
     scriptureRefs: ["Joshua 5:13-15", "Exodus 3:1-6"],
     narrative:
       "[[entity:joshua]] is near [[entity:jericho]] when he looks up and sees a man in front of him with a sword already drawn. There is no vision language in the sentence; he lifts his eyes and there the man is.\n\n" +
-      "Joshua asks the only question a commander would ask: are you for us or for our adversaries? The reply refuses both options. In Hebrew it is a flat no, followed by a title, commander of Yahweh's army, and the words now I have come. Joshua falls face down and asks what his lord commands. He is told to take off his sandals, because the place is holy. He does, and the chapter ends there. The figure issues no orders, and the account never mentions him again.\n\n" +
+      "Joshua asks the only question a commander would ask: are you for us or for our adversaries? The reply refuses both options. In Hebrew it is a flat no, followed by a title, commander of Yahweh's army, and the words now I have come. Joshua falls face down and asks what his lord commands. He is told to take off his sandals, because the place is holy. He does, and the chapter ends there. The figure gives no battle orders here, and the account never mentions him again.\n\n" +
       "The siege instructions in chapter 6 open as a fresh speech, so whether the two scenes are one conversation is left open.",
     entityIds: ["joshua", "jericho", "gilgal", "moses"],
     mapFeatureIds: ["site-jericho", "site-gilgal"],
     mapCaption:
-      "Joshua walks up to Jericho alone and is told that the ground he is standing on is holy.",
+      "Near Jericho, Joshua is told that the ground he is standing on is holy.",
     whatChanged:
-      "Joshua has covered the short distance from the camp to the edge of Jericho. That is the only change, and no force moves with him; the text has him there by himself.",
+      "The scene places Joshua near Jericho. It gives no route from the camp and does not say whether anyone accompanied him.",
     geographyExplanation:
-      "Jericho stands on a low mound beside a strong spring where the Wadi Qelt comes down out of the hills onto the valley floor. Anyone approaching from the plain is in the open and visible from the walls for the last few kilometres, because the ground is flat and there is no cover worth the name. That is worth holding in mind here, since [[entity:joshua]] is described walking up to a fortified town alone across terrain that offers him nothing. The mound itself is small by modern expectation, a few hectares, and what brought people back to it again and again is the water rather than the height. The spring is also why this is the gateway site: the routes climbing west toward [[entity:bethel]] and [[entity:ai]] start from the last reliable water before the wilderness.",
+      "Jericho stands on a low mound beside a strong spring where the Wadi Qelt comes down out of the hills onto the valley floor. Anyone approaching from the plain is in the open and visible from the walls for the last few kilometres, because the ground is flat and there is no cover worth the name. That is worth holding in mind here, though the text says only that [[entity:joshua]] is near Jericho, without describing his approach. The mound itself is small by modern expectation, a few hectares, and what brought people back to it again and again is the water rather than the height. The spring is also why this is the gateway site: the routes climbing west toward [[entity:bethel]] and [[entity:ai]] start from the last reliable water before the wilderness.",
     sequenceType: "event",
     viewport: { center: [35.4442, 31.8715], zoom: 12 },
     citations: [
@@ -1215,7 +1215,7 @@ export const MILESTONES: Milestone[] = [
     scriptureRefs: ["Joshua 6:8-14"],
     narrative:
       "The column goes out. Armed men lead, then seven priests blowing the rams' horns, then the ark of the covenant, then a rear guard, with the horns sounding continuously and every other mouth shut. They walk once around [[entity:jericho]] and return to camp. They do this for six days.\n\n" +
-      "The text gives no reaction from inside the city, which is a striking silence in a chapter this attentive to sound. Nobody on the wall speaks. Nobody shoots.\n\n" +
+      "The text gives no reaction from inside the city, which is a striking silence in a chapter this attentive to sound. No speech or attack from the wall is recorded.\n\n" +
       "What the six days accomplish, as the chapter tells it, is nothing in military terms and everything in liturgical ones. An army that walks in a circle for a week is not conducting a siege. It is keeping time to an instrument that in the law announces a jubilee, and it is moving at the pace set by priests rather than by officers.",
     entityIds: ["joshua", "jericho", "gilgal"],
     mapFeatureIds: ["site-jericho", "site-gilgal"],
@@ -1261,7 +1261,7 @@ export const MILESTONES: Milestone[] = [
     mapCaption:
       "On the seventh day the circuit is run seven times, the wall falls, and the city is destroyed.",
     whatChanged:
-      "Jericho stops being a functioning city. The site stays on the map, and it is the first place in the book Israel has been inside; but nothing is garrisoned and nobody stays, so no territory changes hands here.",
+      "Jericho stops being a functioning city. The site stays on the map as the first city the book reports Israel taking by force. The chapter describes its destruction, with no report of a garrison or lasting occupation.",
     geographyExplanation:
       "Taking a walled town in this period normally meant time: a blockade, a ramp, or treachery at a gate. Jericho's setting made the first of those slow, because the spring is at the foot of the mound and the oasis fields are close in. What the chapter describes instead is a wall failing where it stood, and the plain offers nothing to explain that. The ground is flat, and the mound rises roughly twenty metres above it, the accumulated debris of several thousand years of building rather than a natural hill. Israel's way into the city is therefore straight up the slope of the tell from wherever each man happened to be standing, which is what *each man straight in front of him* describes: not a converging attack on a breach but an ascent all round the perimeter.",
     sequenceType: "event",
@@ -1377,7 +1377,7 @@ export const MILESTONES: Milestone[] = [
     narrative:
       "Chapter 7 opens by looking back into chapter 6. While [[entity:jericho]] was being destroyed, [[entity:achan]] took some of what had been devoted, and the reader is told so before anyone in the camp knows.\n\n" +
       "The verse is a narrator's aside. It gives no time of day, no location inside the city and no witnesses; the burying under the tent floor is reported later, in Achan's own words. Nothing in Israel moves because of this verse, which is why the map here recalls [[entity:jericho]] and the camp rather than drawing an advance.\n\n" +
-      "What it does establish is the chapter's structure. Israel is about to act on information it does not have, and the reader will watch it do so. The defeat at [[entity:ai]] arrives as a mystery to everyone in the story and to nobody reading it.",
+      "What it does establish is the chapter's structure. Israel is about to act without information the reader already has, and the reader will watch it do so. The defeat at [[entity:ai]] arrives as a mystery to everyone in the story and to nobody reading it.",
     entityIds: ["achan", "joshua", "jericho", "gilgal", "ai", "tribe-judah"],
     mapFeatureIds: ["site-jericho", "site-gilgal"],
     mapCaption:
@@ -1407,7 +1407,7 @@ export const MILESTONES: Milestone[] = [
     narrative:
       "[[entity:joshua]] sends men up from [[entity:gilgal]] to look at [[entity:ai]], east of [[entity:bethel]]. They come back confident: the place is small, do not make the whole army climb, two or three thousand will do. About three thousand go.\n\n" +
       "The men of Ai come out and beat them. The account is specific about direction. Israel is chased from in front of the gate as far as a place called Shebarim, which nobody can now locate, and struck *on the descent*. That is not a detail about distance; it is a detail about slope. A force that has climbed more than a kilometre out of the valley is running back down it with pursuit behind.\n\n" +
-      "Thirty-six men die, and the hearts of the people melt and become like water. The number is small against the force sent and smaller still against Israel's strength. For the chapter, the disaster is the collapse of confidence; the casualty count barely registers.",
+      "Thirty-six men die, and the hearts of the people melt and become like water. The number is small against the force sent and smaller still against Israel's strength. The chapter records both the deaths and the resulting collapse of confidence.",
     entityIds: [
       "joshua",
       "ai",
@@ -1507,7 +1507,7 @@ export const MILESTONES: Milestone[] = [
     title: "The lot narrows to one man",
     scriptureRefs: ["Joshua 7:16-21"],
     narrative:
-      "In the morning Israel is brought forward by tribes. [[entity:tribe-judah]] is taken, then the clan of [[entity:zerah]], then the household of [[entity:zabdi]], then [[entity:achan]] son of [[entity:carmi]]. The chapter describes no mechanism. It says only that the lot took each stage in turn while everyone stood and watched.\n\n" +
+      "In the morning Israel is brought forward by tribes. [[entity:tribe-judah]] is taken, then the clan of [[entity:zerah]], then the household of [[entity:zabdi]], then [[entity:achan]] son of [[entity:carmi]]. The chapter describes no mechanism. It reports each stage of the selection in turn, a process commonly understood as the casting of lots.\n\n" +
       "[[entity:joshua]] tells him to give glory to God and confess. [[entity:achan]] does, in order: I saw a fine cloak from Shinar, two hundred shekels of silver and a bar of gold; I coveted them and took them; they are hidden in the ground inside my tent, the silver underneath. Messengers run to the tent and find them exactly there.\n\n" +
       "The confession supplies a motive and no excuse. Whether anyone else in the household knew is not stated, here or later.",
     entityIds: [
@@ -1602,7 +1602,7 @@ export const MILESTONES: Milestone[] = [
     scriptureRefs: ["Joshua 8:1-13"],
     narrative:
       "God tells [[entity:joshua]] not to fear, to take all the fighting men, and to do to [[entity:ai]] and its king what was done to [[entity:jericho]] and its king, with one change: the spoil and the livestock are Israel's to take.\n\n" +
-      "The plan is set out in detail. A force goes by night to lie up west of the city, between Ai and [[entity:bethel]], close enough to move fast. [[entity:joshua]] takes the rest up and camps on the north side with a ravine between the camp and the town, in plain view. A smaller party is posted between the city and Bethel.\n\n" +
+      "The plan is set out in detail. A force goes by night to lie up west of the city, between Ai and [[entity:bethel]], close enough to move fast. [[entity:joshua]] takes the rest up and camps on the north side with a ravine between the camp and the town, in plain view. Verse 12 also names a smaller force between the city and Bethel, though its relationship to the first ambush party is unclear.\n\n" +
       "The two halves of the force are now on opposite sides of a town that can see only one of them. Nothing has been fought yet. What the chapter has established is that Israel this time went up with everybody and used the ground.",
     entityIds: [
       "joshua",
@@ -1690,7 +1690,7 @@ export const MILESTONES: Milestone[] = [
     scriptureRefs: ["Joshua 8:24-29"],
     narrative:
       "The killing is finished in the open and then in the town. The chapter gives a figure, twelve thousand, and calls it all the people of [[entity:ai]], men and women. Only the livestock and the goods are kept, as permitted.\n\n" +
-      "The town is burned and made a permanent ruin, a heap the text says was still there when it wrote. The king is hanged on a tree and left until evening, then taken down at sunset and thrown down at the entrance of the gate under a great heap of stones. Deuteronomy requires a body to be taken down before nightfall, and the narrative follows the rule.\n\n" +
+      "The town is burned and made a permanent ruin, a heap the narrator says remained to his day. The king is hanged on a tree and left until evening, then taken down at sunset and thrown down at the entrance of the gate under a great heap of stones. Deuteronomy requires a body to be taken down before nightfall, and the narrative follows the rule.\n\n" +
       "Nothing is garrisoned. Israel does not move in. The chapter's outcome here is a ruin, a grave at the gate, and an open road west onto the plateau.",
     entityIds: [
       "joshua",
@@ -1712,7 +1712,7 @@ export const MILESTONES: Milestone[] = [
     whatChanged:
       "A town has been destroyed and nobody occupies the site. Israel has beaten a king and burned a city, which is not the same as holding the plateau, and the text claims no settlement here.",
     geographyExplanation:
-      "What Israel actually gains from this is access rather than territory. [[entity:ai]] and [[entity:bethel]] sit astride the eastern approach onto the [[entity:region-hill-country-ephraim]] plateau, at the head of the climb from the valley, and a hostile town there can close that route to anyone coming up from [[entity:gilgal]]. With Ai destroyed, the road onto the plateau and the north to south ridge route running along it are open, which is what makes the next chapter possible: [[entity:gibeon]], about eleven kilometres south-west along that high ground, is now reachable without descending again. The ruin itself is worth nothing. The plateau is a watershed, and whoever can move along it can reach the whole central hill country.",
+      "What Israel actually gains from this is access rather than territory. [[entity:ai]] and [[entity:bethel]] sit astride the eastern approach onto the [[entity:region-hill-country-ephraim]] plateau, at the head of the climb from the valley, and a hostile town there can close that route to anyone coming up from [[entity:gilgal]]. With Ai destroyed, the road onto the plateau and the north to south ridge route running along it are open, which is what makes the next chapter possible: [[entity:gibeon]], about eleven kilometres south-west along that high ground, is now reachable without descending again. The account emphasises the city's destruction rather than its use as a settlement. The plateau is a watershed, and whoever can move along it can reach the whole central hill country.",
     sequenceType: "event",
     viewport: { center: [35.26, 31.905], zoom: 11 },
     citations: [
