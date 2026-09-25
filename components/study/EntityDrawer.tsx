@@ -133,7 +133,7 @@ export function EntityDrawer({
         </div>
       </div>
 
-      <div className="px-5 py-4 pb-10">
+      <div className="px-5 py-4 pb-[calc(2.5rem+env(safe-area-inset-bottom))]">
         <header>
           <p className="label-caps text-bronze" title={meta.description}>
             {meta.label}

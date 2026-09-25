@@ -60,9 +60,9 @@ export function Popover({
       ref={ref}
       role="dialog"
       aria-label={label}
-      className={`animate-fade-rise absolute top-[calc(100%+6px)] z-40 ${
-        align === "right" ? "right-0" : "left-0"
-      } ${width} max-w-[calc(100vw-1.5rem)] overflow-hidden rounded-lg border border-rule bg-ivory shadow-float`}
+      className={`animate-fade-rise fixed inset-x-3 top-[calc(3rem+env(safe-area-inset-top))] z-40 sm:absolute sm:inset-x-auto sm:top-[calc(100%+6px)] ${
+        align === "right" ? "sm:right-0" : "sm:left-0"
+      } ${width} max-h-[75dvh] max-w-[calc(100vw-1.5rem)] overflow-y-auto rounded-lg border border-rule bg-ivory shadow-float`}
     >
       {children}
     </div>

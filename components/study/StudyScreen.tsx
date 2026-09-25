@@ -19,9 +19,9 @@
  * that names the chapter instead of a generic close.
  */
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, useSyncExternalStore } from "react";
 import type { SectionKind } from "@/content/types";
-import { CHAPTER_BY_NUMBER, MILESTONES_BY_CHAPTER, MILESTONE_BY_ID } from "@/content/chapters";
+import { CHAPTER_BY_NUMBER, MILESTONES_BY_CHAPTER, MILESTONE_BY_ID, milestoneNeighbours } from "@/content/chapters";
 import { ENTITY_BY_ID } from "@/content/entities";
 import { useStudy } from "@/lib/state/preferences";
 import { useStudyNavigation } from "@/lib/state/study-url";
@@ -36,7 +36,18 @@ type Tab = "map" | "story" | "context";
 /* Which sections belong to which mobile tab. Desktop shows all of them together. */
 const STORY_KINDS = new Set<SectionKind>(["at-a-glance", "walk-through"]);
 
+function subscribeToLayout(onChange: () => void) {
+  const query = window.matchMedia("(min-width: 1024px)");
+  query.addEventListener("change", onChange);
+  return () => query.removeEventListener("change", onChange);
+}
+
 export function StudyScreen() {
+  const desktop = useSyncExternalStore(
+    subscribeToLayout,
+    () => window.matchMedia("(min-width: 1024px)").matches,
+    () => false,
+  );
   const nav = useStudyNavigation();
   const store = useStudy();
   const [tab, setTab] = useState<Tab>("story");
@@ -89,7 +100,7 @@ export function StudyScreen() {
   };
 
   return (
-    <div className="flex h-[calc(100dvh-3rem)] min-h-0 flex-col">
+    <div className="flex h-[calc(100dvh-var(--app-header-height))] min-h-0 flex-col">
       {nav.corrected && (
         <p className="rule-b bg-terracotta-wash px-4 py-1.5 text-[11.5px] text-terracotta">
           Part of that link pointed at something this study does not have, so the
@@ -100,7 +111,7 @@ export function StudyScreen() {
       {/* ---------------------------------------------------------------- */}
       {/* Desktop: rail, map, text                                        */}
       {/* ---------------------------------------------------------------- */}
-      <div className="hidden min-h-0 flex-1 lg:grid lg:grid-cols-[262px_minmax(0,3fr)_minmax(0,2fr)]">
+      {desktop && <div className="hidden min-h-0 flex-1 lg:grid lg:grid-cols-[262px_minmax(0,3fr)_minmax(0,2fr)]">
         <ChapterRail
           chapter={nav.chapter}
           onSelectChapter={nav.goToChapter}
@@ -141,17 +152,17 @@ export function StudyScreen() {
             </div>
           )}
         </div>
-      </div>
+      </div>}
 
       {/* ---------------------------------------------------------------- */}
       {/* Mobile and tablet: chapter selector, tabs, bottom sheet          */}
       {/* ---------------------------------------------------------------- */}
-      <div className="flex min-h-0 flex-1 flex-col lg:hidden">
+      {!desktop && <div className="flex min-h-0 flex-1 flex-col lg:hidden">
         <div className="rule-b flex items-center gap-2 px-3 py-2">
           <button
             type="button"
             onClick={() => setRailOpen(true)}
-            className="flex min-w-0 flex-1 items-baseline gap-2 rounded border border-rule px-2.5 py-1.5 text-left"
+            className="flex min-h-11 min-w-0 flex-1 items-baseline gap-2 rounded border border-rule px-2.5 py-1.5 text-left"
             aria-haspopup="dialog"
           >
             <span className="label-caps shrink-0 text-bronze">Josh {chapter.number}</span>
@@ -178,8 +189,10 @@ export function StudyScreen() {
               type="button"
               role="tab"
               aria-selected={tab === t}
+              aria-controls="mobile-study-panel"
+              id={`study-tab-${t}`}
               onClick={() => setTab(t)}
-              className={`-mb-px border-b-2 px-3 py-2 text-[12.5px] capitalize transition-colors ${
+              className={`-mb-px min-h-11 flex-1 border-b-2 px-3 py-2 text-[12.5px] capitalize transition-colors ${
                 tab === t
                   ? "border-forest font-medium text-forest"
                   : "border-transparent text-ink-soft"
@@ -190,7 +203,7 @@ export function StudyScreen() {
           ))}
         </div>
 
-        <div className="min-h-0 flex-1">
+        <div id="mobile-study-panel" role="tabpanel" aria-labelledby={`study-tab-${tab}`} className="min-h-0 flex-1">
           {tab === "map" ? (
             milestone ? (
               <MapPanel
@@ -207,6 +220,7 @@ export function StudyScreen() {
             )
           ) : (
             <ChapterPanel
+              resetScrollKey={`${tab}-${milestone?.id ?? chapter.number}`}
               chapter={tab === "story" ? storyChapter : contextChapter}
               milestone={tab === "story" ? (milestone ?? null) : null}
               onEntityClick={nav.openEntity}
@@ -248,7 +262,7 @@ export function StudyScreen() {
               onClick={() => setRailOpen(false)}
               className="absolute inset-0 cursor-default bg-charcoal/25"
             />
-            <div className="relative h-full w-[86vw] max-w-sm border-r border-rule bg-ivory">
+            <div className="relative flex h-full w-[86vw] max-w-sm flex-col pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)] border-r border-rule bg-ivory">
               <div className="rule-b flex items-center justify-between px-4 py-2.5">
                 <h2 className="font-serif text-[14px] font-semibold text-charcoal">
                   Chapters
@@ -267,12 +281,12 @@ export function StudyScreen() {
                   nav.goToChapter(n);
                   setRailOpen(false);
                 }}
-                className="h-[calc(100%-2.75rem)]"
+                className="min-h-0 flex-1"
               />
             </div>
           </div>
         )}
-      </div>
+      </div>}
     </div>
   );
 }
@@ -290,35 +304,31 @@ function MobileStepper({
   const siblings = m ? (MILESTONES_BY_CHAPTER[m.chapter] ?? []) : [];
   const index = siblings.findIndex((s) => s.id === milestoneId);
 
-  /*
-   * Deliberately chapter-local rather than book-wide. On a phone the stepper sits
-   * under the text and its job is moving through the chapter you are reading; the
-   * full cross-chapter walk is on the map tab where the map can keep up.
-   */
-  const prev = index > 0 ? siblings[index - 1] : null;
-  const next = index >= 0 && index < siblings.length - 1 ? siblings[index + 1] : null;
+  const { previous: prev, next } = milestoneNeighbours(milestoneId);
 
   return (
-    <div className="rule-t flex items-center gap-2 bg-ivory px-3 py-2">
-      <button
-        type="button"
-        disabled={!prev}
-        onClick={() => prev && onGoToMilestone(prev.id)}
-        className="rounded border border-rule px-2.5 py-1.5 text-[11.5px] text-ink-soft disabled:opacity-40"
-      >
-        Previous
-      </button>
-      <p className="min-w-0 flex-1 truncate text-center text-[11.5px] text-ink-faint">
-        {milestoneTitle}
+    <div className="mobile-safe-bottom rule-t shrink-0 bg-ivory px-3 py-2">
+      <p className="mb-2 truncate text-[11.5px] text-ink-soft" aria-live="polite">
+        {index + 1} of {siblings.length} in Joshua {m?.chapter} · {milestoneTitle}
       </p>
-      <button
-        type="button"
-        disabled={!next}
-        onClick={() => next && onGoToMilestone(next.id)}
-        className="rounded border border-rule px-2.5 py-1.5 text-[11.5px] text-ink-soft disabled:opacity-40"
-      >
-        Next
-      </button>
+      <div className="flex items-center gap-2">
+        <button
+          type="button"
+          disabled={!prev}
+          onClick={() => prev && onGoToMilestone(prev.id)}
+          className="min-h-11 rounded border border-rule px-3 py-2 text-[12px] text-ink-soft disabled:opacity-40"
+        >
+          Previous
+        </button>
+        <button
+          type="button"
+          disabled={!next}
+          onClick={() => next && onGoToMilestone(next.id)}
+          className="min-h-11 flex-1 rounded border border-forest bg-forest px-3 py-2 text-[12px] font-medium text-ivory disabled:opacity-40"
+        >
+          {!next ? "Final milestone" : next.chapter !== m?.chapter ? `Next · Joshua ${next.chapter}` : "Next milestone"}
+        </button>
+      </div>
     </div>
   );
 }

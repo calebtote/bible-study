@@ -142,7 +142,7 @@ export function RefPopover({
             role="tooltip"
             onMouseEnter={cancelClose}
             onMouseLeave={scheduleClose}
-            className="animate-fade-rise fixed z-[70] rounded border border-rule bg-ivory shadow-float"
+            className="reference-preview animate-fade-rise fixed z-[70] rounded border border-rule bg-ivory shadow-float"
             style={{
               left: at.x,
               top: at.y,

@@ -30,7 +30,7 @@ export function PageShell({
   aside?: React.ReactNode;
 }) {
   return (
-    <div className="quiet-scroll h-[calc(100dvh-3rem)] overflow-y-auto">
+    <div className="quiet-scroll h-[calc(100dvh-var(--app-header-height))] overflow-y-auto">
       <div
         className={`mx-auto px-5 pt-10 pb-24 sm:px-8 ${wide ? "max-w-5xl" : "max-w-3xl"}`}
       >
