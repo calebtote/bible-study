@@ -46,3 +46,6 @@ scripts/.cache/
 # scripts/build-static.mjs parks app/api here for the duration of a static build;
 # should never survive a normal run, but a killed build could leave it behind
 .api-backup-during-static-build/
+
+# visitor log behind /stats
+/data/

@@ -4,6 +4,7 @@ import "./globals.css";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { PreferencesProvider } from "@/lib/state/preferences";
 import { TopBar } from "@/components/shell/TopBar";
+import { TrackVisit } from "@/components/shell/TrackVisit";
 
 const sourceSerif = Source_Serif_4({
   variable: "--font-source-serif",
@@ -54,6 +55,7 @@ export default function RootLayout({
             </main>
           </div>
         </PreferencesProvider>
+        <TrackVisit />
       </body>
     </html>
   );
