@@ -32,7 +32,7 @@ import {
 } from "@/content/world-at-joshua-1";
 import { ENTITY_BY_ID } from "@/content/entities";
 import { AtlasMap } from "@/components/map/AtlasMap";
-import { Prose } from "@/components/Prose";
+import { Prose, ProseLine } from "@/components/Prose";
 import { Section } from "@/components/ui/Disclosure";
 import { Citations, EvidenceBadges } from "@/components/ui/Evidence";
 import { ScriptureRefs } from "@/components/scripture/ScriptureRefs";
@@ -385,7 +385,7 @@ function WorldView({ onEntityClick }: { onEntityClick: (id: string) => void }) {
                       </span>
                     </div>
                     <p className="mt-1 text-[12.5px] leading-relaxed text-ink-soft">
-                      {a.description}
+                      <ProseLine text={a.description} />
                     </p>
                     <Citations citations={a.citations} />
                   </li>

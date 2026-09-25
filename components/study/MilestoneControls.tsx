@@ -101,14 +101,68 @@ export function MilestoneControls({
   }, [previous, next, go]);
 
   return (
-    <div className="rule-t flex flex-wrap items-center gap-x-3 gap-y-2 bg-ivory px-3 py-2">
-      <div className="flex items-center gap-1">
+    <div className="rule-t shrink-0 bg-ivory px-3 py-3">
+      <div className="mb-2 flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
+        <p className="label-caps text-forest">Study chapter by chapter</p>
+        <p className="text-[11px] text-ink-faint tabular-nums">Milestone {position} of {total}</p>
+      </div>
+      <p className="mb-3 text-[12px] leading-relaxed text-ink-soft">
+        Follow the milestones to update the map and reading, then continue into the next chapter.
+      </p>
+      <div className="flex flex-wrap items-center gap-2">
         <Step
           label={previous ? `Previous: ${previous.title}` : "No earlier milestone"}
           disabled={!previous}
           onClick={() => previous && go(previous.id)}
           direction="prev"
         />
+        <Step
+          label={next ? `Next milestone: ${next.title}` : "No later milestone"}
+          disabled={!next}
+          onClick={() => next && go(next.id)}
+          direction="next"
+          chapter={next && next.chapter !== milestone.chapter ? next.chapter : undefined}
+        />
+      </div>
+
+      <div className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-2">
+        <span className="text-[11px] text-ink-faint">This chapter</span>
+        <ol className="flex min-w-0 flex-1 flex-wrap items-center gap-1" aria-label="Milestones in this chapter">
+          {chapterMilestones.map((m) => {
+            const current = m.id === milestone.id;
+            const meta = SEQUENCE_TYPES[m.sequenceType];
+            return (
+              <li key={m.id}>
+                <button
+                  type="button"
+                  onClick={() => go(m.id)}
+                  aria-current={current ? "true" : undefined}
+                  title={`${m.title} · ${meta.label}`}
+                  className={`flex h-5 items-center gap-1.5 rounded px-1.5 transition-colors ${
+                    current ? "bg-bronze-wash" : "hover:bg-ivory-deep"
+                  }`}
+                >
+                  <span
+                    aria-hidden
+                    className={`block size-[7px] border ${
+                      m.sequenceType === "event"
+                        ? "rounded-full"
+                        : m.sequenceType === "allotment"
+                          ? "rounded-[1px]"
+                          : "rotate-45 rounded-[1px]"
+                    } ${
+                      current
+                        ? "border-bronze bg-bronze"
+                        : "border-rule-strong bg-transparent"
+                    }`}
+                  />
+                  <span className="sr-only">{m.title}</span>
+                </button>
+              </li>
+            );
+          })}
+        </ol>
+
         <button
           type="button"
           onClick={() => setWantPlay((v) => !v)}
@@ -121,7 +175,7 @@ export function MilestoneControls({
                 : `Advance every ${STEP_MS / 1000} seconds`
               : "The last milestone in the book"
           }
-          className={`rounded border px-2 py-1 transition-colors disabled:opacity-40 ${
+          className={`flex min-h-8 items-center gap-1.5 rounded border px-2 py-1 text-[11px] transition-colors disabled:opacity-40 ${
             playing
               ? "border-forest bg-forest text-ivory"
               : "border-rule text-ink-soft hover:border-rule-strong hover:text-charcoal"
@@ -134,54 +188,9 @@ export function MilestoneControls({
               <path d="M3.5 2.3 10 6l-6.5 3.7z" fill="currentColor" />
             )}
           </svg>
+          {playing ? "Pause" : "Auto-play"}
         </button>
-        <Step
-          label={next ? `Next: ${next.title}` : "No later milestone"}
-          disabled={!next}
-          onClick={() => next && go(next.id)}
-          direction="next"
-        />
       </div>
-
-      <ol className="flex min-w-0 flex-1 flex-wrap items-center gap-1" aria-label="Milestones in this chapter">
-        {chapterMilestones.map((m) => {
-          const current = m.id === milestone.id;
-          const meta = SEQUENCE_TYPES[m.sequenceType];
-          return (
-            <li key={m.id}>
-              <button
-                type="button"
-                onClick={() => go(m.id)}
-                aria-current={current ? "true" : undefined}
-                title={`${m.title} · ${meta.label}`}
-                className={`flex h-5 items-center gap-1.5 rounded px-1.5 transition-colors ${
-                  current ? "bg-bronze-wash" : "hover:bg-ivory-deep"
-                }`}
-              >
-                <span
-                  aria-hidden
-                  className={`block size-[7px] border ${
-                    m.sequenceType === "event"
-                      ? "rounded-full"
-                      : m.sequenceType === "allotment"
-                        ? "rounded-[1px]"
-                        : "rotate-45 rounded-[1px]"
-                  } ${
-                    current
-                      ? "border-bronze bg-bronze"
-                      : "border-rule-strong bg-transparent"
-                  }`}
-                />
-                <span className="sr-only">{m.title}</span>
-              </button>
-            </li>
-          );
-        })}
-      </ol>
-
-      <p className="shrink-0 text-[11px] text-ink-faint tabular-nums">
-        Milestone {position} of {total}
-      </p>
     </div>
   );
 }
@@ -191,11 +200,13 @@ function Step({
   disabled,
   onClick,
   direction,
+  chapter,
 }: {
   label: string;
   disabled: boolean;
   onClick: () => void;
   direction: "prev" | "next";
+  chapter?: number;
 }) {
   return (
     <button
@@ -204,9 +215,13 @@ function Step({
       disabled={disabled}
       aria-label={label}
       title={label}
-      className="rounded border border-rule px-2 py-1 text-ink-soft transition-colors hover:border-rule-strong hover:text-charcoal disabled:opacity-40 disabled:hover:border-rule"
+      className={`flex min-h-11 items-center justify-center gap-2 rounded border px-3 py-2 text-[12px] font-medium transition-colors disabled:opacity-40 ${
+        direction === "next"
+          ? "flex-1 border-forest bg-forest text-ivory hover:bg-forest/90"
+          : "border-rule text-ink-soft hover:border-rule-strong hover:text-charcoal"
+      }`}
     >
-      <svg viewBox="0 0 12 12" className="size-3" aria-hidden>
+      <svg viewBox="0 0 12 12" className={`size-3 shrink-0 ${direction === "next" ? "order-last" : ""}`} aria-hidden>
         <path
           d={direction === "prev" ? "M7.5 2.5 4 6l3.5 3.5" : "M4.5 2.5 8 6l-3.5 3.5"}
           fill="none"
@@ -216,6 +231,7 @@ function Step({
           strokeLinejoin="round"
         />
       </svg>
+      {direction === "prev" ? "Previous" : disabled ? "Final milestone" : chapter ? `Next · Joshua ${chapter}` : "Next milestone"}
     </button>
   );
 }

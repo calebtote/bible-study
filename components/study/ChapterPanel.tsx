@@ -23,7 +23,7 @@ import type { Chapter, Milestone } from "@/content/types";
 import { ENTITY_TYPES } from "@/content/types";
 import { ENTITY_BY_ID } from "@/content/entities";
 import { deeperWords } from "@/content/chapters";
-import { Prose, type EntityClick } from "@/components/Prose";
+import { Prose, ProseLine, type EntityClick } from "@/components/Prose";
 import { Section } from "@/components/ui/Disclosure";
 import { ScriptureRefs } from "@/components/scripture/ScriptureRefs";
 import { Citations, EvidenceBadges } from "@/components/ui/Evidence";
@@ -68,7 +68,7 @@ export function ChapterPanel({
           </div>
 
           <p className="mt-2 font-serif text-[15px] leading-relaxed text-ink-soft">
-            {chapter.summary}
+            <ProseLine text={chapter.summary} onEntityClick={onEntityClick} />
           </p>
 
           <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2">

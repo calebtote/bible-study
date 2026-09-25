@@ -26,7 +26,7 @@ import { ENTITY_BY_ID } from "@/content/entities";
 import { THEME_BY_ID } from "@/content/themes";
 import { MILESTONE_BY_ID } from "@/content/chapters";
 import { BEFORE_STAGE_BY_ID } from "@/content/before-joshua";
-import { Prose } from "@/components/Prose";
+import { Prose, ProseLine } from "@/components/Prose";
 import { Citations } from "@/components/ui/Evidence";
 import { Spoiler } from "@/components/ui/Disclosure";
 import { ScriptureRefs } from "@/components/scripture/ScriptureRefs";
@@ -285,7 +285,7 @@ function ProfileDetail({
                       inferred
                     </span>
                   )}
-                  {r.note && <span className="text-ink-soft"> — {r.note}</span>}
+                  {r.note && <span className="text-ink-soft"> — <ProseLine text={r.note} /></span>}
                   {r.scriptureRefs && r.scriptureRefs.length > 0 && (
                     <ScriptureRefs refs={r.scriptureRefs} className="mt-1.5" label="See" />
                   )}
@@ -334,7 +334,7 @@ function ProfileDetail({
                 key={i}
                 className="border-l-2 border-rule-strong pl-3 text-[12.5px] leading-relaxed text-ink-soft"
               >
-                {gap}
+                <ProseLine text={gap} />
               </li>
             ))}
           </ul>
@@ -451,7 +451,7 @@ function Timeline({ events }: { events: TimelineEvent[] }) {
                 <span className="text-[10.5px] text-ink-faint">{cert.label}</span>
               </div>
               <p className="mt-1 text-[12.5px] leading-relaxed text-ink-soft">
-                {event.description}
+                <ProseLine text={event.description} />
               </p>
               <div className="mt-1.5 flex flex-wrap items-center gap-x-4 gap-y-1">
                 <EventLink event={event} />
