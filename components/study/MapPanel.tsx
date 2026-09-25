@@ -47,8 +47,8 @@ export function MapPanel({
   const sequence = SEQUENCE_TYPES[milestone.sequenceType];
 
   return (
-    <div className={`flex min-h-0 flex-col ${className ?? ""}`}>
-      <div className="relative min-h-[240px] flex-1">
+    <div className={`mobile-safe-bottom quiet-scroll flex min-h-0 flex-col overflow-y-auto lg:overflow-visible ${className ?? ""}`}>
+      <div className="relative min-h-[min(48dvh,360px)] shrink-0 lg:min-h-[240px] lg:flex-1">
         <AtlasMap
           features={selection.features}
           contextIds={selection.contextIds}
@@ -66,7 +66,7 @@ export function MapPanel({
         onGo={onGoToMilestone}
       />
 
-      <div className="quiet-scroll max-h-[38%] shrink-0 overflow-y-auto bg-ivory-deep/60">
+      <div className="quiet-scroll shrink-0 lg:max-h-[38%] lg:overflow-y-auto bg-ivory-deep/60">
         <div className="rule-b px-4 py-3">
           <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
             <h2 className="font-serif text-[14px] font-semibold text-charcoal">

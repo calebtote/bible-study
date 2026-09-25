@@ -60,9 +60,9 @@ export function TopBar() {
 
   return (
     <>
-      <header className="rule-b sticky top-0 z-30 bg-ivory/92 backdrop-blur-sm no-print">
-        <div className="flex h-12 items-center gap-2 px-3 sm:gap-4 sm:px-4">
-          <Link href="/" className="group flex min-w-0 shrink-0 items-baseline gap-2">
+      <header className="app-header rule-b sticky top-0 z-30 bg-ivory/92 backdrop-blur-sm no-print">
+        <div className="flex h-[92px] flex-wrap items-center sm:h-12 sm:flex-nowrap gap-x-2 gap-y-0 px-3 sm:gap-4 sm:px-4">
+          <Link href="/" className="group mr-auto flex min-h-11 min-w-0 shrink-0 sm:mr-0 items-baseline gap-2">
             <span className="font-serif text-[15px] font-semibold tracking-[-0.01em] text-charcoal group-hover:text-forest">
               Joshua
             </span>
@@ -71,7 +71,7 @@ export function TopBar() {
             </span>
           </Link>
 
-          <nav className="quiet-scroll -mx-1 flex min-w-0 flex-1 items-center gap-0.5 overflow-x-auto px-1">
+          <nav aria-label="Main navigation" className="quiet-scroll order-last -mx-1 flex h-11 w-full min-w-0 flex-none sm:order-none sm:h-auto sm:w-auto sm:flex-1 items-center gap-0.5 overflow-x-auto px-1">
             {NAV.map((item) => {
               const active = pathname === item.href;
               return (
@@ -79,7 +79,7 @@ export function TopBar() {
                   key={item.href}
                   href={item.href}
                   aria-current={active ? "page" : undefined}
-                  className={`shrink-0 rounded px-2 py-1 text-[12.5px] whitespace-nowrap transition-colors ${
+                  className={`flex min-h-11 shrink-0 items-center rounded px-3 py-1 sm:min-h-0 sm:px-2 text-[12.5px] whitespace-nowrap transition-colors ${
                     active
                       ? "bg-forest-wash font-medium text-forest"
                       : "text-ink-soft hover:bg-ivory-deep hover:text-charcoal"
@@ -95,7 +95,7 @@ export function TopBar() {
             <button
               type="button"
               onClick={() => setSearch(true)}
-              className="flex items-center gap-2 rounded border border-rule px-2 py-1 text-[12px] text-ink-faint transition-colors hover:border-rule-strong hover:text-charcoal"
+              className="flex min-h-11 min-w-11 items-center justify-center gap-2 rounded border sm:min-h-0 sm:min-w-0 border-rule px-2 py-1 text-[12px] text-ink-faint transition-colors hover:border-rule-strong hover:text-charcoal"
               aria-label="Search the study"
             >
               <svg viewBox="0 0 16 16" className="size-3.5" aria-hidden>
@@ -178,7 +178,7 @@ function IconButton({
       aria-label={label}
       aria-expanded={active}
       title={label}
-      className={`rounded p-1.5 transition-colors ${
+      className={`flex min-h-11 min-w-11 items-center justify-center rounded p-1.5 sm:min-h-0 sm:min-w-0 transition-colors ${
         active
           ? "bg-forest-wash text-forest"
           : "text-ink-faint hover:bg-ivory-deep hover:text-charcoal"

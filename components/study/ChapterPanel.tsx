@@ -19,11 +19,12 @@
  * cannot click a four-pixel dot on a canvas can still reach Makkedah.
  */
 
+import { useEffect, useRef } from "react";
 import type { Chapter, Milestone } from "@/content/types";
 import { ENTITY_TYPES } from "@/content/types";
 import { ENTITY_BY_ID } from "@/content/entities";
 import { deeperWords } from "@/content/chapters";
-import { Prose, type EntityClick } from "@/components/Prose";
+import { Prose, ProseLine, type EntityClick } from "@/components/Prose";
 import { Section } from "@/components/ui/Disclosure";
 import { ScriptureRefs } from "@/components/scripture/ScriptureRefs";
 import { Citations, EvidenceBadges } from "@/components/ui/Evidence";
@@ -37,18 +38,24 @@ export function ChapterPanel({
   milestone,
   onEntityClick,
   className,
+  resetScrollKey,
 }: {
   chapter: Chapter;
   milestone: Milestone | null;
   onEntityClick: EntityClick;
   className?: string;
+  resetScrollKey?: string;
 }) {
+  const panel = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (resetScrollKey) panel.current?.scrollTo({ top: 0 });
+  }, [resetScrollKey]);
   const store = useStudy();
   const complete = store.data.progress.completedChapters.includes(chapter.number);
   const deeper = deeperWords(chapter);
 
   return (
-    <div className={`quiet-scroll overflow-y-auto ${className ?? ""}`}>
+    <div ref={panel} className={`quiet-scroll overflow-y-auto ${className ?? ""}`}>
       <div className="px-5 py-4 pb-10 sm:px-6">
         <header>
           <div className="flex items-start justify-between gap-3">
@@ -68,7 +75,7 @@ export function ChapterPanel({
           </div>
 
           <p className="mt-2 font-serif text-[15px] leading-relaxed text-ink-soft">
-            {chapter.summary}
+            <ProseLine text={chapter.summary} onEntityClick={onEntityClick} />
           </p>
 
           <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2">

@@ -29,7 +29,7 @@ import {
   DIFFICULT_QUESTION_BY_ID,
 } from "@/content/difficult-questions";
 import { ENTITY_BY_ID } from "@/content/entities";
-import { Prose } from "@/components/Prose";
+import { Prose, ProseLine } from "@/components/Prose";
 import { Citations } from "@/components/ui/Evidence";
 import { ScriptureRefs } from "@/components/scripture/ScriptureRefs";
 import { BookmarkButton } from "@/components/shell/BookmarksPanel";
@@ -344,8 +344,8 @@ function ThemeDetail({
               <ul className="mt-2 space-y-2">
                 {theme.newTestament.explicitReferences.map((r) => (
                   <li key={r.ref} className="text-[12.5px] leading-relaxed">
-                    <span className="font-medium text-charcoal">{r.ref}</span>
-                    <span className="text-ink-soft"> — {r.note}</span>
+                    <span className="font-medium text-charcoal"><ProseLine text={r.ref} /></span>
+                    <span className="text-ink-soft"> — <ProseLine text={r.note} /></span>
                   </li>
                 ))}
               </ul>
@@ -369,8 +369,8 @@ function ThemeDetail({
               <ul className="mt-2 space-y-2">
                 {theme.newTestament.laterTypology.map((t, i) => (
                   <li key={i} className="text-[12.5px] leading-relaxed">
-                    <span className="font-medium text-charcoal">{t.claim}</span>
-                    <span className="text-ink-soft"> — {t.note}</span>
+                    <span className="font-medium text-charcoal"><ProseLine text={t.claim} /></span>
+                    <span className="text-ink-soft"> — <ProseLine text={t.note} /></span>
                   </li>
                 ))}
               </ul>

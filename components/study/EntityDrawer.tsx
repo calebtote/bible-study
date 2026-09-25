@@ -27,7 +27,7 @@ import { ENTITY_BY_ID } from "@/content/entities";
 import { MILESTONES } from "@/content/chapters";
 import { TIMELINE_EVENT_BY_ID } from "@/content/people/timeline";
 import { PROFILE_BY_ENTITY_ID } from "@/content/people/profiles";
-import { Prose, type EntityClick } from "@/components/Prose";
+import { Prose, ProseLine, type EntityClick } from "@/components/Prose";
 import { Section, Spoiler } from "@/components/ui/Disclosure";
 import { ScriptureRefs, ScriptureRef } from "@/components/scripture/ScriptureRefs";
 import { Citations } from "@/components/ui/Evidence";
@@ -133,7 +133,7 @@ export function EntityDrawer({
         </div>
       </div>
 
-      <div className="px-5 py-4 pb-10">
+      <div className="px-5 py-4 pb-[calc(2.5rem+env(safe-area-inset-bottom))]">
         <header>
           <p className="label-caps text-bronze" title={meta.description}>
             {meta.label}
@@ -147,7 +147,7 @@ export function EntityDrawer({
             </p>
           )}
           <p className="mt-2.5 font-serif text-[14.5px] leading-relaxed text-charcoal">
-            {entity.summary}
+            <ProseLine text={entity.summary} onEntityClick={onEntityClick} />
           </p>
           <p className="mt-2 text-[11px] leading-relaxed text-ink-faint">
             {meta.description}

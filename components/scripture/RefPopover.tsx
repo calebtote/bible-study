@@ -19,7 +19,7 @@
  * is the preferred translation with its attribution, cached after the first look.
  */
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useId, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { usePassage } from "./Passage";
 
@@ -31,12 +31,17 @@ export function RefPopover({
   refText,
   className,
   children,
+  preview,
 }: {
   /** The reference exactly as written, e.g. "Joshua 6:1-5". */
   refText: string;
   className?: string;
   children: React.ReactNode;
+  /** Optional source summary; scripture remains the default. */
+  preview?: React.ReactNode;
 }) {
+  const tooltipId = useId();
+  const cardRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
   const [at, setAt] = useState<{ x: number; y: number; above: boolean } | null>(null);
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -46,9 +51,10 @@ export function RefPopover({
     const el = triggerRef.current;
     if (!el) return;
     const r = el.getBoundingClientRect();
+    const width = Math.min(CARD_WIDTH, window.innerWidth - GAP * 2);
     const x = Math.min(
-      Math.max(GAP, r.left + r.width / 2 - CARD_WIDTH / 2),
-      window.innerWidth - CARD_WIDTH - GAP
+      Math.max(GAP, r.left + r.width / 2 - width / 2),
+      window.innerWidth - width - GAP
     );
     /* Above by default, below when the trigger sits near the top of the window. */
     const above = r.top > 260;
@@ -67,17 +73,26 @@ export function RefPopover({
   useEffect(() => {
     if (!open) return;
     const close = () => setAt(null);
+    const onScroll = (e: Event) => {
+      if (e.target instanceof Node && cardRef.current?.contains(e.target)) return;
+      close();
+    };
+    const onPointerDown = (e: PointerEvent) => {
+      if (e.target instanceof Node && !triggerRef.current?.contains(e.target) && !cardRef.current?.contains(e.target)) close();
+    };
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") close();
     };
     /* `true` catches the scroll of whichever panel the reference lives in. */
-    window.addEventListener("scroll", close, true);
+    window.addEventListener("scroll", onScroll, true);
     window.addEventListener("resize", close);
     document.addEventListener("keydown", onKey);
+    document.addEventListener("pointerdown", onPointerDown);
     return () => {
-      window.removeEventListener("scroll", close, true);
+      window.removeEventListener("scroll", onScroll, true);
       window.removeEventListener("resize", close);
       document.removeEventListener("keydown", onKey);
+      document.removeEventListener("pointerdown", onPointerDown);
     };
   }, [open]);
 
@@ -95,14 +110,20 @@ export function RefPopover({
         type="button"
         className={className ?? "ref-link"}
         aria-expanded={open}
+        aria-describedby={open ? tooltipId : undefined}
         onMouseEnter={() => {
           cancelClose();
           place();
         }}
         onMouseLeave={scheduleClose}
-        onFocus={place}
+        onFocus={(e) => {
+          if (e.currentTarget.matches(":focus-visible")) place();
+        }}
         onBlur={scheduleClose}
-        onClick={() => (open ? setAt(null) : place())}
+        onClick={() => {
+          cancelClose();
+          place();
+        }}
       >
         {children}
       </button>
@@ -116,10 +137,12 @@ export function RefPopover({
       {open &&
         createPortal(
           <div
+            ref={cardRef}
+            id={tooltipId}
             role="tooltip"
             onMouseEnter={cancelClose}
             onMouseLeave={scheduleClose}
-            className="animate-fade-rise fixed z-[70] rounded border border-rule bg-ivory shadow-float"
+            className="reference-preview animate-fade-rise fixed z-[70] rounded border border-rule bg-ivory shadow-float"
             style={{
               left: at.x,
               top: at.y,
@@ -128,7 +151,7 @@ export function RefPopover({
               transform: at.above ? "translateY(-100%)" : undefined,
             }}
           >
-            <PassageCard refText={refText} />
+            {preview ?? <PassageCard refText={refText} />}
           </div>,
           document.body
         )}

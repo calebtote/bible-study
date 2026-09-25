@@ -106,11 +106,12 @@ export function SearchOverlay({ onClose }: { onClose: () => void }) {
               setActive(0);
             }}
             placeholder="Search chapters, places, people, themes, sources"
-            className="w-full bg-transparent text-[15px] text-charcoal outline-none placeholder:text-ink-faint"
+            className="w-full bg-transparent text-base text-charcoal outline-none placeholder:text-ink-faint"
             autoComplete="off"
             spellCheck={false}
             aria-controls="search-results"
           />
+          <button type="button" onClick={onClose} className="min-h-11 shrink-0 px-2 text-[12px] text-forest sm:hidden">Close</button>
           <kbd className="hidden shrink-0 rounded border border-rule px-1.5 py-0.5 text-[10px] text-ink-faint sm:block">
             Esc
           </kbd>

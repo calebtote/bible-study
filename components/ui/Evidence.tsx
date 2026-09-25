@@ -17,6 +17,8 @@ import { useState } from "react";
 import type { Citation, EvidenceLabel } from "@/content/types";
 import { EVIDENCE_LABELS } from "@/content/types";
 import { SOURCE_BY_ID, shortCitation } from "@/content/sources";
+import { RefPopover } from "@/components/scripture/RefPopover";
+import { ProseLine } from "@/components/Prose";
 import { usePreferences } from "@/lib/state/preferences";
 
 const LABEL_TONE: Record<EvidenceLabel, string> = {
@@ -55,7 +57,7 @@ export function EvidenceBadges({
 }
 
 /**
- * Citations, collapsed to a count until asked for.
+ * Quiet source previews, with full citation details on request.
  *
  * Every entry names the claim it supports rather than sitting at the end of a
  * paragraph as an unattached number. A reader who wants to know which of four
@@ -73,14 +75,38 @@ export function Citations({
 
   return (
     <div className={`mt-3 ${className ?? ""}`}>
+      <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 text-[11.5px] text-ink-soft">
+        {citations.map((citation, i) => {
+          const source = SOURCE_BY_ID[citation.sourceId];
+          if (!source) return null;
+          return (
+            <RefPopover
+              key={`${citation.sourceId}-${i}`}
+              refText={source.title}
+              preview={
+                <div className="quiet-scroll max-h-72 overflow-y-auto px-4 py-3 text-[12px] leading-relaxed">
+                  <p className="font-medium text-charcoal">{source.author}</p>
+                  <p className="mt-1 font-serif italic text-charcoal">{source.title}</p>
+                  <p className="mt-1 text-ink-faint">{[source.year, citation.locator].filter(Boolean).join(" · ")}</p>
+                  <p className="label-caps mt-3 text-bronze">Cited for · study summary</p>
+                  <p className="mt-1 text-ink-soft">{citation.supportedClaim}</p>
+                  {source.standpoint && <p className="mt-2 text-ink-faint">{source.standpoint}</p>}
+                </div>
+              }
+            >
+              {shortCitation(citation.sourceId)}
+            </RefPopover>
+          );
+        })}
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
         className="label-caps text-ink-faint transition-colors hover:text-forest"
         aria-expanded={open}
       >
-        {open ? "Hide sources" : `${citations.length} source${citations.length === 1 ? "" : "s"}`}
+        {open ? "Hide details" : "Source details"}
       </button>
+      </div>
 
       {open && (
         <ol className="mt-2 space-y-2 border-l border-rule pl-3">
@@ -93,7 +119,7 @@ export function Citations({
                   {c.locator ? `, ${c.locator}` : ""}
                 </span>
                 <span className="mt-0.5 block text-ink-soft">
-                  Cited for: {c.supportedClaim}
+                  Cited for: <ProseLine text={c.supportedClaim} />
                 </span>
                 {source?.standpoint && (
                   <span className="mt-0.5 block text-ink-faint">
