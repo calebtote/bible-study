@@ -196,6 +196,18 @@ export default async function StatsPage() {
   }
 
   const uniqueVisitors = new Set(visits.map((v) => v.visitor)).size;
+
+  /*
+   * "Active" can only mean "seen recently": the beacon fires on page views,
+   * not on presence, so a reader sitting on one chapter for ten minutes drops
+   * out of the count. Five minutes is the conventional compromise.
+   */
+  const fiveMinutesAgo = Date.now() - 5 * 60 * 1000;
+  const activeNow = new Set(
+    visits
+      .filter((v) => new Date(v.t).getTime() >= fiveMinutesAgo)
+      .map((v) => v.visitor),
+  ).size;
   const days = visits.map((v) => localDay(v.t));
   const today = localDay(new Date().toISOString());
   const visitsToday = days.filter((d) => d === today).length;
@@ -239,6 +251,11 @@ export default async function StatsPage() {
         <StatTile
           label="Unique visitors"
           value={uniqueVisitors.toLocaleString()}
+        />
+        <StatTile
+          label="Active now"
+          value={activeNow.toLocaleString()}
+          note="seen in the last 5 minutes"
         />
         <StatTile label="Visits today" value={visitsToday.toLocaleString()} />
         <StatTile
