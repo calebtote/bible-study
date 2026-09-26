@@ -12,7 +12,6 @@ import { DIFFICULT_QUESTIONS } from "@/content/difficult-questions";
 import { BEFORE_STAGES } from "@/content/before-joshua";
 import { PROFILES } from "@/content/people/profiles";
 import { SOURCES } from "@/content/sources";
-import { ALL_ENTITIES } from "@/content/entities";
 
 /*
  * The six questions in `ORIENTS` are the brief's own test for the product, and
@@ -180,27 +179,6 @@ export default function Home() {
           </Aside>
         )}
 
-        <Aside title="What identification does and does not prove">
-          <p>
-            {ALL_ENTITIES.length} places, people, peoples and regions have records here.
-            Many of the sites are securely identified, some are disputed, and a few are
-            simply unknown. Identifying a mound as Jericho places the name; it does not
-            confirm any event the text describes there, and a destruction layer does not
-            arrive with a signature. Those two claims are kept apart everywhere in this
-            study.
-          </p>
-        </Aside>
-
-        <Aside title="Joshua and later violence" tone="caution">
-          <p>
-            These chapters have been used to justify conquest and displacement,
-            including against indigenous peoples and in modern territorial conflict.
-            This study treats the campaigns as a bounded episode inside the biblical
-            narrative and does not treat them as authorisation for anyone&apos;s
-            violence now. That is said on the pages where it arises rather than left
-            to inference.
-          </p>
-        </Aside>
       </section>
 
       <p className="mt-10 text-[12px] leading-relaxed text-ink-faint">

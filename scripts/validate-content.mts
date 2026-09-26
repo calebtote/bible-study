@@ -678,9 +678,6 @@ if (questions) {
       }
       checkCitations(i.citations, `question "${q.id}" interpretation "${i.label}"`);
     }
-    if (q.id === "conquest-violence" && !q.ethicalNote?.trim()) {
-      fail(`"${q.id}" must carry an ethicalNote`);
-    }
     for (const t of q.themeIds) {
       if (!THEMES.has(t)) fail(`"${q.id}" references unknown theme "${t}"`);
     }

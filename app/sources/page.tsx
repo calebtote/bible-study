@@ -86,11 +86,7 @@ export default function SourcesPage() {
     >
       <section className="mt-2 space-y-4">
         {METHODOLOGY_NOTES.map((note) => (
-          <Aside
-            key={note.id}
-            title={note.title}
-            tone={note.id === "misuse-note" ? "caution" : "neutral"}
-          >
+          <Aside key={note.id} title={note.title}>
             <p>{note.body}</p>
           </Aside>
         ))}

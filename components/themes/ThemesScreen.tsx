@@ -33,7 +33,6 @@ import { Prose, ProseLine } from "@/components/Prose";
 import { Citations } from "@/components/ui/Evidence";
 import { ScriptureRefs } from "@/components/scripture/ScriptureRefs";
 import { BookmarkButton } from "@/components/shell/BookmarksPanel";
-import { Aside } from "@/components/shell/PageShell";
 import { entityHref, studyHref } from "@/lib/state/study-url";
 
 type Selection =
@@ -505,14 +504,6 @@ function QuestionDetail({
         <Prose body={question.unresolved} onEntityClick={onEntityClick} />
         <Citations citations={question.citations} />
       </Block>
-
-      {question.ethicalNote && (
-        <div className="mt-2">
-          <Aside title="A necessary caution" tone="caution">
-            <Prose body={question.ethicalNote} compact />
-          </Aside>
-        </div>
-      )}
 
       {themes.length > 0 && (
         <Block title="Related themes">

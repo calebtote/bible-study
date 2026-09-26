@@ -660,8 +660,6 @@ export interface DifficultQuestion {
   }[];
   /** What remains genuinely unresolved. */
   unresolved: string;
-  /** Explicit guard against misuse. */
-  ethicalNote?: string;
   chapterNumbers: number[];
   themeIds: string[];
   scriptureRefs: string[];
